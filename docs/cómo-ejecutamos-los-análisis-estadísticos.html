@@ -1,0 +1,2186 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>COMPONENTE 8 ¿CÓMO EJECUTAMOS LOS ANÁLISIS ESTADÍSTICOS? | EXAMEN DE OPCIÓN MÚLTIPLE</title>
+  <meta name="description" content="Este es un manual técnico en construcción de cómo diseñar, aplicar y validar exámenes de opción múltiple de alto impacto" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="COMPONENTE 8 ¿CÓMO EJECUTAMOS LOS ANÁLISIS ESTADÍSTICOS? | EXAMEN DE OPCIÓN MÚLTIPLE" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Este es un manual técnico en construcción de cómo diseñar, aplicar y validar exámenes de opción múltiple de alto impacto" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="COMPONENTE 8 ¿CÓMO EJECUTAMOS LOS ANÁLISIS ESTADÍSTICOS? | EXAMEN DE OPCIÓN MÚLTIPLE" />
+  
+  <meta name="twitter:description" content="Este es un manual técnico en construcción de cómo diseñar, aplicar y validar exámenes de opción múltiple de alto impacto" />
+  
+
+<meta name="author" content="Davin Eduardo Díaz García" />
+<meta name="author" content="Elizabeth Vega Gatica" />
+
+
+<meta name="date" content="2021-06-12" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="COMP6.html"/>
+<link rel="next" href="GLOSARIO.html"/>
+<script src="libs/header-attrs-2.8/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">MANUAL TÉCNICO: EXAMENES DE OPCIÓN MÚLTIPLE</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> ¿Para qué necesitamos revisar un manual técnico? {<span class="citation">(<span><strong>para?</strong></span>)</span>}</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#cúales-son-las-fases-del-procedimiento-fases"><i class="fa fa-check"></i><b>1.1</b> ¿Cúales son las fases del procedimiento? {<span class="citation">(<span><strong>fases?</strong></span>)</span>}</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#cómo-leer-este-manual-instructivo"><i class="fa fa-check"></i><b>1.2</b> ¿Cómo leer este manual? {<span class="citation">(<span><strong>instructivo?</strong></span>)</span>}</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="COMP1.html"><a href="COMP1.html"><i class="fa fa-check"></i><b>2</b> ¿QUÉ, PARA QUÉ Y CÓMO VAMOS A EVALUAR?</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="COMP1.html"><a href="COMP1.html#qué-voy-a-medir"><i class="fa fa-check"></i><b>2.1</b> ¿Qué voy a medir?</a></li>
+<li class="chapter" data-level="2.2" data-path="COMP1.html"><a href="COMP1.html#para-qué-voy-a-medir"><i class="fa fa-check"></i><b>2.2</b> ¿Para qué voy a medir?</a></li>
+<li class="chapter" data-level="2.3" data-path="COMP1.html"><a href="COMP1.html#a-quién-voy-a-evaluar"><i class="fa fa-check"></i><b>2.3</b> ¿A quién voy a evaluar?</a></li>
+<li class="chapter" data-level="2.4" data-path="COMP1.html"><a href="COMP1.html#cuáles-serán-las-interpretaciones-para-los-usos-previstos-de-la-prueba"><i class="fa fa-check"></i><b>2.4</b> ¿Cuáles serán las interpretaciones para los usos previstos de la prueba?</a></li>
+<li class="chapter" data-level="2.5" data-path="COMP1.html"><a href="COMP1.html#qué-procedimiento-seguiremos-para-saber-si-nuestro-instrumento-es-válido-confiable-y-que-nuestros-reactivos-se-comportan-de-manera-adecuada"><i class="fa fa-check"></i><b>2.5</b> ¿Qué procedimiento seguiremos para saber si nuestro instrumento es válido, confiable y que nuestros reactivos se comportan de manera adecuada?</a></li>
+<li class="chapter" data-level="2.6" data-path="COMP1.html"><a href="COMP1.html#cuántos-reactivos-tendrá-nuestra-prueba-y-como-estará-organizada"><i class="fa fa-check"></i><b>2.6</b> ¿Cuántos reactivos tendrá nuestra prueba y como estará organizada?</a></li>
+<li class="chapter" data-level="2.7" data-path="COMP1.html"><a href="COMP1.html#cómo-calificaremos-la-prueba"><i class="fa fa-check"></i><b>2.7</b> ¿Cómo calificaremos la prueba?</a></li>
+<li class="chapter" data-level="2.8" data-path="COMP1.html"><a href="COMP1.html#otras-características-importantes-a-considerar"><i class="fa fa-check"></i><b>2.8</b> Otras características importantes a considerar</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="COMP2.html"><a href="COMP2.html"><i class="fa fa-check"></i><b>3</b> ¿CÓMO DELIMITAMOS LO QUE EVALUREMOS EN NUESTRO EXAMEN?</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="COMP2.html"><a href="COMP2.html#definiendo-nuestor-marco-conceptual"><i class="fa fa-check"></i><b>3.1</b> Definiendo nuestor marco conceptual</a></li>
+<li class="chapter" data-level="3.2" data-path="COMP2.html"><a href="COMP2.html#pasando-de-la-definición-de-constructo-a-la-construcción-de-reactivos"><i class="fa fa-check"></i><b>3.2</b> Pasando de la definición de constructo a la construcción de reactivos</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="COMP2.html"><a href="COMP2.html#operacionalizando"><i class="fa fa-check"></i><b>3.2.1</b> Operacionalizando</a></li>
+<li class="chapter" data-level="3.2.2" data-path="COMP2.html"><a href="COMP2.html#elaborando-nuestra-tabla-de-especificaciones"><i class="fa fa-check"></i><b>3.2.2</b> Elaborando nuestra tabla de especificaciones</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="COMP3.html"><a href="COMP3.html"><i class="fa fa-check"></i><b>4</b> ¿CÓMO ELABORAMOS NUESTRO EXAMEN?</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="COMP3.html"><a href="COMP3.html#REDACCION"><i class="fa fa-check"></i><b>4.1</b> ¿CÓMO REDACTAMOS NUESTROS REACTIVOS?</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="COMP3.html"><a href="COMP3.html#reactivos-de-cuestionamiento-directo"><i class="fa fa-check"></i><b>4.1.1</b> Reactivos de cuestionamiento directo:</a></li>
+<li class="chapter" data-level="4.1.2" data-path="COMP3.html"><a href="COMP3.html#reactivos-de-completamiento"><i class="fa fa-check"></i><b>4.1.2</b> Reactivos de completamiento:</a></li>
+<li class="chapter" data-level="4.1.3" data-path="COMP3.html"><a href="COMP3.html#reactivos-de-elección-de-elementos-o-complejos"><i class="fa fa-check"></i><b>4.1.3</b> Reactivos de elección de elementos o complejos:</a></li>
+<li class="chapter" data-level="4.1.4" data-path="COMP3.html"><a href="COMP3.html#reactivos-de-jerarquización-u-ordenamiento"><i class="fa fa-check"></i><b>4.1.4</b> Reactivos de jerarquización u ordenamiento:</a></li>
+<li class="chapter" data-level="4.1.5" data-path="COMP3.html"><a href="COMP3.html#reactivo-verdadero-o-falso"><i class="fa fa-check"></i><b>4.1.5</b> Reactivo verdadero o falso:</a></li>
+<li class="chapter" data-level="4.1.6" data-path="COMP3.html"><a href="COMP3.html#reactivos-de-relación-de-columnas-o-matching"><i class="fa fa-check"></i><b>4.1.6</b> Reactivos de relación de columnas o matching:</a></li>
+<li class="chapter" data-level="4.1.7" data-path="COMP3.html"><a href="COMP3.html#conjuntos-de-reactivos-basados-en-contexto-o-multireactivos"><i class="fa fa-check"></i><b>4.1.7</b> Conjuntos de reactivos basados en contexto o multireactivos:</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="COMP3.html"><a href="COMP3.html#cómo-validamos-nuestros-reactivos"><i class="fa fa-check"></i><b>4.2</b> ¿CÓMO VALIDAMOS NUESTROS REACTIVOS</a></li>
+<li class="chapter" data-level="4.3" data-path="COMP3.html"><a href="COMP3.html#piloteo-y-análisis-psicométricos"><i class="fa fa-check"></i><b>4.3</b> Piloteo y análisis psicométricos</a></li>
+<li class="chapter" data-level="4.4" data-path="COMP3.html"><a href="COMP3.html#banco-de-ítems"><i class="fa fa-check"></i><b>4.4</b> Banco de ítems</a></li>
+<li class="chapter" data-level="4.5" data-path="COMP3.html"><a href="COMP3.html#ensamblaje"><i class="fa fa-check"></i><b>4.5</b> Ensamblaje</a></li>
+<li class="chapter" data-level="4.6" data-path="COMP3.html"><a href="COMP3.html#para-ejercitar"><i class="fa fa-check"></i><b>4.6</b> Para ejercitar</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="COMP4.html"><a href="COMP4.html"><i class="fa fa-check"></i><b>5</b> ¿CÓMO ADMINISTRAMOS EL EXAME?</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="COMP4.html"><a href="COMP4.html#cómo-producimos-e-imprimimos-el-examen"><i class="fa fa-check"></i><b>5.1</b> ¿Cómo producimos e imprimimos el examen?</a></li>
+<li class="chapter" data-level="5.2" data-path="COMP4.html"><a href="COMP4.html#cómo-aplicamos-el-examen"><i class="fa fa-check"></i><b>5.2</b> ¿Cómo aplicamos el examen?</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="COMP5.html"><a href="COMP5.html"><i class="fa fa-check"></i><b>6</b> ¿QUÉ ANÁLISIS PODEMOS HACER DE LOS RESULTADOS?</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="COMP5.html"><a href="COMP5.html#desempeño-de-los-reactivos"><i class="fa fa-check"></i><b>6.1</b> Desempeño de los reactivos</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="COMP5.html"><a href="COMP5.html#teoría-clásica-de-los-tests"><i class="fa fa-check"></i><b>6.1.1</b> Teoría Clásica de los Tests</a></li>
+<li class="chapter" data-level="6.1.2" data-path="COMP5.html"><a href="COMP5.html#teoría-de-respuesta-al-ítem"><i class="fa fa-check"></i><b>6.1.2</b> Teoría de Respuesta al Ítem</a></li>
+<li class="chapter" data-level="6.1.3" data-path="COMP5.html"><a href="COMP5.html#eliminación-de-reactivos"><i class="fa fa-check"></i><b>6.1.3</b> Eliminación de reactivos</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="COMP5.html"><a href="COMP5.html#dimensionalidad"><i class="fa fa-check"></i><b>6.2</b> Dimensionalidad</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="COMP5.html"><a href="COMP5.html#análisis-factorial-exploratorio"><i class="fa fa-check"></i><b>6.2.1</b> Análisis Factorial Exploratorio</a></li>
+<li class="chapter" data-level="6.2.2" data-path="COMP5.html"><a href="COMP5.html#análisis-factorial-confirmatorio"><i class="fa fa-check"></i><b>6.2.2</b> Análisis Factorial Confirmatorio</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="COMP5.html"><a href="COMP5.html#confiabilidad"><i class="fa fa-check"></i><b>6.3</b> Confiabilidad</a></li>
+<li class="chapter" data-level="6.4" data-path="COMP5.html"><a href="COMP5.html#imparcialidad"><i class="fa fa-check"></i><b>6.4</b> Imparcialidad</a></li>
+<li class="chapter" data-level="6.5" data-path="COMP5.html"><a href="COMP5.html#evidencias-de-validez"><i class="fa fa-check"></i><b>6.5</b> Evidencias de validez</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="COMP5.html"><a href="COMP5.html#correlación-con-otras-pruebas-supongamos-que-nosotros-definimos-nuestro-examen-como-un-instrumento-de-medición-que-permite-dar-cuenta-del-constructo-de-comprensión-lectora-a-partir-de-cierta-teoría-y-esta-teoría-afirma-que-la-comprensión-lectora-tiene-una-relación-significativa-con-la-memoria-de-trabajo-que-mencionamos-en-otro-ejemplo.-si-queremos-generar-mayor-evidencia-de-la-validez-del-uso-de-este-examen-como-una-medida-de-comprensión-lectora-bajo-esta-teoría-podríamos-aplicar-esta-misma-prueba-junto-con-nuestro-examen-a-los-participantes-y-medir-qué-tanto-se-relacionan-estadísticamente-estas-dos-pruebas."><i class="fa fa-check"></i><b>6.5.1</b> Correlación con otras pruebas: Supongamos que nosotros definimos nuestro examen como un instrumento de medición que permite dar cuenta del constructo de comprensión lectora a partir de cierta teoría, y esta teoría, afirma que la comprensión lectora tiene una relación significativa con la memoria de trabajo que mencionamos en otro ejemplo. Si queremos generar mayor evidencia de la validez del uso de este examen como una medida de comprensión lectora bajo esta teoría, podríamos aplicar esta misma prueba junto con nuestro examen a los participantes y medir qué tanto se relacionan estadísticamente estas dos pruebas.</a></li>
+<li class="chapter" data-level="6.5.2" data-path="COMP5.html"><a href="COMP5.html#regresiones-lineales-y-logísticas"><i class="fa fa-check"></i><b>6.5.2</b> Regresiones lineales y logísticas</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="COMP5.html"><a href="COMP5.html#calificación"><i class="fa fa-check"></i><b>6.6</b> Calificación</a>
+<ul>
+<li class="chapter" data-level="6.6.1" data-path="COMP5.html"><a href="COMP5.html#métodos-para-establecer-puntos-de-corte-standard-setting"><i class="fa fa-check"></i><b>6.6.1</b> Métodos para establecer puntos de corte (standard setting)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="COMP6.html"><a href="COMP6.html"><i class="fa fa-check"></i><b>7</b> ¿CÓMO REPORTAMOS LOS RESULTADOS</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="COMP6.html"><a href="COMP6.html#examinados"><i class="fa fa-check"></i><b>7.1</b> Examinados</a></li>
+<li class="chapter" data-level="7.2" data-path="COMP6.html"><a href="COMP6.html#institución"><i class="fa fa-check"></i><b>7.2</b> Institución</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="cómo-ejecutamos-los-análisis-estadísticos.html"><a href="cómo-ejecutamos-los-análisis-estadísticos.html"><i class="fa fa-check"></i><b>8</b> ¿CÓMO EJECUTAMOS LOS ANÁLISIS ESTADÍSTICOS?</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="cómo-ejecutamos-los-análisis-estadísticos.html"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cómo-capturamos-nuestros-datos"><i class="fa fa-check"></i><b>8.1</b> ¿Cómo capturamos nuestros datos?</a></li>
+<li class="chapter" data-level="8.2" data-path="cómo-ejecutamos-los-análisis-estadísticos.html"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cómo-cargamos-nuestros-datos-en-r"><i class="fa fa-check"></i><b>8.2</b> ¿Cómo cargamos nuestros datos en R?</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="cómo-ejecutamos-los-análisis-estadísticos.html"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cómo-capturamos-la-clave-de-respuestas"><i class="fa fa-check"></i><b>8.2.1</b> ¿Cómo capturamos la clave de respuestas?</a></li>
+<li class="chapter" data-level="8.2.2" data-path="cómo-ejecutamos-los-análisis-estadísticos.html"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#seleccionar-solamente-los-reactivos-y-transformarlos"><i class="fa fa-check"></i><b>8.2.2</b> Seleccionar solamente los reactivos y transformarlos</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="cómo-ejecutamos-los-análisis-estadísticos.html"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#desempeño-de-los-reactivos-1"><i class="fa fa-check"></i><b>8.3</b> Desempeño de los reactivos</a></li>
+<li class="chapter" data-level="8.4" data-path="cómo-ejecutamos-los-análisis-estadísticos.html"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#análisis-de-los-distractores"><i class="fa fa-check"></i><b>8.4</b> Análisis de los distractores</a></li>
+<li class="chapter" data-level="8.5" data-path="cómo-ejecutamos-los-análisis-estadísticos.html"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#dimensionalidad-1"><i class="fa fa-check"></i><b>8.5</b> Dimensionalidad</a>
+<ul>
+<li class="chapter" data-level="8.5.1" data-path="cómo-ejecutamos-los-análisis-estadísticos.html"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#análisis-factorial-exploratorio-1"><i class="fa fa-check"></i><b>8.5.1</b> Análisis Factorial Exploratorio</a></li>
+<li class="chapter" data-level="8.5.2" data-path="cómo-ejecutamos-los-análisis-estadísticos.html"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#análisis-factorial-confirmatorio-1"><i class="fa fa-check"></i><b>8.5.2</b> Análisis Factorial Confirmatorio</a></li>
+</ul></li>
+<li class="chapter" data-level="8.6" data-path="cómo-ejecutamos-los-análisis-estadísticos.html"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#confiabilidad-1"><i class="fa fa-check"></i><b>8.6</b> Confiabilidad</a></li>
+<li class="chapter" data-level="8.7" data-path="cómo-ejecutamos-los-análisis-estadísticos.html"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#imparcialidad-1"><i class="fa fa-check"></i><b>8.7</b> Imparcialidad</a></li>
+<li class="chapter" data-level="8.8" data-path="cómo-ejecutamos-los-análisis-estadísticos.html"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#gráficos"><i class="fa fa-check"></i><b>8.8</b> Gráficos</a></li>
+<li class="chapter" data-level="8.9" data-path="cómo-ejecutamos-los-análisis-estadísticos.html"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#COMP7"><i class="fa fa-check"></i><b>8.9</b> ¿Y QUÉ HACEMOS DESPUÉS CON EL EXAMEN?</a></li>
+<li class="chapter" data-level="8.10" data-path="cómo-ejecutamos-los-análisis-estadísticos.html"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#contenido-de-los-reactivos"><i class="fa fa-check"></i><b>8.10</b> Contenido de los reactivos:</a></li>
+<li class="chapter" data-level="8.11" data-path="cómo-ejecutamos-los-análisis-estadísticos.html"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#seguridad-del-instrumento"><i class="fa fa-check"></i><b>8.11</b> Seguridad del instrumento:</a></li>
+<li class="chapter" data-level="8.12" data-path="cómo-ejecutamos-los-análisis-estadísticos.html"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#desempeño-psicométrico"><i class="fa fa-check"></i><b>8.12</b> Desempeño psicométrico:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html"><i class="fa fa-check"></i>GLOSARIO</a>
+<ul>
+<li class="chapter" data-level="8.13" data-path="GLOSARIO.html"><a href="GLOSARIO.html#alpha-de-cronbach"><i class="fa fa-check"></i><b>8.13</b> Alpha de Cronbach:</a></li>
+<li class="chapter" data-level="8.14" data-path="GLOSARIO.html"><a href="GLOSARIO.html#análisis-factorial-exploratorio-2"><i class="fa fa-check"></i><b>8.14</b> Análisis Factorial Exploratorio:</a></li>
+<li class="chapter" data-level="8.15" data-path="GLOSARIO.html"><a href="GLOSARIO.html#análisis-factorial-confirmatorio-2"><i class="fa fa-check"></i><b>8.15</b> Análisis Factorial Confirmatorio:</a></li>
+<li class="chapter" data-level="8.16" data-path="GLOSARIO.html"><a href="GLOSARIO.html#aprendizaje-esperado"><i class="fa fa-check"></i><b>8.16</b> Aprendizaje esperado:</a></li>
+<li class="chapter" data-level="8.17" data-path="GLOSARIO.html"><a href="GLOSARIO.html#base-de-datos"><i class="fa fa-check"></i><b>8.17</b> Base de datos:</a></li>
+<li class="chapter" data-level="8.18" data-path="GLOSARIO.html"><a href="GLOSARIO.html#base-de-datos-ordenada"><i class="fa fa-check"></i><b>8.18</b> Base de datos ordenada:</a></li>
+<li class="chapter" data-level="8.19" data-path="GLOSARIO.html"><a href="GLOSARIO.html#base-de-datos-limpia"><i class="fa fa-check"></i><b>8.19</b> Base de datos limpia:</a></li>
+<li class="chapter" data-level="8.20" data-path="GLOSARIO.html"><a href="GLOSARIO.html#calibración"><i class="fa fa-check"></i><b>8.20</b> Calibración:</a></li>
+<li class="chapter" data-level="8.21" data-path="GLOSARIO.html"><a href="GLOSARIO.html#codificación"><i class="fa fa-check"></i><b>8.21</b> Codificación:</a></li>
+<li class="chapter" data-level="8.22" data-path="GLOSARIO.html"><a href="GLOSARIO.html#confiabilidad-2"><i class="fa fa-check"></i><b>8.22</b> Confiabilidad:</a></li>
+<li class="chapter" data-level="8.23" data-path="GLOSARIO.html"><a href="GLOSARIO.html#consistencia-interna"><i class="fa fa-check"></i><b>8.23</b> Consistencia interna:</a></li>
+<li class="chapter" data-level="8.24" data-path="GLOSARIO.html"><a href="GLOSARIO.html#constructo"><i class="fa fa-check"></i><b>8.24</b> Constructo:</a></li>
+<li class="chapter" data-level="8.25" data-path="GLOSARIO.html"><a href="GLOSARIO.html#correlación"><i class="fa fa-check"></i><b>8.25</b> Correlación:</a></li>
+<li class="chapter" data-level="8.26" data-path="GLOSARIO.html"><a href="GLOSARIO.html#correlación-reactivo-total"><i class="fa fa-check"></i><b>8.26</b> Correlación reactivo-total:</a></li>
+<li class="chapter" data-level="8.27" data-path="GLOSARIO.html"><a href="GLOSARIO.html#criterios-de-calidad-de-los-reactivos"><i class="fa fa-check"></i><b>8.27</b> Criterios de calidad de los reactivos:</a></li>
+<li class="chapter" data-level="8.28" data-path="GLOSARIO.html"><a href="GLOSARIO.html#cuestionario"><i class="fa fa-check"></i><b>8.28</b> Cuestionario:</a></li>
+<li class="chapter" data-level="8.29" data-path="GLOSARIO.html"><a href="GLOSARIO.html#desempeño-de-reactivos"><i class="fa fa-check"></i><b>8.29</b> Desempeño de reactivos:</a></li>
+<li class="chapter" data-level="8.30" data-path="GLOSARIO.html"><a href="GLOSARIO.html#dificultad"><i class="fa fa-check"></i><b>8.30</b> Dificultad:</a></li>
+<li class="chapter" data-level="8.31" data-path="GLOSARIO.html"><a href="GLOSARIO.html#dimensión"><i class="fa fa-check"></i><b>8.31</b> Dimensión:</a></li>
+<li class="chapter" data-level="8.32" data-path="GLOSARIO.html"><a href="GLOSARIO.html#dimensionalidad-2"><i class="fa fa-check"></i><b>8.32</b> Dimensionalidad:</a></li>
+<li class="chapter" data-level="8.33" data-path="GLOSARIO.html"><a href="GLOSARIO.html#distractores"><i class="fa fa-check"></i><b>8.33</b> Distractores:</a></li>
+<li class="chapter" data-level="8.34" data-path="GLOSARIO.html"><a href="GLOSARIO.html#entrevista-cognitiva"><i class="fa fa-check"></i><b>8.34</b> Entrevista cognitiva:</a></li>
+<li class="chapter" data-level="8.35" data-path="GLOSARIO.html"><a href="GLOSARIO.html#equiparación"><i class="fa fa-check"></i><b>8.35</b> Equiparación:</a></li>
+<li class="chapter" data-level="8.36" data-path="GLOSARIO.html"><a href="GLOSARIO.html#error-de-medición"><i class="fa fa-check"></i><b>8.36</b> Error de medición:</a></li>
+<li class="chapter" data-level="8.37" data-path="GLOSARIO.html"><a href="GLOSARIO.html#escenario-o-estímulo"><i class="fa fa-check"></i><b>8.37</b> Escenario o estímulo:</a></li>
+<li class="chapter" data-level="8.38" data-path="GLOSARIO.html"><a href="GLOSARIO.html#estandarización"><i class="fa fa-check"></i><b>8.38</b> Estandarización:</a></li>
+<li class="chapter" data-level="8.39" data-path="GLOSARIO.html"><a href="GLOSARIO.html#evaluación-criterial"><i class="fa fa-check"></i><b>8.39</b> Evaluación criterial:</a></li>
+<li class="chapter" data-level="8.40" data-path="GLOSARIO.html"><a href="GLOSARIO.html#evaluación-normativa"><i class="fa fa-check"></i><b>8.40</b> Evaluación normativa:</a></li>
+<li class="chapter" data-level="8.41" data-path="GLOSARIO.html"><a href="GLOSARIO.html#evidencias-de-validez-1"><i class="fa fa-check"></i><b>8.41</b> Evidencias de validez:</a></li>
+<li class="chapter" data-level="8.42" data-path="GLOSARIO.html"><a href="GLOSARIO.html#funcionamiento-diferencial-del-reactivo-dif"><i class="fa fa-check"></i><b>8.42</b> Funcionamiento Diferencial del Reactivo (DIF):</a></li>
+<li class="chapter" data-level="8.43" data-path="GLOSARIO.html"><a href="GLOSARIO.html#mantenimiento-de-la-prueba"><i class="fa fa-check"></i><b>8.43</b> Mantenimiento de la prueba:</a></li>
+<li class="chapter" data-level="8.44" data-path="GLOSARIO.html"><a href="GLOSARIO.html#marco-conceptual"><i class="fa fa-check"></i><b>8.44</b> Marco conceptual:</a></li>
+<li class="chapter" data-level="8.45" data-path="GLOSARIO.html"><a href="GLOSARIO.html#modelo-de-1-parámetro"><i class="fa fa-check"></i><b>8.45</b> Modelo de 1 parámetro:</a></li>
+<li class="chapter" data-level="8.46" data-path="GLOSARIO.html"><a href="GLOSARIO.html#modelo-de-2-parámetros"><i class="fa fa-check"></i><b>8.46</b> Modelo de 2 parámetros:</a></li>
+<li class="chapter" data-level="8.47" data-path="GLOSARIO.html"><a href="GLOSARIO.html#niveles-de-aprendizaje"><i class="fa fa-check"></i><b>8.47</b> Niveles de aprendizaje:</a></li>
+<li class="chapter" data-level="8.48" data-path="GLOSARIO.html"><a href="GLOSARIO.html#omega-de-mcdonald"><i class="fa fa-check"></i><b>8.48</b> Omega de McDonald:</a></li>
+<li class="chapter" data-level="8.49" data-path="GLOSARIO.html"><a href="GLOSARIO.html#operacionalización"><i class="fa fa-check"></i><b>8.49</b> Operacionalización:</a></li>
+<li class="chapter" data-level="8.50" data-path="GLOSARIO.html"><a href="GLOSARIO.html#paneles-de-expertos"><i class="fa fa-check"></i><b>8.50</b> Paneles de expertos:</a></li>
+<li class="chapter" data-level="8.51" data-path="GLOSARIO.html"><a href="GLOSARIO.html#parámetros-psicométricos"><i class="fa fa-check"></i><b>8.51</b> Parámetros psicométricos:</a></li>
+<li class="chapter" data-level="8.52" data-path="GLOSARIO.html"><a href="GLOSARIO.html#propiedades-estadísticas"><i class="fa fa-check"></i><b>8.52</b> Propiedades estadísticas:</a></li>
+<li class="chapter" data-level="8.53" data-path="GLOSARIO.html"><a href="GLOSARIO.html#prueba-objetiva"><i class="fa fa-check"></i><b>8.53</b> Prueba objetiva:</a></li>
+<li class="chapter" data-level="8.54" data-path="GLOSARIO.html"><a href="GLOSARIO.html#pruebas-paralelas"><i class="fa fa-check"></i><b>8.54</b> Pruebas paralelas:</a></li>
+<li class="chapter" data-level="8.55" data-path="GLOSARIO.html"><a href="GLOSARIO.html#punto-de-corte"><i class="fa fa-check"></i><b>8.55</b> Punto de corte:</a></li>
+<li class="chapter" data-level="8.56" data-path="GLOSARIO.html"><a href="GLOSARIO.html#reactivos-ancla"><i class="fa fa-check"></i><b>8.56</b> Reactivos ancla:</a></li>
+<li class="chapter" data-level="8.57" data-path="GLOSARIO.html"><a href="GLOSARIO.html#regresión-lineal"><i class="fa fa-check"></i><b>8.57</b> Regresión Lineal:</a></li>
+<li class="chapter" data-level="8.58" data-path="GLOSARIO.html"><a href="GLOSARIO.html#seguridad-del-instrumento-1"><i class="fa fa-check"></i><b>8.58</b> Seguridad del instrumento:</a></li>
+<li class="chapter" data-level="8.59" data-path="GLOSARIO.html"><a href="GLOSARIO.html#sesgo"><i class="fa fa-check"></i><b>8.59</b> Sesgo:</a></li>
+<li class="chapter" data-level="8.60" data-path="GLOSARIO.html"><a href="GLOSARIO.html#subrepresentación-del-constructo"><i class="fa fa-check"></i><b>8.60</b> Subrepresentación del constructo:</a></li>
+<li class="chapter" data-level="8.61" data-path="GLOSARIO.html"><a href="GLOSARIO.html#tabla-de-especificaciones"><i class="fa fa-check"></i><b>8.61</b> Tabla de especificaciones:</a></li>
+<li class="chapter" data-level="8.62" data-path="GLOSARIO.html"><a href="GLOSARIO.html#teoría-clásica-de-los-tests-1"><i class="fa fa-check"></i><b>8.62</b> Teoría Clásica de los Tests:</a></li>
+<li class="chapter" data-level="8.63" data-path="GLOSARIO.html"><a href="GLOSARIO.html#teoría-de-respuesta-al-ítem-1"><i class="fa fa-check"></i><b>8.63</b> Teoría de Respuesta al Ítem:</a></li>
+<li class="chapter" data-level="8.64" data-path="GLOSARIO.html"><a href="GLOSARIO.html#test-retest"><i class="fa fa-check"></i><b>8.64</b> Test-Retest:</a></li>
+<li class="chapter" data-level="8.65" data-path="GLOSARIO.html"><a href="GLOSARIO.html#validez"><i class="fa fa-check"></i><b>8.65</b> Validez:</a></li>
+<li class="chapter" data-level="8.66" data-path="GLOSARIO.html"><a href="GLOSARIO.html#varianza-irrelevante-al-constructo"><i class="fa fa-check"></i><b>8.66</b> Varianza irrelevante al constructo:</a></li>
+</ul></li>
+<li class="appendix"><span><b>ANEXO</b></span></li>
+<li class="chapter" data-level="" data-path="respuestas-a-las-preguntas.html"><a href="respuestas-a-las-preguntas.html"><i class="fa fa-check"></i>RESPUESTAS A LAS PREGUNTAS</a>
+<ul>
+<li class="chapter" data-level="67" data-path="respuestas-a-las-preguntas.html"><a href="respuestas-a-las-preguntas.html#por-qué-es-necesario-establecer-los-usos-inválidos-de-la-prueba-quiz1"><i class="fa fa-check"></i><b>67</b> <strong>¿Por qué es necesario establecer los usos inválidos de la prueba?</strong> {<span class="citation">(<span><strong>quiz1?</strong></span>)</span>}</a></li>
+<li class="chapter" data-level="68" data-path="respuestas-a-las-preguntas.html"><a href="respuestas-a-las-preguntas.html#qué-función-tiene-el-propósito-de-la-evaluación-quiz2"><i class="fa fa-check"></i><b>68</b> <strong>¿Qué función tiene el propósito de la evaluación?</strong> {<span class="citation">(<span><strong>quiz2?</strong></span>)</span>}</a></li>
+<li class="chapter" data-level="69" data-path="respuestas-a-las-preguntas.html"><a href="respuestas-a-las-preguntas.html#para-qué-necesitamos-un-marco-conceptual-del-constructo-a-evaluar"><i class="fa fa-check"></i><b>69</b> <strong>¿Para qué necesitamos un marco conceptual del constructo a evaluar?</strong></a></li>
+<li class="chapter" data-level="70" data-path="respuestas-a-las-preguntas.html"><a href="respuestas-a-las-preguntas.html#cuál-es-la-utilidad-que-tiene-generar-una-tabla-de-especificaciones"><i class="fa fa-check"></i><b>70</b> <strong>¿Cuál es la utilidad que tiene generar una tabla de especificaciones?</strong></a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">EXAMEN DE OPCIÓN MÚLTIPLE</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="cómo-ejecutamos-los-análisis-estadísticos" class="section level1" number="8">
+<h1><span class="header-section-number">COMPONENTE 8</span> ¿CÓMO EJECUTAMOS LOS ANÁLISIS ESTADÍSTICOS?</h1>
+<p>En esta sección presentaremos herramientas para llevar a cabo el análisis estadístico de los reactivos y de la prueba en general. Para ayudar a que cualquier persona que lea el manual pueda llevar a cabo estos análisis, utilizaremos el lenguaje de programación R. Pese a que llamarlo lenguaje de programación puede resultar intimidante, trataremos de presentar todo el contenido de esta sección de la manera más simple y didáctica posible, de tal forma que el lector solo tenga que reemplazar uno o dos valores que nosotros indicaremos, y que con eso sea suficiente para obtener los resultados deseados.</p>
+<p>Para lograr este cometido, necesitaremos dos prerrequisitos importantes, el primero de ellos es tener instalado R y RStudio; para ello, recomendamos el siguiente enlace con instrucciones para su instalación:</p>
+<blockquote>
+<p>Enlace pendiente</p>
+</blockquote>
+<p>El segundo requisito es tener una base de datos limpia y ordenada que permita analizar la información de la manera más simple posible. Para ello, recomendamos al lector dirigirse a la siguiente sección y seguir cada uno de los tips presentados ahí.</p>
+<div id="cómo-capturamos-nuestros-datos" class="section level2" number="8.1">
+<h2><span class="header-section-number">8.1</span> ¿Cómo capturamos nuestros datos?</h2>
+<p>Una base de datos ordenada es aquella en la que cada fila representa a un solo sustentante y cada columna representa un atributo medido de ese sustentante. La primera fila ha de contener el nombre de dichos atributos, y las filas subsecuentes contendrán el valor de ese atributo para cada sustentante sin que existan duplicaciones de información.</p>
+<p>Cuando hablamos de una base de datos limpia, nos referimos a que cada celda de esta contenga información útil, correcta e interpretable. En particular hay algunos puntos que se necesitan para lograr esto:</p>
+<ul>
+<li><p><strong>Nombres de las columnas:</strong> Cada columna debe tener un descriptor breve y explicativo. Es sumamente recomendable utilizar una única palabra o abreviatura para describir cada columna. Es importante que usemos descriptores claros, si decido llamara a la columna de “Licenciatura de Procedencia” como “licproc,” probablemente resulte confuso para una segunda persona que lea la base de datos; una mejor opción podría ser “lic_procedencia.” Nótese que se utiliza un “_” para separar las palabras, esto será importante para los subsecuentes análisis.</p></li>
+<li><p><strong>Codificación de valores:</strong> Cuando hacemos análisis estadísticos, la mayoría de los programas funcionan mejor si utilizamos números para todos nuestros valores. Por ello, es importante que todos los atributos capturados de los sustentantes sean capturados con números (o convertidos en caso de que ya tengamos la base de datos hecha). Por ejemplo, el atributo de sexo puede ser convertido asignando el número 0 para todos los sustentantes que sean hombres y el número 1 para todas las sustentantes que sean mujeres. En este caso, los números 0 y 1 no significan que un sexo sea superior a otro, simplemente son las etiquetas que se dan para distinguirlos.</p></li>
+</ul>
+<div class="nota">
+<p><strong>Nota:</strong>
+Es muy importante que mantengamos un registro por separado de lo que cada código significa. Esto puede hacerse en una segunda hoja de cálculo o en algún documento de texto que guardemos junto a la base de datos.</p>
+</div>
+<ul>
+<li><strong>Secuencia de las columnas:</strong> Es recomendable que introduzcamos cada atributo del sustentante en un orden lógico. De igual forma, se recomienda que las columnas iniciales contengan los datos de identificación o demográficos. La primera columna suele ser el identificador del sustentante, ya sea su nombre, clave única o clave asignada. Posterior a esto, se introducen los demás atributos como el sexo, edad, semestre que cursa, etc. En cuanto a los reactivos, es importante que se registren en orden: si tenemos 15 reactivos de un subdominio específico, que esos 15 reactivos se registren en 15 columnas consecutivas.</li>
+</ul>
+</div>
+<div id="cómo-cargamos-nuestros-datos-en-r" class="section level2" number="8.2">
+<h2><span class="header-section-number">8.2</span> ¿Cómo cargamos nuestros datos en R?</h2>
+<p>Lo primero que tenemos que hacer es abrir RStudio e instalar los paquetes que vamos a requerir para elaborar nuestros análisis. A continuación se presenta el código necesario a ejecutar. La primera vez será necesario ejecutar todo el código, incluidos los comandos “install.packages.” En las ocasiones siguientes, una vez que se han instalado los paquetes, solamente será necesario correr la segunda mitad con los comandos “library”</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Instalar paquetes</span></span>
+<span id="cb1-2"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;psych&quot;</span>)</span>
+<span id="cb1-3"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;psy&quot;</span>)</span>
+<span id="cb1-4"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;sjPlot&quot;</span>)</span>
+<span id="cb1-5"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;lavaan&quot;</span>)</span>
+<span id="cb1-6"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;difR&quot;</span>)</span>
+<span id="cb1-7"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;mirt&quot;</span>)</span>
+<span id="cb1-8"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;pander&quot;</span>)</span>
+<span id="cb1-9"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;kableExtra&quot;</span>)</span>
+<span id="cb1-10"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;corrplot&quot;</span>)</span>
+<span id="cb1-11"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;ShinyItemAnalysis&quot;</span>)</span>
+<span id="cb1-12"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;ltm&quot;</span>)</span>
+<span id="cb1-13"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;lme4&quot;</span>)</span>
+<span id="cb1-14"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;tidyverse&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Cargar paquetes</span></span>
+<span id="cb2-2"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psych)</span>
+<span id="cb2-4"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psy)</span>
+<span id="cb2-5"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sjPlot)</span>
+<span id="cb2-6"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lavaan)</span>
+<span id="cb2-7"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(difR)</span>
+<span id="cb2-8"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(mirt)</span>
+<span id="cb2-9"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(pander)</span>
+<span id="cb2-10"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span>
+<span id="cb2-11"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(corrplot)</span>
+<span id="cb2-12"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ShinyItemAnalysis)</span>
+<span id="cb2-13"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ltm)</span>
+<span id="cb2-14"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lme4)</span>
+<span id="cb2-15"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div>
+<p>El primer paso es leer la base de datos que utilizaremos. Es recomendable convertirla a formato “csv” y moverla a la carpeta donde creémos el proyecto. Una vez que lo hemos hecho, podemos ejecutar la siguiente línea, reemplazando lo que está entre comillas después de <code>~/</code> por el nombre de nuestro archivo para la base de datos</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb3-1" aria-hidden="true" tabindex="-1"></a>datos_completos <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;~/examen matematicas.csv&quot;</span>)</span></code></pre></div>
+<p>Lo que aparece al inicio del código <code>datos completos</code> es el nombre que tendrá la variable dentro del ambiente de trabajo de R, este nombre es nuestra sugerencia, pero siempre puede tomar cualquier otro valor, siempre y cuando seamos consistentes al utilizarlo igual en las siguientes funciones.</p>
+<div id="cómo-capturamos-la-clave-de-respuestas" class="section level3" number="8.2.1">
+<h3><span class="header-section-number">8.2.1</span> ¿Cómo capturamos la clave de respuestas?</h3>
+<p>Si nuestra base de datos viene con las repuestas directas que los sustentantes dieron al examen, es decir, aprece qué opción de respuesta seleccionó en cada reactivo (e.g. “A,” “B” o “C”), es necesario que capturemos en R cuál es la respuesta correcta para cada uno de los reactivos. Para ello, bastará que usemos la siguiente línea de código, sustituyendo cada uno de los valores dentro de <code>c()</code> que se encuentran entre comillas por el valor correspondiente para la respuesta correcta de los reactivos de nuestro examen. Se presentan las opciones en el orden en que esté cada reactivo en la base de datos; es decir, si el primer reactivo tiene como respuesta correcta la A, el primer valor dentro de <code>c()</code>, deberá ser “A,” si el segundo reactivo tiene como respuesta correcta D, el segundo valor dentro de <code>c()</code> será “D,” y así sucesivamente. Es importante que utilicemos la misma codificación que en la base de datos. Por ejemplo, si nuestra base de datos tiene “a” en lugar de “A,” tenemos que respetar ese formato para que el código funcione.</p>
+<p>En este ejemplo, dado que son 18 reactivos, podemos observar que tenemos 18 letras entre comillas y separadas por comas. Es muy importante que verifiquemos esta información, dado que cualquier error aunque sea en una sola de estas opciones, invalidará todas nuestras posibles interpretaciones de los resultados.</p>
+<p>Este paso es necesario únicamente si nuestra base de datos viene con las opciones de respuesta codificadas así, si nuestra base de datos viene directamente con unos y ceros, podemos saltar este paso.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb4-1" aria-hidden="true" tabindex="-1"></a>cadena_respuestas <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;A&quot;</span>,<span class="st">&quot;D&quot;</span>,<span class="st">&quot;C&quot;</span>,<span class="st">&quot;B&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;B&quot;</span>,<span class="st">&quot;C&quot;</span>, <span class="st">&quot;D&quot;</span>,<span class="st">&quot;C&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;B&quot;</span>,<span class="st">&quot;D&quot;</span>, <span class="st">&quot;C&quot;</span>, <span class="st">&quot;A&quot;</span>, <span class="st">&quot;B&quot;</span>, <span class="st">&quot;A&quot;</span>,<span class="st">&quot;D&quot;</span>, <span class="st">&quot;C&quot;</span>)</span></code></pre></div>
+<div class="nota">
+<p><strong>Nota</strong>
+En este caso decidimos nombrar la variable como “cadena_respuestas” dado el tipo de formato que es en R. Mantener los nombres que hemos sugerido, permitirá que sea más sencillo ejecutar todo el código con muy ligeras modificaciones y evitar errores, pero se recalca nuevamente que siempre es posible cambiar los nombres de las variables.</p>
+</div>
+</div>
+<div id="seleccionar-solamente-los-reactivos-y-transformarlos" class="section level3" number="8.2.2">
+<h3><span class="header-section-number">8.2.2</span> Seleccionar solamente los reactivos y transformarlos</h3>
+<p>Ahora, vamos a seleccionar de nuestra base de datos únicamente los reactivos y los convertiremos en una variable diferente. Dentro del componente “select” pondremos el nombre del primer reactivo que aparezca en la base de datos, seguido de este, pondremos dos puntos <code>:</code> y después el nombre del último reactivo de la base de datos.</p>
+<div class="nota">
+<p>Esta es la razón por la que es importante acomodar los reactivos en orden y todos seguidos</p>
+</div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb5-1" aria-hidden="true" tabindex="-1"></a>reactivos_correctos <span class="ot">&lt;-</span> datos_completos<span class="sc">%&gt;%</span></span>
+<span id="cb5-2"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Calc1<span class="sc">:</span>Geo6)</span></code></pre></div>
+<div class="nota">
+<p>Si ponemos atención, el código utiliza el valor de “datos_completos.” Este es el primer ejemplo en el que comenzamos a utilizar las variables que ya hemos definido antes, por esto es que es muy importante mantener las consistencias con los nombres, ya que si en esta línea cambiamos aunque sea una letra, R ya no podrá encontrar las variables que definimos previamente y nos dará un error</p>
+</div>
+<p>Con la siguiente linea convertiremos los valores “A,” “B,” “C” y “D” en respuestas correctas utilizando la clave que generamos con anterioridad. Esto nos permitirá tener una base de datos que puede ser analizada con algunas de las técnicas que veremos a continuación.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb6-1" aria-hidden="true" tabindex="-1"></a>reactivos_correctos[] <span class="ot">&lt;-</span> <span class="sc">+</span><span class="fu">t</span>(<span class="fu">t</span>(reactivos_correctos) <span class="sc">==</span> cadena_respuestas)</span></code></pre></div>
+<p>Si ejecutamos la siguiente línea de código, podremos visualizar cómo se ven ahora las primeras observaciones de nuestra base de datos que solamente contiene reactivos y que se ha convertido en unos y ceros.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(reactivos_correctos)</span></code></pre></div>
+<pre><code>##   Calc1 Calc2 Calc3 Calc4 Calc5 Calc6 Alg1 Alg2 Alg3 Alg4 Alg5 Alg6 Geo1 Geo2
+## 1     1     1     1     1     1     1    1    1    1    1    1    1    1    1
+## 2     1     1     1     1     1     1    1    1    1    1    1    0    0    1
+## 3     0     1     1     0     1     0    0    0    0    0    0    0    0    1
+## 4     1     1     1     1     1     1    0    1    1    1    1    0    0    1
+## 5     1     1     1     1     1     1    0    0    0    0    0    1    1    1
+## 6     1     1     1     1     1     1    1    1    1    1    1    1    1    1
+##   Geo3 Geo4 Geo5 Geo6
+## 1    1    1    1    1
+## 2    0    0    1    1
+## 3    1    1    1    1
+## 4    0    1    1    0
+## 5    1    1    1    1
+## 6    0    1    1    1</code></pre>
+</div>
+</div>
+<div id="desempeño-de-los-reactivos-1" class="section level2" number="8.3">
+<h2><span class="header-section-number">8.3</span> Desempeño de los reactivos</h2>
+<p>Ya que tenemos esta base de datos, podemos realizar algunos análisis para ver cómo se comportan los reactivos. Si recordamos lo revisado en la sección del desempeño de los reactivos, los principales análisis que podemos hacer en este campo son:</p>
+<ul>
+<li><p>TCT</p></li>
+<li><p>Índice de Dificultad</p></li>
+<li><p>Índice de Discriminación</p></li>
+<li><p>Correlación reactivo-total</p></li>
+<li><p>Alfa si se elimina el reactivo</p></li>
+<li><p>TRI</p></li>
+<li><p>Índice de Dificultad</p></li>
+<li><p>Índice de Discriminación</p></li>
+</ul>
+<p>Para mayor practicidad, sugerimos al lector ejecutar todas las siguientes líneas de código tal como están, con lo que obtendrá como resultado final una tabla con todos estos estadísticos. La interpretación de estos estadísticos se especificó en el capítulo referente los tipos de análisis que podemos realizar.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Tabla inicial con dificultad y discriminación</span></span>
+<span id="cb9-2"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb9-2" aria-hidden="true" tabindex="-1"></a>tabla_items<span class="ot">&lt;-</span><span class="fu">ItemAnalysis</span>(reactivos_correctos)</span>
+<span id="cb9-3"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Modelo de 2 Parámetros IRT del examen de redaccion </span></span>
+<span id="cb9-4"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb9-4" aria-hidden="true" tabindex="-1"></a>modelo2PL <span class="ot">&lt;-</span> <span class="fu">mirt</span>(<span class="at">data=</span>reactivos_correctos,<span class="at">model =</span> <span class="dv">1</span>, <span class="at">itemtype=</span><span class="st">&quot;2PL&quot;</span>, <span class="at">SE=</span><span class="cn">TRUE</span>, <span class="at">verbose=</span><span class="cn">FALSE</span>)</span>
+<span id="cb9-5"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb9-5" aria-hidden="true" tabindex="-1"></a>coef<span class="fl">.2</span>PL <span class="ot">&lt;-</span> <span class="fu">coef</span>(modelo2PL, <span class="at">IRTpars=</span><span class="cn">TRUE</span>, <span class="at">simplify=</span><span class="cn">TRUE</span>)</span>
+<span id="cb9-6"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb9-6" aria-hidden="true" tabindex="-1"></a>items<span class="fl">.2</span>PL <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(coef<span class="fl">.2</span>PL<span class="sc">$</span>items)</span>
+<span id="cb9-7"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-8"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="co">#Creación de la tabla final</span></span>
+<span id="cb9-9"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb9-9" aria-hidden="true" tabindex="-1"></a>propiedades_items<span class="ot">&lt;-</span><span class="fu">bind_cols</span>(tabla_items[,<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">10</span>,<span class="dv">12</span>,<span class="dv">15</span>)], items<span class="fl">.2</span>PL[,<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>])<span class="sc">%&gt;%</span></span>
+<span id="cb9-10"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb9-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="fu">c</span> (<span class="st">&quot;Dificultad&quot;</span> <span class="ot">=</span> <span class="st">&quot;Difficulty&quot;</span> , </span>
+<span id="cb9-11"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb9-11" aria-hidden="true" tabindex="-1"></a>          <span class="st">&quot;Discriminación&quot;</span> <span class="ot">=</span> <span class="st">&quot;ULI&quot;</span>,</span>
+<span id="cb9-12"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb9-12" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;Alfa si se elimina&quot;</span> <span class="ot">=</span> <span class="st">&quot;Alpha.drop&quot;</span>, <span class="st">&quot;Correlación con Total&quot;</span> <span class="ot">=</span> <span class="st">&quot;RIR&quot;</span></span>
+<span id="cb9-13"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb9-13" aria-hidden="true" tabindex="-1"></a>        ,<span class="st">&quot;Discriminación TRI&quot;</span> <span class="ot">=</span> <span class="st">&quot;a&quot;</span>, <span class="st">&quot;Dificultad TRI&quot;</span> <span class="ot">=</span> <span class="st">&quot;b&quot;</span>))</span>
+<span id="cb9-14"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="co">#Presentación de la tabla final</span></span>
+<span id="cb9-15"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb9-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>(propiedades_items)<span class="sc">%&gt;%</span></span>
+<span id="cb9-16"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb9-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_paper</span>(<span class="st">&quot;hover&quot;</span>, <span class="at">full_width =</span> F)</span></code></pre></div>
+<table class=" lightable-paper lightable-hover" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:right;">
+Dificultad
+</th>
+<th style="text-align:right;">
+Discriminación
+</th>
+<th style="text-align:right;">
+Correlación con Total
+</th>
+<th style="text-align:right;">
+Alfa si se elimina
+</th>
+<th style="text-align:right;">
+Discriminación TRI
+</th>
+<th style="text-align:right;">
+Dificultad TRI
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Calc1
+</td>
+<td style="text-align:right;">
+0.7913669
+</td>
+<td style="text-align:right;">
+0.4532374
+</td>
+<td style="text-align:right;">
+0.5148635
+</td>
+<td style="text-align:right;">
+0.8665042
+</td>
+<td style="text-align:right;">
+1.898230
+</td>
+<td style="text-align:right;">
+-1.0765750
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Calc2
+</td>
+<td style="text-align:right;">
+0.8705036
+</td>
+<td style="text-align:right;">
+0.3237410
+</td>
+<td style="text-align:right;">
+0.5328361
+</td>
+<td style="text-align:right;">
+0.8664821
+</td>
+<td style="text-align:right;">
+2.273188
+</td>
+<td style="text-align:right;">
+-1.3999271
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Calc3
+</td>
+<td style="text-align:right;">
+0.8633094
+</td>
+<td style="text-align:right;">
+0.3237410
+</td>
+<td style="text-align:right;">
+0.5135592
+</td>
+<td style="text-align:right;">
+0.8669967
+</td>
+<td style="text-align:right;">
+2.058128
+</td>
+<td style="text-align:right;">
+-1.4142462
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Calc4
+</td>
+<td style="text-align:right;">
+0.8225420
+</td>
+<td style="text-align:right;">
+0.4460432
+</td>
+<td style="text-align:right;">
+0.5449856
+</td>
+<td style="text-align:right;">
+0.8655487
+</td>
+<td style="text-align:right;">
+2.262323
+</td>
+<td style="text-align:right;">
+-1.1417800
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Calc5
+</td>
+<td style="text-align:right;">
+0.8465228
+</td>
+<td style="text-align:right;">
+0.3669065
+</td>
+<td style="text-align:right;">
+0.4742614
+</td>
+<td style="text-align:right;">
+0.8681438
+</td>
+<td style="text-align:right;">
+1.787357
+</td>
+<td style="text-align:right;">
+-1.4051080
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Calc6
+</td>
+<td style="text-align:right;">
+0.7985612
+</td>
+<td style="text-align:right;">
+0.4748201
+</td>
+<td style="text-align:right;">
+0.5303807
+</td>
+<td style="text-align:right;">
+0.8659432
+</td>
+<td style="text-align:right;">
+2.037352
+</td>
+<td style="text-align:right;">
+-1.0760163
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Alg1
+</td>
+<td style="text-align:right;">
+0.7026379
+</td>
+<td style="text-align:right;">
+0.5827338
+</td>
+<td style="text-align:right;">
+0.4408353
+</td>
+<td style="text-align:right;">
+0.8696223
+</td>
+<td style="text-align:right;">
+1.386176
+</td>
+<td style="text-align:right;">
+-0.8283282
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Alg2
+</td>
+<td style="text-align:right;">
+0.5611511
+</td>
+<td style="text-align:right;">
+0.6258993
+</td>
+<td style="text-align:right;">
+0.4357119
+</td>
+<td style="text-align:right;">
+0.8703345
+</td>
+<td style="text-align:right;">
+1.248749
+</td>
+<td style="text-align:right;">
+-0.2530500
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Alg3
+</td>
+<td style="text-align:right;">
+0.8201439
+</td>
+<td style="text-align:right;">
+0.4316547
+</td>
+<td style="text-align:right;">
+0.5439254
+</td>
+<td style="text-align:right;">
+0.8655685
+</td>
+<td style="text-align:right;">
+1.998167
+</td>
+<td style="text-align:right;">
+-1.1907733
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Alg4
+</td>
+<td style="text-align:right;">
+0.8033573
+</td>
+<td style="text-align:right;">
+0.4964029
+</td>
+<td style="text-align:right;">
+0.5763031
+</td>
+<td style="text-align:right;">
+0.8642516
+</td>
+<td style="text-align:right;">
+2.259346
+</td>
+<td style="text-align:right;">
+-1.0524779
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Alg5
+</td>
+<td style="text-align:right;">
+0.5971223
+</td>
+<td style="text-align:right;">
+0.6330935
+</td>
+<td style="text-align:right;">
+0.4648838
+</td>
+<td style="text-align:right;">
+0.8689340
+</td>
+<td style="text-align:right;">
+1.443025
+</td>
+<td style="text-align:right;">
+-0.3721805
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Alg6
+</td>
+<td style="text-align:right;">
+0.6211031
+</td>
+<td style="text-align:right;">
+0.6258993
+</td>
+<td style="text-align:right;">
+0.4567892
+</td>
+<td style="text-align:right;">
+0.8692341
+</td>
+<td style="text-align:right;">
+1.454254
+</td>
+<td style="text-align:right;">
+-0.4651869
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Geo1
+</td>
+<td style="text-align:right;">
+0.7865707
+</td>
+<td style="text-align:right;">
+0.5107914
+</td>
+<td style="text-align:right;">
+0.4941531
+</td>
+<td style="text-align:right;">
+0.8672825
+</td>
+<td style="text-align:right;">
+1.717702
+</td>
+<td style="text-align:right;">
+-1.1066032
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Geo2
+</td>
+<td style="text-align:right;">
+0.6786571
+</td>
+<td style="text-align:right;">
+0.5827338
+</td>
+<td style="text-align:right;">
+0.5042273
+</td>
+<td style="text-align:right;">
+0.8669888
+</td>
+<td style="text-align:right;">
+1.604966
+</td>
+<td style="text-align:right;">
+-0.6648394
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Geo3
+</td>
+<td style="text-align:right;">
+0.7577938
+</td>
+<td style="text-align:right;">
+0.4460432
+</td>
+<td style="text-align:right;">
+0.4436710
+</td>
+<td style="text-align:right;">
+0.8692825
+</td>
+<td style="text-align:right;">
+1.340876
+</td>
+<td style="text-align:right;">
+-1.1154822
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Geo4
+</td>
+<td style="text-align:right;">
+0.7338129
+</td>
+<td style="text-align:right;">
+0.5539568
+</td>
+<td style="text-align:right;">
+0.5642772
+</td>
+<td style="text-align:right;">
+0.8644139
+</td>
+<td style="text-align:right;">
+1.979519
+</td>
+<td style="text-align:right;">
+-0.8104590
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Geo5
+</td>
+<td style="text-align:right;">
+0.8465228
+</td>
+<td style="text-align:right;">
+0.3741007
+</td>
+<td style="text-align:right;">
+0.4759789
+</td>
+<td style="text-align:right;">
+0.8680866
+</td>
+<td style="text-align:right;">
+1.695224
+</td>
+<td style="text-align:right;">
+-1.4434632
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Geo6
+</td>
+<td style="text-align:right;">
+0.8177458
+</td>
+<td style="text-align:right;">
+0.3812950
+</td>
+<td style="text-align:right;">
+0.4329043
+</td>
+<td style="text-align:right;">
+0.8695228
+</td>
+<td style="text-align:right;">
+1.373836
+</td>
+<td style="text-align:right;">
+-1.4357878
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="análisis-de-los-distractores" class="section level2" number="8.4">
+<h2><span class="header-section-number">8.4</span> Análisis de los distractores</h2>
+<p>El lector recordará que también sugerimos incluir el análisis de los distractores. La manera más práctica de hacerlo es al visualizar la frecuencia con la que cada una de las opciones de respuestas fue seleccionada. Si deseamos ver estas frecuencias en forma de tabla y separados por grupos bajo, medio y alto (en las tablas aparecen como 1, 2 y 3 respectivamente), el siguiente comando puede ayudarnos a lograrlo</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb10-1" aria-hidden="true" tabindex="-1"></a>distractores<span class="ot">&lt;-</span>datos_completos<span class="sc">%&gt;%</span></span>
+<span id="cb10-2"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="fu">names</span>(reactivos_correctos))<span class="sc">%&gt;%</span></span>
+<span id="cb10-3"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">DistractorAnalysis</span>(<span class="at">key =</span> cadena_respuestas, <span class="at">p.table=</span><span class="cn">TRUE</span>)</span>
+<span id="cb10-4"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-5"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(distractores)</span></code></pre></div>
+<pre><code>## $Calc1
+##         score.level
+## response Group1 Group2 Group3
+##        A  0.569  0.845  0.993
+##        B  0.268  0.109  0.000
+##        C  0.124  0.008  0.007
+##        D  0.039  0.039  0.000
+## 
+## $Calc2
+##         score.level
+## response Group1 Group2 Group3
+##        A  0.176  0.039  0.015
+##        B  0.078  0.000  0.000
+##        C  0.052  0.000  0.000
+##        D  0.693  0.961  0.985
+## 
+## $Calc3
+##         score.level
+## response Group1 Group2 Group3
+##        A  0.105  0.000  0.007
+##        B  0.039  0.000  0.007
+##        C  0.680  0.953  0.985
+##        D  0.176  0.047  0.000
+## 
+## $Calc4
+##         score.level
+## response Group1 Group2 Group3
+##        A  0.033  0.000  0.000
+##        B  0.588  0.915  1.000
+##        C  0.281  0.062  0.000
+##        D  0.098  0.023  0.000
+## 
+## $Calc5
+##         score.level
+## response Group1 Group2 Group3
+##        A  0.654  0.930  0.985
+##        B  0.209  0.016  0.000
+##        C  0.105  0.031  0.000
+##        D  0.033  0.023  0.015
+## 
+## $Calc6
+##         score.level
+## response Group1 Group2 Group3
+##        A  0.052  0.016  0.000
+##        B  0.549  0.891  0.993
+##        C  0.288  0.078  0.007
+##        D  0.111  0.016  0.000
+## 
+## $Alg1
+##         score.level
+## response Group1 Group2 Group3
+##        A  0.163  0.031  0.000
+##        B  0.033  0.031  0.000
+##        C  0.405  0.752  0.993
+##        D  0.399  0.186  0.007
+## 
+## $Alg2
+##         score.level
+## response Group1 Group2 Group3
+##        A  0.438  0.217  0.081
+##        B  0.229  0.070  0.015
+##        C  0.092  0.078  0.052
+##        D  0.242  0.636  0.852
+## 
+## $Alg3
+##         score.level
+## response Group1 Group2 Group3
+##        A  0.111  0.008  0.000
+##        B  0.020  0.000  0.000
+##        C  0.588  0.915  0.993
+##        D  0.281  0.078  0.007
+## 
+## $Alg4
+##         score.level
+## response Group1 Group2 Group3
+##        A  0.523  0.930  1.000
+##        B  0.340  0.062  0.000
+##        C  0.085  0.000  0.000
+##        D  0.052  0.008  0.000
+## 
+## $Alg5
+##         score.level
+## response Group1 Group2 Group3
+##        A  0.059  0.070  0.007
+##        B  0.275  0.628  0.933
+##        C  0.425  0.264  0.052
+##        D  0.242  0.039  0.007
+## 
+## $Alg6
+##         score.level
+## response Group1 Group2 Group3
+##        A  0.359  0.225  0.022
+##        B  0.183  0.062  0.007
+##        C  0.137  0.085  0.015
+##        D  0.320  0.628  0.956
+## 
+## $Geo1
+##         score.level
+## response Group1 Group2 Group3
+##        A  0.085  0.016  0.000
+##        B  0.039  0.000  0.000
+##        C  0.529  0.868  1.000
+##        D  0.346  0.116  0.000
+## 
+## $Geo2
+##         score.level
+## response Group1 Group2 Group3
+##        A  0.373  0.767  0.941
+##        B  0.464  0.171  0.044
+##        C  0.150  0.062  0.015
+##        D  0.013  0.000  0.000
+## 
+## $Geo3
+##         score.level
+## response Group1 Group2 Group3
+##        A  0.020  0.000  0.000
+##        B  0.516  0.837  0.956
+##        C  0.353  0.147  0.037
+##        D  0.111  0.016  0.007
+## 
+## $Geo4
+##         score.level
+## response Group1 Group2 Group3
+##        A  0.451  0.806  0.985
+##        B  0.458  0.178  0.015
+##        C  0.059  0.008  0.000
+##        D  0.033  0.008  0.000
+## 
+## $Geo5
+##         score.level
+## response Group1 Group2 Group3
+##        A  0.248  0.039  0.015
+##        B  0.065  0.008  0.000
+##        C  0.046  0.008  0.000
+##        D  0.641  0.946  0.985
+## 
+## $Geo6
+##         score.level
+## response Group1 Group2 Group3
+##        A  0.059  0.047  0.007
+##        B  0.020  0.008  0.000
+##        C  0.634  0.853  0.993
+##        D  0.288  0.093  0.000</code></pre>
+<p>También podemos presentar únicamente la tabla más estilizada de cualquiera de los reactivos con el siguiente comando, solamente tenemos que reemplazar el número entre corchetes por el número correspondiente al reactivo de nuestro interés</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kbl</span>(distractores[[<span class="dv">1</span>]])<span class="sc">%&gt;%</span></span>
+<span id="cb12-2"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_paper</span>(<span class="st">&quot;hover&quot;</span>, <span class="at">full_width =</span> F)</span></code></pre></div>
+<table class=" lightable-paper lightable-hover" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:right;">
+Group1
+</th>
+<th style="text-align:right;">
+Group2
+</th>
+<th style="text-align:right;">
+Group3
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+A
+</td>
+<td style="text-align:right;">
+0.569
+</td>
+<td style="text-align:right;">
+0.845
+</td>
+<td style="text-align:right;">
+0.993
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+B
+</td>
+<td style="text-align:right;">
+0.268
+</td>
+<td style="text-align:right;">
+0.109
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:right;">
+0.124
+</td>
+<td style="text-align:right;">
+0.008
+</td>
+<td style="text-align:right;">
+0.007
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:right;">
+0.039
+</td>
+<td style="text-align:right;">
+0.039
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+</tr>
+</tbody>
+</table>
+<p>Si identificamos algún reactivo que nos llame la atención por el comportamiento de sus distractores, podemos analizarlo gráficamente con el siguiente comando:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb13-1" aria-hidden="true" tabindex="-1"></a>datos_completos<span class="sc">%&gt;%</span></span>
+<span id="cb13-2"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="fu">names</span>(reactivos_correctos))<span class="sc">%&gt;%</span></span>
+<span id="cb13-3"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plotDistractorAnalysis</span>(<span class="at">key =</span> cadena_respuestas, <span class="at">item=</span><span class="dv">4</span>, <span class="at">item.name=</span> <span class="st">&quot;Cálculo 4&quot;</span>)</span></code></pre></div>
+<p><img src="analisis_files/figure-html/grafico-distractores-1.png" width="672" /></p>
+<p>Si queremos ver la correlación de los distractores con el puntaje total, lo podemos hacer con el siguiente comando</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb14-1" aria-hidden="true" tabindex="-1"></a>reactivos_completos <span class="ot">&lt;-</span> datos_completos<span class="sc">%&gt;%</span></span>
+<span id="cb14-2"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="fu">colnames</span>(reactivos_correctos))</span>
+<span id="cb14-3"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb14-4" aria-hidden="true" tabindex="-1"></a>examen1<span class="ot">&lt;-</span>reactivos_completos <span class="sc">%&gt;%</span></span>
+<span id="cb14-5"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb14-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">row =</span> <span class="fu">row_number</span>()) <span class="sc">%&gt;%</span></span>
+<span id="cb14-6"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb14-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="sc">-</span>row) <span class="sc">%&gt;%</span></span>
+<span id="cb14-7"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb14-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">val =</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb14-8"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb14-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(row) <span class="sc">%&gt;%</span></span>
+<span id="cb14-9"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb14-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">complete</span>(name, value, <span class="at">fill =</span> <span class="fu">list</span>(<span class="at">val =</span> <span class="dv">0</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb14-10"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb14-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(name, value) <span class="sc">%&gt;%</span></span>
+<span id="cb14-11"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb14-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> <span class="fu">c</span>(name, value), <span class="at">values_from =</span> val, </span>
+<span id="cb14-12"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb14-12" aria-hidden="true" tabindex="-1"></a>              <span class="at">names_sep =</span> <span class="st">&#39;.&#39;</span>, <span class="at">values_fill =</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb14-13"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb14-13" aria-hidden="true" tabindex="-1"></a>  ungroup <span class="sc">%&gt;%</span></span>
+<span id="cb14-14"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb14-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(row) <span class="sc">%&gt;%</span></span>
+<span id="cb14-15"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb14-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>row)</span>
+<span id="cb14-16"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb14-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-17"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb14-17" aria-hidden="true" tabindex="-1"></a>examen1 <span class="ot">&lt;-</span> examen1<span class="sc">%&gt;%</span></span>
+<span id="cb14-18"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb14-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Total =</span> <span class="fu">rowSums</span>(reactivos_correctos, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb14-19"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb14-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-20"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb14-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-21"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb14-21" aria-hidden="true" tabindex="-1"></a>correl1 <span class="ot">&lt;-</span> <span class="fu">cor</span>(examen1)</span>
+<span id="cb14-22"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb14-22" aria-hidden="true" tabindex="-1"></a>cor<span class="ot">&lt;-</span> <span class="fu">as.vector</span>(correl1[<span class="fu">ncol</span>(examen1),<span class="dv">1</span><span class="sc">:</span><span class="fu">ncol</span>(examen1)<span class="sc">-</span><span class="dv">1</span>])</span>
+<span id="cb14-23"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb14-23" aria-hidden="true" tabindex="-1"></a>cor_total <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">matrix</span>(cor, <span class="at">nrow =</span> <span class="dv">4</span>))<span class="sc">%&gt;%</span></span>
+<span id="cb14-24"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb14-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">setNames</span>(<span class="fu">colnames</span>(reactivos_correctos))<span class="sc">%&gt;%</span></span>
+<span id="cb14-25"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb14-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">t</span>()</span>
+<span id="cb14-26"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb14-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-27"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb14-27" aria-hidden="true" tabindex="-1"></a><span class="fu">kbl</span>((cor_total))  <span class="sc">%&gt;%</span></span>
+<span id="cb14-28"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb14-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_classic</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb14-29"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb14-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_header_above</span>(<span class="fu">c</span>(<span class="st">&quot;&quot;</span>,<span class="st">&quot; A&quot;</span>, <span class="st">&quot; B&quot;</span>, <span class="st">&quot; C&quot;</span>, <span class="st">&quot; D&quot;</span>))</span></code></pre></div>
+<table class=" lightable-classic" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="empty-cells: hide;" colspan="1">
+</th>
+<th style="padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<div style="border-bottom: 1px solid #111111; margin-bottom: -1px; ">
+A
+</div>
+</th>
+<th style="padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<div style="border-bottom: 1px solid #111111; margin-bottom: -1px; ">
+B
+</div>
+</th>
+<th style="padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<div style="border-bottom: 1px solid #111111; margin-bottom: -1px; ">
+C
+</div>
+</th>
+<th style="padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<div style="border-bottom: 1px solid #111111; margin-bottom: -1px; ">
+D
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Calc1
+</td>
+<td style="text-align:right;">
+-0.3369282
+</td>
+<td style="text-align:right;">
+-0.1738727
+</td>
+<td style="text-align:right;">
+0.5259912
+</td>
+<td style="text-align:right;">
+-0.3199584
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Calc2
+</td>
+<td style="text-align:right;">
+-0.3147886
+</td>
+<td style="text-align:right;">
+-0.2993869
+</td>
+<td style="text-align:right;">
+-0.1197667
+</td>
+<td style="text-align:right;">
+0.5285089
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Calc3
+</td>
+<td style="text-align:right;">
+-0.4107848
+</td>
+<td style="text-align:right;">
+-0.1892840
+</td>
+<td style="text-align:right;">
+0.6064053
+</td>
+<td style="text-align:right;">
+-0.3973809
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Calc4
+</td>
+<td style="text-align:right;">
+0.6374808
+</td>
+<td style="text-align:right;">
+-0.4761574
+</td>
+<td style="text-align:right;">
+-0.3051633
+</td>
+<td style="text-align:right;">
+-0.2286052
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Calc5
+</td>
+<td style="text-align:right;">
+-0.1080693
+</td>
+<td style="text-align:right;">
+0.5535004
+</td>
+<td style="text-align:right;">
+-0.3461032
+</td>
+<td style="text-align:right;">
+-0.3230592
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Calc6
+</td>
+<td style="text-align:right;">
+-0.3293887
+</td>
+<td style="text-align:right;">
+-0.3149080
+</td>
+<td style="text-align:right;">
+-0.1504287
+</td>
+<td style="text-align:right;">
+0.5453402
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Alg1
+</td>
+<td style="text-align:right;">
+0.5838510
+</td>
+<td style="text-align:right;">
+-0.3854295
+</td>
+<td style="text-align:right;">
+-0.3769662
+</td>
+<td style="text-align:right;">
+-0.1521265
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Alg2
+</td>
+<td style="text-align:right;">
+-0.3663339
+</td>
+<td style="text-align:right;">
+-0.3317779
+</td>
+<td style="text-align:right;">
+-0.3054610
+</td>
+<td style="text-align:right;">
+0.5885848
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Alg3
+</td>
+<td style="text-align:right;">
+-0.3339129
+</td>
+<td style="text-align:right;">
+-0.1681985
+</td>
+<td style="text-align:right;">
+0.5722226
+</td>
+<td style="text-align:right;">
+-0.4035162
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Alg4
+</td>
+<td style="text-align:right;">
+-0.1701431
+</td>
+<td style="text-align:right;">
+0.6070416
+</td>
+<td style="text-align:right;">
+-0.4728389
+</td>
+<td style="text-align:right;">
+-0.2877867
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Alg5
+</td>
+<td style="text-align:right;">
+0.5391035
+</td>
+<td style="text-align:right;">
+-0.4639064
+</td>
+<td style="text-align:right;">
+-0.2855065
+</td>
+<td style="text-align:right;">
+-0.0415687
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Alg6
+</td>
+<td style="text-align:right;">
+-0.2346653
+</td>
+<td style="text-align:right;">
+0.5969445
+</td>
+<td style="text-align:right;">
+-0.3887874
+</td>
+<td style="text-align:right;">
+-0.3450808
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Geo1
+</td>
+<td style="text-align:right;">
+-0.2952885
+</td>
+<td style="text-align:right;">
+-0.1780219
+</td>
+<td style="text-align:right;">
+0.5657538
+</td>
+<td style="text-align:right;">
+-0.4212370
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Geo2
+</td>
+<td style="text-align:right;">
+0.5844247
+</td>
+<td style="text-align:right;">
+-0.4315585
+</td>
+<td style="text-align:right;">
+-0.2940830
+</td>
+<td style="text-align:right;">
+-0.1433994
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Geo3
+</td>
+<td style="text-align:right;">
+-0.1153404
+</td>
+<td style="text-align:right;">
+0.5233467
+</td>
+<td style="text-align:right;">
+-0.3672995
+</td>
+<td style="text-align:right;">
+-0.3333619
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Geo4
+</td>
+<td style="text-align:right;">
+0.6335290
+</td>
+<td style="text-align:right;">
+-0.5043415
+</td>
+<td style="text-align:right;">
+-0.2495189
+</td>
+<td style="text-align:right;">
+-0.2543514
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Geo5
+</td>
+<td style="text-align:right;">
+-0.3925212
+</td>
+<td style="text-align:right;">
+-0.3045590
+</td>
+<td style="text-align:right;">
+-0.1770732
+</td>
+<td style="text-align:right;">
+0.5406796
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Geo6
+</td>
+<td style="text-align:right;">
+-0.1819230
+</td>
+<td style="text-align:right;">
+-0.1275161
+</td>
+<td style="text-align:right;">
+0.5057479
+</td>
+<td style="text-align:right;">
+-0.4336853
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="dimensionalidad-1" class="section level2" number="8.5">
+<h2><span class="header-section-number">8.5</span> Dimensionalidad</h2>
+<p>La siguiente sección es referente al análisis de dimensionalidad de nuestro instrumento, para llevar esto a cabo, recordemos que contamos con dos estrategias principales: Análisis Factorial Exploratorio y Análisis Factorial Confirmatorio.</p>
+<div id="análisis-factorial-exploratorio-1" class="section level3" number="8.5.1">
+<h3><span class="header-section-number">8.5.1</span> Análisis Factorial Exploratorio</h3>
+<p>Para realizar el AFE, necesitamos seguir una serie de pasos que presentaremos a continuación. Un primer paso importante es explorar cómo se relacionan los reactivos de nuestro examen. Para hacerlo, es más sencillo analizarlo de manera gráfica. Si ejecutamos el siguiente comando podremos visualizar la relación entre cada uno de los reactivos. Se trata de una matriz de correlaciones, en la que se cruzan los valores de los reactivos de manera horizontal y vertical. En el ejemplo, donde vemos el cruce del reactivo Calc1 y Calc2, se señala la relación que existe entre ambos reactivos. Esta gráfica, en lugar de presentar los valores, presenta un color específico que denota la intensidad de la relación entre ambos, lo cual se ve explicado en la barra lateral derecha.</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">corrplot</span>(<span class="fu">cor</span>(reactivos_correctos), <span class="at">method =</span> <span class="st">&quot;circle&quot;</span>, <span class="at">na.rm=</span>T, <span class="at">sig.level =</span> <span class="fl">0.05</span>)</span></code></pre></div>
+<pre><code>## Warning in text.default(pos.xlabel[, 1], pos.xlabel[, 2], newcolnames, srt =
+## tl.srt, : &quot;na.rm&quot; is not a graphical parameter</code></pre>
+<pre><code>## Warning in text.default(pos.ylabel[, 1], pos.ylabel[, 2], newrownames, col =
+## tl.col, : &quot;na.rm&quot; is not a graphical parameter</code></pre>
+<pre><code>## Warning in title(title, ...): &quot;na.rm&quot; is not a graphical parameter</code></pre>
+<p><img src="analisis_files/figure-html/corplot-1.png" width="672" /></p>
+<p>En este gráfico, ya podemos comenzar a ver qué tanto se relacionan los reactivos entre sí, y nos dará pistas para comenzar a identificar posibles factores, entendidos como los posibles grupos de reactivos que se relacionan más entre sí.</p>
+<p>El siguiente pasó a revisar será ver qué tan factible es llevar a cabo un AFE de acuerdo con la variabilidad de nuestra muestra y con las correlaciones de nuestros reactivos. En esencia, los dos valores que obtendremos al correr las siguientes líneas de código, nos dirán si nuestra muestra tiene suficiente variabilidad en los puntajes y los reactivos tienen una relación lo suficientemente significativa como para llevar a cabo un AFE.</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cortest.bartlett</span>(reactivos_correctos)</span></code></pre></div>
+<pre><code>## R was not square, finding R from data</code></pre>
+<pre><code>## $chisq
+## [1] 2457.232
+## 
+## $p.value
+## [1] 0
+## 
+## $df
+## [1] 153</code></pre>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">KMO</span>(reactivos_correctos)</span></code></pre></div>
+<pre><code>## Kaiser-Meyer-Olkin factor adequacy
+## Call: KMO(r = reactivos_correctos)
+## Overall MSA =  0.89
+## MSA for each item = 
+## Calc1 Calc2 Calc3 Calc4 Calc5 Calc6  Alg1  Alg2  Alg3  Alg4  Alg5  Alg6  Geo1 
+##  0.92  0.89  0.86  0.90  0.89  0.92  0.85  0.86  0.88  0.89  0.87  0.84  0.92 
+##  Geo2  Geo3  Geo4  Geo5  Geo6 
+##  0.91  0.89  0.91  0.87  0.84</code></pre>
+<p>La Prueba de Bartlett es una prueba de significancia, por lo que esperamos que el valor de p <code>p.value</code> sea menor a 0.05. Cualquier valor mayor a esto nos indicaría que no es pertinente elaborar un AFE.</p>
+<p>El análisis de KMO, arroja valores de 0 a 1, siendo los valores más cercanos a 1 los que nos indican una mayor adecuación de nuestros datos para la ejecución de un AFE. El criterio de definición suele ser 0.8. Es decir, esperamos que nuestros reactivos presenten un KMO mayor a 0.8 para poder identificar que es viable incluirlos en el AFE.</p>
+<p>El siguiente paso es determinar el número de factores que vamos a extraer del AFE. Para ello, ejecutaremos la siguiente función que nos mostrará una aproximación de la cantidad ideal de factores a extraer.</p>
+<p>Este comando nos dirá directamente la cantidad de factores a extraer, y a su vez, nos presentará un gráfico en el que se puede observar la mejoría en la varianza explicada en relación con el aumento de factores. Es decir, hacia la derecha, cada punto representa la cantidad de factores, y se puede ver qué tanta varianza explica cada uno de los factores. Como se puede ver, cada factor que se añade explica menos cantidad de varianza, por lo que es importante determinar en qué punto la cantidad de varianza que explica la inclusión de un nuevo factor es tan insignificante que no resulta necesario incluir ese factor.</p>
+<p>El gráfico nos ayuda a determinarlo al trazar la línea roja punteada, en este ejemplo podemos ver que el factor que ya no añade suficiente varianza es el 5, y por ello es que el análisis recomienda 4 factores.</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">fa.parallel</span>(reactivos_correctos, <span class="at">fm =</span> <span class="st">&quot;uls&quot;</span>, <span class="at">fa =</span> <span class="st">&quot;fa&quot;</span>)</span></code></pre></div>
+<pre><code>## Warning in fa.stats(r = r, f = f, phi = phi, n.obs = n.obs, np.obs = np.obs, :
+## The estimated weights for the factor scores are probably incorrect. Try a
+## different factor score estimation method.</code></pre>
+<p><img src="analisis_files/figure-html/parallel-1.png" width="672" /></p>
+<pre><code>## Parallel analysis suggests that the number of factors =  4  and the number of components =  NA</code></pre>
+<p>Una segunda opción es el análisis vss, que realiza un procedimiento similar mediante otros métodos, lo cual nos sirve como una segunda opinión o método a considerar para decidir la cantidad de factores. Este análisis nos dará varios criterios referentes a la cantidad ideal de factores, por ejemplo, presenta en primer lugar el <code>VSS complexity 1</code>, y nos indica la cantidad de factores que ofrece un mejor resultado.
+Otro criterio que se suele tomar en cuenta es el <code>Velicer MAP</code> o el “BIC.” Idealmente, todos estos criterios deberían mostrar la misma cantidad de factores, pero cuando no es así, dependerá de nosotros seleccionar los criterios que consideremos más adecuados según nuestro caso particular.De igual forma, será necesario que respaldemos la decisión del número de factores con evidencia.</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">vss</span>(reactivos_correctos)</span></code></pre></div>
+<p><img src="analisis_files/figure-html/vss-1.png" width="672" /></p>
+<pre><code>## 
+## Very Simple Structure
+## Call: vss(x = reactivos_correctos)
+## VSS complexity 1 achieves a maximimum of 0.74  with  1  factors
+## VSS complexity 2 achieves a maximimum of 0.81  with  2  factors
+## 
+## The Velicer MAP achieves a minimum of 0.02  with  2  factors 
+## BIC achieves a minimum of  -350.11  with  3  factors
+## Sample Size adjusted BIC achieves a minimum of  -85.83  with  6  factors
+## 
+## Statistics by number of factors 
+##   vss1 vss2   map dof chisq    prob sqresid  fit RMSEA  BIC SABIC complex
+## 1 0.74 0.00 0.023 135   801 3.4e-95    11.8 0.74 0.109  -13   415     1.0
+## 2 0.58 0.81 0.018 118   443 4.4e-39     8.6 0.81 0.081 -269   105     1.4
+## 3 0.54 0.77 0.018 102   265 1.8e-16     6.8 0.85 0.062 -350   -26     1.4
+## 4 0.52 0.72 0.022  87   186 3.4e-09     5.9 0.87 0.052 -339   -63     1.6
+## 5 0.47 0.71 0.028  73   123 2.1e-04     5.3 0.89 0.041 -317   -85     1.7
+## 6 0.46 0.70 0.035  60    86 1.6e-02     4.8 0.90 0.032 -276   -86     1.7
+## 7 0.44 0.69 0.043  48    54 2.5e-01     4.3 0.91 0.017 -235   -83     1.8
+## 8 0.43 0.65 0.055  37    36 5.0e-01     3.8 0.92 0.000 -187   -69     1.8
+##   eChisq  SRMR eCRMS eBIC
+## 1   1083 0.092 0.098  268
+## 2    458 0.060 0.068 -254
+## 3    199 0.039 0.048 -417
+## 4    115 0.030 0.040 -409
+## 5     72 0.024 0.034 -368
+## 6     50 0.020 0.032 -312
+## 7     27 0.015 0.026 -263
+## 8     18 0.012 0.024 -206</code></pre>
+<p>El análisis VSS recomienda un solo factor, probablemente debido a que todos los reactivos son referentes a matemáticas. Sin embargo, el MAP recomienda dos factores, y el BIC recomienda tres. De manera interesante, ninguno de los valores del análisis VSS recomienda cuatro factores como el anterior.</p>
+<p>Debido a que nosotros estimamos que contamos con tres factores dado que así se construyó el examen, y el criterio BIC respalda esa decisión, haremos los análisis con estos tres factores. Sin embargo, cabe aclarar que las discrepancias entre estos métodos nos pueden estar indicando que la estructura de nuestro examen es ambigua.</p>
+<p>Una vez que hemos determinado la cantidad de factores, podemos pasar a ejecutar el siguiente código para obtener el AFE. El aspecto principal que tenemos que tomar en cuenta es la rotación. Este es un concepto con bases matemáticas, que en esencia se refiere a la forma en que el análisis puede determinar las cargas factoriales. Existen dos tipos principales, las ortogonales y las oblicuas. En las primeras se asume que los factores que obtengamos no se relacionan entre sí, mientras que en las segundas, esto sí es permitido. Dentro de las ortogonales la más utilizada es la “varimax,” mientras que entre las oblicuas la más utilizada es la “oblimin.” En este caso, decidimos utilizar “promax,” que es un método con la rigurosidad de varimax pero que permite la relación entre los factores en un segundo paso.</p>
+<div class="nota">
+<p><strong>Nota:</strong>
+Si al lector le interesa profundizar en esto, recomendamos consultar el artículo de Lloret-Segura et al. (2014), el cuál presenta una guía práctica para la elaboración de AFE en español.</p>
+</div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb29-1" aria-hidden="true" tabindex="-1"></a>AFE <span class="ot">&lt;-</span> <span class="fu">factanal</span>(reactivos_correctos, <span class="dv">3</span>, <span class="at">rotation=</span><span class="st">&quot;promax&quot;</span>)</span>
+<span id="cb29-2"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(AFE<span class="sc">$</span>loadings, <span class="at">digits=</span><span class="dv">2</span>, <span class="at">cutoff=</span>.<span class="dv">3</span>, <span class="at">sort=</span><span class="cn">TRUE</span>)</span></code></pre></div>
+<pre><code>## 
+## Loadings:
+##       Factor1 Factor2 Factor3
+## Calc1  0.60                  
+## Calc2  0.72                  
+## Calc3  0.58                  
+## Calc4  0.81                  
+## Calc5  0.74                  
+## Calc6  0.63                  
+## Geo1           0.56          
+## Geo2           0.64          
+## Geo3           0.59          
+## Geo4           0.68          
+## Geo5           0.52          
+## Geo6           0.67          
+## Alg3                   0.57  
+## Alg4                   0.67  
+## Alg5                   0.73  
+## Alg6                   0.73  
+## Alg1                   0.43  
+## Alg2                   0.39  
+## 
+##                Factor1 Factor2 Factor3
+## SS loadings       2.87    2.35    2.22
+## Proportion Var    0.16    0.13    0.12
+## Cumulative Var    0.16    0.29    0.41</code></pre>
+<p>Podemos observar que en las filas se enlistan todos los reactivos, y en las columnas los 4 factores que obtuvimos en este caso. El valor que se muestra en cada cruce de ambos es la carga factorial de ese reactivo en ese factor dado.</p>
+<div id="interpretación" class="section level4" number="8.5.1.1">
+<h4><span class="header-section-number">8.5.1.1</span> Interpretación</h4>
+<p>Lo que esperamos en este caso es que cada reactivo tenga una carga significativa en uno solo de los factores. Por lo general, si observamos que un reactivo se agrupa en dos factores, esto es un indicador de que dicho reactivo está midiendo dos cosas a la vez, lo cual no es algo que estemos buscando. Será importante también evaluar el valor que presente cada reactivo en la carga factorial (el valor que aparece en el cruce entre el reactivo y el factor). Algunos autores señalan como criterio para definir si el reactivo se agrupa en el factor correspondiente, que la carga factorial sea mayor a .4. De igual forma, si un reactivo carga en dos factores, podemos decantarnos por darle prioridad al factor en el que tenga una carga factorial más alta, de preferencia, si la diferencia entre ambas cargas factoriales es mayor a .2.</p>
+<p>Es importante destacar que habrá ocasiones en las que algunos reactivos no tengan una carga significativa en ningún factor, o que carguen de manera muy similar en dos factores distintos. En estos casos, esto ya es un indicio de que el reactivo no se está comportando como esperaríamos, sin embargo, podemos intentar utilizar otros métodos de rotación para ver cuál funciona mejor con nuestros datos y si existe mejoría con estos reactivos. Tal como hemos venido mencionando, para eliminar un reactivo, debemos tomar en cuenta toda la evidencia en su conjunto, y no solamente la correspondiente a un solo análisis, como en este caso.</p>
+<p>Una vez que hemos identificado las cargas factoriales y agrupado cada reactivo en un solo factor, es momento de identificar qué representa cada uno de estos factores con base en los reactivos que se agruparon en ellos. En el ejemplo de arriba, los reactivos se agruparon de la manera que se esperaba, todos los de Cálculo juntos, todos los de Algebra también y lo mismo para los de Geometría, por lo que podemos definir que esos tres son los factores que encontramos. Sin embargo, no siempre será así, en ocasiones, es posible que reactivos que contemplamos medían una cosa, se agrupen en un factor distinto, por lo que sería importante revisar dicho reactivo y considerar si de verdad está midiendo lo que esperábamos que midiera. En ocasiones, al observar la agrupación de los reactivos, y basados en nuestra revisión bibliográfica, podemos determinar que esos reactivos agrupados en un factor, en realidad están midiendo un constructo distinto. Pero para esto, hace falta un procedimiento sumamente riguroso, sistemático y basado en evidencias, tanto del AFE como de la literatura.</p>
+</div>
+</div>
+<div id="análisis-factorial-confirmatorio-1" class="section level3" number="8.5.2">
+<h3><span class="header-section-number">8.5.2</span> Análisis Factorial Confirmatorio</h3>
+<p>Para llevar a cabo el análisis factorial confirmatorio, como ya se mencionó, nosotros definimos el modelo que queremos poner a prueba. Para lograrlo, utilizamos la sintaxis que se presenta en el cuadro de código siguiente.</p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb31-1" aria-hidden="true" tabindex="-1"></a>modelo <span class="ot">&lt;-</span> <span class="st">&#39; </span></span>
+<span id="cb31-2"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="st">Calculo=~  Calc1 + Calc2 + Calc3 + Calc4 + Calc5 + Calc6 </span></span>
+<span id="cb31-3"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="st">Algebra=~  Alg1 + Alg2 + Alg3 + Alg4 + Alg5 + Alg6 </span></span>
+<span id="cb31-4"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb31-4" aria-hidden="true" tabindex="-1"></a><span class="st">Geometria=~  Geo1 + Geo2 + Geo3 + Geo4 + Geo5 + Geo6 </span></span>
+<span id="cb31-5"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb31-5" aria-hidden="true" tabindex="-1"></a><span class="st">&#39;</span></span></code></pre></div>
+<p>Lo primero que hacemos es ponerle un nombre a nuestro modelo, dado que en este ejemplo no haremos comparación de modelos, simplemente llamamos al que presentamos “modelo.” Si el lector tuviera que comparar distintos modelos, sería importante nombrar a cada uno de manera sencilla y que permita identificarlos fácilmente. Después de nombrarlo, utilizamos el signo de asignación en R <code>&lt;-</code> y abrimos comillas simples. La sintaxis dentro del espacio de comillas es muy simple. Primero definimos la variable latente, es decir, aquello que suponemos que nuestros reactivos están midiendo. En el ejemplo que estamos utilizando, todos los reactivos que comienzan con “Calc,” fueron diseñados pensando en que midieran Cálculo, por lo que podemos llamar a ese factor así. Una vez definido el nombre del factor, se incluye el símbolo <code>=~</code> que nos indica que ese factor está compuesto por lo que sigue. Por ello, después de ese signo, se enlistan todos los reactivos que se incluyen en dicho factor, separados cada uno por un signo de <code>+</code>. Después del último reactivo, iniciamos en una nueva línea y repetimos el mismo proceso para cada factor, y al terminar simplemente cerramos las comillas simples.</p>
+<div class="nota">
+<p>Es importante destacar que los reactivos dentro del modelo deben tener exactamente el mismo nombre que tienen como variables dentro de nuestra base de datos.</p>
+</div>
+<p>Una vez definido el modelo, solamente tenemos que ejecutar las siguientes líneas de código para obtener el resumen de los resultados de dicho modelo en nuestra muestra. Solamente necesitamos poner dentro de la función “afc” el nombre de nuestro modelo, el nombre de la base de datos con nuestros reactivos y elegir el método de estimación de parámetros con el indicador <code>estimator =</code>. Para el contexto de exámenes con una sola respuesta correcta por reactivo, algunos autores recomiendan utilizar el método “ULS” por lo que es el que dejamos por defecto en esta línea de código, pero existen otras opciones como los métodos de Máxima Verosimilitud o los de WLS.</p>
+<p>El resultado de estas líneas de código será un resumen amplio de cómo se comporta el modelo, mostrando las cargas factoriales de cada reactivo y algunos otros estadísticos. Sin embargo, para fines prácticos de este manual, nos concentraremos en los resultados ofrecidos por la última línea de código, la cual nos muestra una serie de índices de bondad de ajuste del modelo.</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb32-1" aria-hidden="true" tabindex="-1"></a>ajuste <span class="ot">&lt;-</span> <span class="fu">cfa</span>(modelo, <span class="at">data=</span>reactivos_correctos ,<span class="at">std.lv=</span> <span class="cn">TRUE</span>, <span class="at">estimator =</span> <span class="st">&quot;ULS&quot;</span>, </span>
+<span id="cb32-2"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb32-2" aria-hidden="true" tabindex="-1"></a>              <span class="at">auto.fix.first =</span> <span class="cn">FALSE</span>, <span class="at">sample.nobs=</span><span class="dv">417</span>)</span>
+<span id="cb32-3"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Resultados de dicho modelo</span></span>
+<span id="cb32-4"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb32-4" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(ajuste,<span class="at">fit.measures=</span>T,<span class="at">standardized=</span>T)</span></code></pre></div>
+<pre><code>## lavaan 0.6-8 ended normally after 23 iterations
+## 
+##   Estimator                                        ULS
+##   Optimization method                           NLMINB
+##   Number of model parameters                        39
+##                                                       
+##   Number of observations                           417
+##                                                       
+## Model Test User Model:
+##                                                       
+##   Test statistic                                 4.461
+##   Degrees of freedom                               132
+##   P-value (Unknown)                                 NA
+## 
+## Model Test Baseline Model:
+## 
+##   Test statistic                               167.698
+##   Degrees of freedom                               153
+##   P-value                                           NA
+## 
+## User Model versus Baseline Model:
+## 
+##   Comparative Fit Index (CFI)                    1.000
+##   Tucker-Lewis Index (TLI)                      11.058
+## 
+## Root Mean Square Error of Approximation:
+## 
+##   RMSEA                                          0.000
+##   90 Percent confidence interval - lower         0.000
+##   90 Percent confidence interval - upper         0.000
+##   P-value RMSEA &lt;= 0.05                          1.000
+## 
+## Standardized Root Mean Square Residual:
+## 
+##   SRMR                                           0.044
+## 
+## Parameter Estimates:
+## 
+##   Standard errors                             Standard
+##   Information                                 Expected
+##   Information saturated (h1) model        Unstructured
+## 
+## Latent Variables:
+##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##   Calculo =~                                                            
+##     Calc1             0.275    0.068    4.070    0.000    0.275    0.677
+##     Calc2             0.236    0.066    3.606    0.000    0.236    0.703
+##     Calc3             0.231    0.065    3.540    0.000    0.231    0.672
+##     Calc4             0.278    0.068    4.097    0.000    0.278    0.726
+##     Calc5             0.229    0.065    3.509    0.000    0.229    0.634
+##     Calc6             0.278    0.068    4.093    0.000    0.278    0.691
+##   Algebra =~                                                            
+##     Alg1              0.255    0.062    4.094    0.000    0.255    0.558
+##     Alg2              0.272    0.063    4.311    0.000    0.272    0.548
+##     Alg3              0.264    0.063    4.204    0.000    0.264    0.686
+##     Alg4              0.292    0.064    4.552    0.000    0.292    0.733
+##     Alg5              0.301    0.065    4.661    0.000    0.301    0.613
+##     Alg6              0.292    0.064    4.551    0.000    0.292    0.601
+##   Geometria =~                                                          
+##     Geo1              0.249    0.063    3.948    0.000    0.249    0.608
+##     Geo2              0.295    0.066    4.486    0.000    0.295    0.631
+##     Geo3              0.234    0.062    3.743    0.000    0.234    0.545
+##     Geo4              0.311    0.067    4.654    0.000    0.311    0.703
+##     Geo5              0.208    0.061    3.395    0.001    0.208    0.578
+##     Geo6              0.207    0.061    3.376    0.001    0.207    0.536
+## 
+## Covariances:
+##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##   Calculo ~~                                                            
+##     Algebra           0.508    0.131    3.878    0.000    0.508    0.508
+##     Geometria         0.607    0.152    4.003    0.000    0.607    0.607
+##   Algebra ~~                                                            
+##     Geometria         0.631    0.141    4.490    0.000    0.631    0.631
+## 
+## Variances:
+##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##    .Calc1             0.090    0.062    1.455    0.146    0.090    0.541
+##    .Calc2             0.057    0.058    0.984    0.325    0.057    0.505
+##    .Calc3             0.065    0.058    1.125    0.261    0.065    0.548
+##    .Calc4             0.069    0.062    1.117    0.264    0.069    0.472
+##    .Calc5             0.078    0.057    1.357    0.175    0.078    0.598
+##    .Calc6             0.084    0.062    1.362    0.173    0.084    0.522
+##    .Alg1              0.144    0.058    2.465    0.014    0.144    0.688
+##    .Alg2              0.173    0.060    2.885    0.004    0.173    0.700
+##    .Alg3              0.078    0.059    1.322    0.186    0.078    0.529
+##    .Alg4              0.073    0.062    1.186    0.235    0.073    0.462
+##    .Alg5              0.150    0.063    2.404    0.016    0.150    0.624
+##    .Alg6              0.151    0.062    2.445    0.014    0.151    0.639
+##    .Geo1              0.106    0.058    1.820    0.069    0.106    0.630
+##    .Geo2              0.132    0.063    2.105    0.035    0.132    0.602
+##    .Geo3              0.129    0.057    2.267    0.023    0.129    0.703
+##    .Geo4              0.099    0.064    1.539    0.124    0.099    0.506
+##    .Geo5              0.087    0.055    1.569    0.117    0.087    0.666
+##    .Geo6              0.106    0.055    1.928    0.054    0.106    0.713
+##     Calculo           1.000                               1.000    1.000
+##     Algebra           1.000                               1.000    1.000
+##     Geometria         1.000                               1.000    1.000</code></pre>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">fitmeasures</span>(<span class="at">object =</span> ajuste,<span class="at">fit.measures =</span> <span class="fu">c</span>(<span class="st">&quot;chisq&quot;</span>,<span class="st">&quot;df&quot;</span>,<span class="st">&quot;cfi&quot;</span>,<span class="st">&quot;tli&quot;</span>,<span class="st">&quot;rmsea&quot;</span>,</span>
+<span id="cb34-2"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb34-2" aria-hidden="true" tabindex="-1"></a>                                            <span class="st">&quot;rmsea.ci.upper&quot;</span>,<span class="st">&quot;rmsea.ci.lower&quot;</span>))</span></code></pre></div>
+<pre><code>##          chisq             df            cfi            tli          rmsea 
+##          4.461        132.000          1.000         11.058          0.000 
+## rmsea.ci.upper rmsea.ci.lower 
+##          0.000          0.000</code></pre>
+<p>Los índices de bondad de ajuste más utilizados suelen ser dos: el “CFI” y el “RMSEA.” Existen variaciones de ambos e índices similares, pero para fines prácticos, en este manual nos concentraremos en esos dos. El CFI es un índice de la bondad de ajuste, que en esencia nos dice qué tan bien se ajustaron los datos al modelo propuesto; es decir, qué tanto los datos que tenemos de nuestra muestra realmente se están comportando como el modelo predice en términos de que los reactivos sí se agrupen como nosotros definimos que lo harían. EL CFI es un estadístico que toma valores de 0 a 1, siendo los valores más cercanos a 1 indicadores de un buen nivel de ajuste. Algunos autores suelen definir como criterio de decisión un valor mínimo de .90 para indicar un buen ajuste y un valor de .96 para indicar un ajuste excelente.
+Por su parte, el RMSEA, es una medida del error presente en el modelo, nos indica los residuales de aquello que el modelo no fue capaz de explicar de nuestros datos. Por ello, lo que esperamos es obtener un valor muy pequeño de este estadístico. En específico, algunos autores recomiendan como criterio de decisión valores menores a .06 como índice de un buen ajuste.</p>
+</div>
+</div>
+<div id="confiabilidad-1" class="section level2" number="8.6">
+<h2><span class="header-section-number">8.6</span> Confiabilidad</h2>
+<p>Como se mencionó en el capítulo anterior, existen diversos tipos de confiabilidad, los cuales se obtienen con diferentes métodos. Sin embargo, la más usada usualmente, debido a su practicidad es la confiabilidad de consistencia interna, en especial el coeficiente Alfa de Cronbach. Para obtenerlo, solamente tenemos que utilizar la función <code>cronbach()</code> e indicar dentro de esta el nombre de la base de datos en donde se encuentran únicamente nuestros reactivos.</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cronbach</span>(reactivos_correctos)</span></code></pre></div>
+<pre><code>## $sample.size
+## [1] 417
+## 
+## $number.of.items
+## [1] 18
+## 
+## $alpha
+## [1] 0.8738393</code></pre>
+<p>Este comando nos arroja tres valores específicos; aunque los primeros dos ya los conocemos (el tamaño de la muestra y el numero de reactivos), es importante verificar que están correctamente capturados. Una vez que lo hemos revisado, el dato que nos importa es el coeficiente Alfa que aparece en el último renglón. Recordaremos que este valor puede ir de 0 a 1, y los valores más cercanos a 1 suelen indicar una mejor confiabilidad.</p>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cronbach</span>(reactivos_correctos)</span></code></pre></div>
+<pre><code>## $sample.size
+## [1] 417
+## 
+## $number.of.items
+## [1] 18
+## 
+## $alpha
+## [1] 0.8738393</code></pre>
+<p>Ahora bien, hasta aquí hemos omitido aclarar un punto de suma importancia en este análisis. Recordemos que en el apartado anterior llevamos a cabo el análisis de la dimensionalidad, en el que pudimos comprobar si nuestro examen presenta las dimensiones que presuponíamos desde un inicio. Si obtuvimos un examen multidimensional, como en el ejemplo que hemos utilizado aquí, es importante que analicemos la confiabilidad de cada una de las dimensiones. Dado que los reactivos se agrupan de esa forma, nosotros interpretamos que se agrupan así porque miden un mismo constructo en cada dimensión y por lo tanto, tendríamos que obtener puntajes de cada dimensión; es decir, si nuestro examen presenta varias dimensiones, tenemos que interpretar cada dimensión por separado, obteniendo un puntaje total para cada una con su respectivo coeficiente de confiabilidad.</p>
+<p>Para obtener este coeficiente de confiabilidad, simplemente tenemos que generar una base de datos para cada dimensión que contenga exclusivamente los reactivos correspondientes. En las siguientes líneas de código presentamos un ejemplo de ello. Al igual que cuando generamos la base de datos total, aquí solamente tenemos que poner el nombre del primer reactivo de la dimensión seguido de <code>:</code> y el nombre del último reactivo de la dimensión, todo esto dentro de la función <code>select()</code>. Ya que lo hemos hecho, simplemente ejecutamos nuevamente la línea “cronbach()” con el nombre de nuestra nueva base de datos.</p>
+<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb40-1" aria-hidden="true" tabindex="-1"></a>calculo <span class="ot">&lt;-</span> reactivos_correctos<span class="sc">%&gt;%</span></span>
+<span id="cb40-2"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb40-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Calc1<span class="sc">:</span>Calc6)</span>
+<span id="cb40-3"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb40-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-4"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb40-4" aria-hidden="true" tabindex="-1"></a><span class="fu">cronbach</span>(calculo)</span></code></pre></div>
+<pre><code>## $sample.size
+## [1] 417
+## 
+## $number.of.items
+## [1] 6
+## 
+## $alpha
+## [1] 0.8399005</code></pre>
+<p>Si queremos interpretar la suma de las distintas dimensiones como un puntaje total, necesitamos aportar evidencia de que esta interpretación es válida. Ya sea por evidencia obtenida en la revisión para el marco conceptual o por estudios estadísticos, debemos presentar evidencia de que es posible utilizar la suma de cada dimensión como un puntaje significativo e interpretable.</p>
+<p>En caso de que nuestro examen presente una sola dimensión, podemos simplemente proceder con la primer línea de código referente al Alfa de Cronbach general.</p>
+<p>Como mencionamos en el componente 5, otra opción es el uso del coeficiente Omega, el cuál nos brinda el análisis de confiabilidad basado en la estructura de dimensionalidad que obtuvimos en el AFC, con los siguientes comandos podemos obtener los coeficiente de omega de cada dimensión.</p>
+<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb42-1" aria-hidden="true" tabindex="-1"></a>omega<span class="ot">&lt;-</span><span class="fu">omegaFromSem</span>(ajuste)</span></code></pre></div>
+<p><img src="analisis_files/figure-html/omega-1.png" width="672" /></p>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb43-1" aria-hidden="true" tabindex="-1"></a>omega<span class="sc">$</span>omega.group<span class="sc">$</span>total</span></code></pre></div>
+<pre><code>## [1] 0.84072092 0.09652765 0.13441104</code></pre>
+</div>
+<div id="imparcialidad-1" class="section level2" number="8.7">
+<h2><span class="header-section-number">8.7</span> Imparcialidad</h2>
+<p>Para poder presentar evidencia de que el examen no da ventaja a ningún grupo en específico, podríamos comenzar con un análisis de varianza (ANOVA). Este análisis, nos permite identificar si existen diferencias en los promedios de puntaje total del examen entre los grupos que queramos evaluar. De hecho, un primer paso para llevar a cabo este análisis es visualizar gráficamente cómo se distribuyen los puntajes por grupos. Para ello, podemos utilizar las siguientes líneas de código:</p>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb45-1" aria-hidden="true" tabindex="-1"></a>datos_completos <span class="ot">&lt;-</span> datos_completos<span class="sc">%&gt;%</span></span>
+<span id="cb45-2"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb45-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="sc">-</span><span class="fu">names</span>(reactivos_correctos), factor))</span>
+<span id="cb45-3"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb45-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-4"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb45-4" aria-hidden="true" tabindex="-1"></a>reactivos_total <span class="ot">&lt;-</span> datos_completos<span class="sc">%&gt;%</span></span>
+<span id="cb45-5"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb45-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Total =</span> <span class="fu">rowSums</span>(reactivos_correctos))</span>
+<span id="cb45-6"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb45-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-7"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb45-7" aria-hidden="true" tabindex="-1"></a>reactivos_total<span class="sc">%&gt;%</span></span>
+<span id="cb45-8"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb45-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> Sexo, <span class="at">y =</span> Total, <span class="at">col =</span> Sexo)) <span class="sc">+</span> <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb45-9"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb45-9" aria-hidden="true" tabindex="-1"></a>   <span class="fu">scale_x_discrete</span>(<span class="at">labels =</span> <span class="fu">c</span>(<span class="st">&quot;Mujeres&quot;</span>, <span class="st">&quot;Hombres&quot;</span>))</span></code></pre></div>
+<p><img src="analisis_files/figure-html/dif-1-1.png" width="672" /></p>
+<p>Como podemos observar, en este ejemplo, no parecen existir diferencias significativas entre ambos grupos. La línea gruesa que vemos atraviesa de forma horizontal la gráfica es la media de cada grupo, y la caja como tal es una manera gráfica de representar cómo se distribuyen aproximadamente los puntajes de los evaluados. Pese a que en cuanto a las medias no parece haber diferencias, pareciera haber mayor proporción de puntajes bajos en los hombres, así que sería importante también hacer el análisis de varianza. Podemos hacerlo con las siguientes líneas de código:</p>
+<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb46-1" aria-hidden="true" tabindex="-1"></a>anova_genero<span class="ot">&lt;-</span><span class="fu">aov</span>(Total <span class="sc">~</span> Sexo, <span class="at">data=</span> reactivos_total)</span>
+<span id="cb46-2"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb46-2" aria-hidden="true" tabindex="-1"></a><span class="fu">pander</span>(anova_genero)</span></code></pre></div>
+<table style="width:85%;">
+<caption>Analysis of Variance Model</caption>
+<colgroup>
+<col width="22%" />
+<col width="8%" />
+<col width="12%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"> </th>
+<th align="center">Df</th>
+<th align="center">Sum Sq</th>
+<th align="center">Mean Sq</th>
+<th align="center">F value</th>
+<th align="center">Pr(&gt;F)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><strong>Sexo</strong></td>
+<td align="center">1</td>
+<td align="center">18.78</td>
+<td align="center">18.78</td>
+<td align="center">1.052</td>
+<td align="center">0.3057</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>Residuals</strong></td>
+<td align="center">415</td>
+<td align="center">7411</td>
+<td align="center">17.86</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
+</tr>
+</tbody>
+</table>
+<p>La información que más nos interesa es la última columna que aparece como <code>Pr(&gt;F)</code>. Este valor es la significancia, y nos dirá si las posibles diferencias observadas entre ambos grupos son estadísticamente significativas. En educación y en ciencias sociales, el criterio de decisión lo solemos establecer en .05. Es decir, si el valor de esta columna es menor .05, podemos decir que las diferencias son significativas; en caso contrario, podemos decir que no existen diferencias entre ambos grupos.</p>
+<p>En este ejemplo, no parece haber diferencias significativas en el total. Sin embargo, esto no nos garantiza que el examen y los reactivos estén siendo imparciales. <strong>(ver nota).</strong> Para evaluar de manera más profunda y precisa la presencia de sesgos que atenten contra la imparcialidad, la herramienta más utilizada en este contexto es el Análisis del Funcionamiento Diferencial del Reactivo (DIF por sus siglas en inglés).</p>
+<div class="nota">
+<p>Inclusive, aunque hayan existido diferencias significativas entre los grupos, eso no significa que esas diferencias sean debidas a que el examen está sesgado. De hecho, como se mencionó en el capítulo anterior, al igual que en el siguiente análisis, estas diferencias podrían ser explicadas por diferencias existentes reales entre ambos grupos.</p>
+</div>
+<p>El análisis DIF nos indica la presencia de sesgos en los reactivos que favorezcan más a algún grupo con respecto a otro independientemente de su nivel de habilidad. Esto es, si dos sustentantes tienen el mismo nivel de habilidad, pero uno de ellos por pertenecer a un grupo distinto tiene mayor probabilidad de contestar de manera correcta dicho reactivo. Existen muchos métodos distintos para detectar la presencia de DIF en cada reactivo, algunos que parten de la IRT y algunos que parten de otras teorías. Para fines prácticos, en este análisis incluiremos la comparativa de dos modelos de manera simplificada, pero si al lector le interesa profundizar en este aspecto, recomendamos las siguientes fuentes:
+_____________</p>
+<p>Para llevar a cabo el análisis, simplemente tenemos que ejecutar la siguiente línea de código. En el campo de Data, pondremos el nombre de nuestra base de datos que solamente incluye los reactivos en formato de 0-1. En el campo de group, incluiremos la variable que define los grupos que queremos contrastar; en este caso, haremos el análisis en términos de género. Recordaremos, que esa variable estaba presente en la primera base de datos que cargamos en nuestro ejemplo, por lo que podemos referenciarla poniendo el nombre de la base de datos donde se encuentra seguido del signo “$” y el nombre de la varible.</p>
+<p>El último componente que debemos específicar es el grupo focal. Para definir esto, es importante que tomemos en consideración cuál es el grupo que consideramos parte con desventaja. Esto puede estar basado en experiencias previas, en revisión de la literatura, o inclusive, en los análisis aquí realizados. Como podemos ver en el gráfico de cajas, pese a que no existen diferencias significativas, los hombres presentan una mayor distribución en puntajes bajos, así que, para fines didácticos, podemos asumir que son los hombres quienes parten con desventaja. El valor que ponemos en este caso es 1, que recordaremos es el que asignamos en un inicio a los hombres.</p>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb47-1" aria-hidden="true" tabindex="-1"></a>MH<span class="ot">&lt;-</span> <span class="fu">difMH</span>(<span class="at">Data=</span>reactivos_correctos, <span class="at">group=</span>datos_completos<span class="sc">$</span>Sexo, <span class="at">focal.name=</span> <span class="dv">1</span>, <span class="at">purify=</span><span class="cn">TRUE</span>)</span>
+<span id="cb47-2"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb47-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-3"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb47-3" aria-hidden="true" tabindex="-1"></a>MH</span></code></pre></div>
+<pre><code>## 
+## Detection of Differential Item Functioning using Mantel-Haenszel method 
+## with continuity correction and with item purification
+## 
+## Results based on asymptotic inference 
+##  
+## Convergence reached after 7 iterations
+## 
+## Matching variable: test score 
+##  
+## No set of anchor items was provided 
+##  
+## No p-value adjustment for multiple comparisons 
+##  
+## Mantel-Haenszel Chi-square statistic: 
+##  
+##       Stat.  P-value   
+## Calc1 3.5944 0.0580  . 
+## Calc2 0.0816 0.7751    
+## Calc3 1.3360 0.2477    
+## Calc4 0.0065 0.9359    
+## Calc5 0.0151 0.9023    
+## Calc6 0.0002 0.9902    
+## Alg1  4.1501 0.0416  * 
+## Alg2  2.7749 0.0958  . 
+## Alg3  0.0800 0.7772    
+## Alg4  4.9948 0.0254  * 
+## Alg5  1.8603 0.1726    
+## Alg6  2.0798 0.1493    
+## Geo1  0.5980 0.4393    
+## Geo2  0.0000 0.9981    
+## Geo3  0.0080 0.9289    
+## Geo4  0.0242 0.8763    
+## Geo5  9.0235 0.0027  **
+## Geo6  4.5712 0.0325  * 
+## 
+## Signif. codes: 0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1  
+## 
+## Detection threshold: 3.8415 (significance level: 0.05)
+## 
+## Items detected as DIF items: 
+##      
+##  Alg1
+##  Alg4
+##  Geo5
+##  Geo6
+## 
+##  
+## Effect size (ETS Delta scale): 
+##  
+## Effect size code: 
+##  &#39;A&#39;: negligible effect 
+##  &#39;B&#39;: moderate effect 
+##  &#39;C&#39;: large effect 
+##  
+##       alphaMH deltaMH  
+## Calc1  1.9762 -1.6008 C
+## Calc2  0.8399  0.4099 A
+## Calc3  1.6222 -1.1368 B
+## Calc4  1.0312 -0.0723 A
+## Calc5  1.0158 -0.0369 A
+## Calc6  1.0453 -0.1041 A
+## Alg1   1.8083 -1.3921 B
+## Alg2   1.5236 -0.9895 A
+## Alg3   0.8668  0.3360 A
+## Alg4   0.4496  1.8788 C
+## Alg5   0.6849  0.8893 A
+## Alg6   0.6789  0.9099 A
+## Geo1   0.7557  0.6583 A
+## Geo2   0.9655  0.0824 A
+## Geo3   0.9377  0.1511 A
+## Geo4   1.0887 -0.1998 A
+## Geo5   0.3118  2.7385 C
+## Geo6   0.5016  1.6216 C
+## 
+## Effect size codes: 0 &#39;A&#39; 1.0 &#39;B&#39; 1.5 &#39;C&#39; 
+##  (for absolute values of &#39;deltaMH&#39;) 
+##  
+## Output was not captured!</code></pre>
+<p>Este primer análisis se basa en modelos no IRT. Lo que nos interesa es la sección titulada “items detected as DIF items,” dado que en ella se presentan específicamente qué reactivos fueron detetados con DIF significatvio. Por otr lado, también nos interesa la tabla que aparece al final, donde se presenta el nombre de cada reactivo seguido por dos datos numéricos y una clasificación de “A, B y C”; dicha clasificación nos indica si la presencia de DIF es insignificativa <code>A</code>, moderada <code>B</code> o grande <code>C</code>.</p>
+<p>Para verificar y contrastar estos resultados, podemos utilizar un modelo más basado en la TRI. Cabe resaltar, que al igual que en los análisis que ya hicimos referentes a la TRI, es importante considerar el tamaño de nuestra muestra, si contamos con una muestra pequeña, recomendamos quedarnos únicamente con el primer análisis.</p>
+<p>En este modelo TRI, los campos a especificar son los mismos, el único que se añade es si el modelo de la TRI será de 1 <code>1PL</code>, 2 <code>2PL</code> o tres parámetros <code>3PL</code>.</p>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb49-1" aria-hidden="true" tabindex="-1"></a>Lord<span class="ot">&lt;-</span> <span class="fu">difLord</span>(<span class="at">Data=</span>reactivos_correctos, <span class="at">group=</span>datos_completos<span class="sc">$</span>Sexo, <span class="at">focal.name=</span> <span class="dv">1</span>, <span class="at">model=</span><span class="st">&quot;2PL&quot;</span>, <span class="at">purify=</span><span class="cn">TRUE</span>)</span>
+<span id="cb49-2"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb49-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-3"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb49-3" aria-hidden="true" tabindex="-1"></a>Lord</span></code></pre></div>
+<pre><code>## 
+## Detection of Differential Item Functioning using Lord&#39;s method 
+## with 2PL model and with item purification
+## 
+## Engine &#39;ltm&#39; for item parameter estimation 
+##  
+## Convergence reached after 1 iteration
+## 
+## No set of anchor items was provided 
+##  
+## No p-value adjustment for multiple comparisons 
+##  
+## Lord&#39;s chi-square statistic: 
+##  
+##       Stat.  P-value  
+## Calc1 3.6082 0.1646   
+## Calc2 2.6574 0.2648   
+## Calc3 1.8497 0.3966   
+## Calc4 2.3062 0.3157   
+## Calc5 0.8880 0.6415   
+## Calc6 0.1602 0.9230   
+## Alg1  6.7892 0.0336  *
+## Alg2  3.9465 0.1390   
+## Alg3  0.0213 0.9894   
+## Alg4  3.7272 0.1551   
+## Alg5  2.2627 0.3226   
+## Alg6  2.4758 0.2900   
+## Geo1  2.8509 0.2404   
+## Geo2  0.0055 0.9972   
+## Geo3  0.9319 0.6275   
+## Geo4  0.2367 0.8884   
+## Geo5  7.5089 0.0234  *
+## Geo6  4.0901 0.1294   
+## 
+## Signif. codes: 0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1  
+##  
+## Detection threshold: 5.9915 (significance level: 0.05)
+## 
+## Items detected as DIF items: 
+##      
+##  Alg1
+##  Geo5
+## 
+## Output was not captured!</code></pre>
+<p>En este caso, el resultado se presenta al revés, dado que primero aparece la tabla con la significancia del efecto DIF. En este método, en lugar de presentarse con clasificaicón “ABC,” se presenta con asteríscos, siendo que los reactivos con presencia de DIF considerable aparecen con un asterísco junto a ellos, si aparecen más de un asterísco, quiere decir que el nivel de significancia del efecto DIF es mayor.</p>
+<p>Como podemos ver, utilizar estos dos métodos nos permite contrastar la presencia de DIF en los reactivos, y ver si es consistente en ambos modelos. En este ejemplo, podemos observar que el reactivo 1 de algebra (el reactivo 7 en el orden del total de reactivos) presenta DIF en los dos métodos, por lo que resulta importante indagar más en cuál está siendo su comportamiento. Para ello, una forma útil de hacerlo es analizarlo gráficamente, si corremos el siguiente código, podremos visualizar cómo se comporta la CCI del reactivo para los dos grupos. En la última línea de código, debemos especificar qué reactivo queremos visualizar al definir “item =.” En este caso, lo que escribiremos es el número del reactivo en el orden en el que aparecen en nuestra tabla anterior.</p>
+<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb51-1" aria-hidden="true" tabindex="-1"></a>coefLord<span class="ot">&lt;-</span> Lord<span class="sc">$</span>itemParInit</span>
+<span id="cb51-2"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb51-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plotDIFirt</span>(coefLord, <span class="at">item =</span> <span class="dv">7</span>)</span></code></pre></div>
+<pre><code>## [[1]]
+## NULL
+## 
+## [[2]]
+## NULL
+## 
+## [[3]]
+## NULL
+## 
+## [[4]]
+## NULL
+## 
+## [[5]]
+## NULL
+## 
+## [[6]]
+## NULL
+## 
+## [[7]]</code></pre>
+<p><img src="analisis_files/figure-html/grafica-lord-1.png" width="672" /></p>
+<p>Como podemos ver, en este caso, parecería que el reactivo favorece más a las mujeres en los niveles bajos de habilidad. Es decir, cuando un hombre y una mujer tienen ambos un nivel bajo de habilidad en el constructo medido, la mujer tiene una probabilidad más alta de contestar correctamente el reactivo, mientras que en los niveles altos de habilidad, la probabilidad de contestar correctamente es más similar entre ambos grupos. A esto se le llama DIF no uniforme.</p>
+<p>Una vez que hemos detectado esto, el siguiente paso, como se mencionó en el capitulo anterior, es revisar cualitativamente el reactivo con jueces expertos para poder identificar, si efectivamente hay algo en el reactivo que esté favoereciendo al grupo de las mujeres, o si, por el contrario, se trata de una diferencia específica real entre ambos grupos con respecto a lo que este reactivo evalúa.</p>
+</div>
+<div id="gráficos" class="section level2" number="8.8">
+<h2><span class="header-section-number">8.8</span> Gráficos</h2>
+<p>Esta última sección corresponde al apartado referente al informe de resultados. Como se mencionó en esa sección, al presentar resultados es de suma utilidad recurrir a recursos gráficos para resumir la información. De hecho, algunos de los gráficos y tablas que ya se generaron en este capítulo pueden ser de gran utilidad para el reporte final, especialmente aquel que incluye el reporte del desempeño de los reactivos y del examen. Pese a ello, existen otros gráficos que pueden ser de utilidad. En este ejemplo, generaremos un par de gráficas esperando que al lector le resulte de utilidad para sus propios informes, si desean conocer más sobre las herramientas gráficas en R y cómo generar otro tipo de gráficas, recomendamos referirse a los siguientes enlaces</p>
+<p>El gráfico que generaremos en este ejemplo permitirá observar cómo se distribuyeron los porcentajes de respuestas en nuestra muestra, primero en general, y después dividios por sexo.</p>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb53-1" aria-hidden="true" tabindex="-1"></a>datos_graficos <span class="ot">&lt;-</span> reactivos_total<span class="sc">%&gt;%</span></span>
+<span id="cb53-2"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb53-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Sexo =</span> <span class="fu">case_when</span>(Sexo <span class="sc">==</span> <span class="dv">0</span> <span class="sc">~</span> <span class="st">&quot;Hombre&quot;</span>, Sexo <span class="sc">==</span>  <span class="dv">1</span> <span class="sc">~</span> <span class="st">&quot;Mujer&quot;</span>))<span class="sc">%&gt;%</span></span>
+<span id="cb53-3"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb53-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Porcentaje =</span> <span class="fu">round</span>((Total<span class="sc">/</span><span class="fu">max</span>(Total))<span class="sc">*</span><span class="dv">100</span>))<span class="sc">%&gt;%</span></span>
+<span id="cb53-4"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb53-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rango_porcentaje =</span> <span class="fu">case_when</span>(Porcentaje<span class="sc">%in%</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span> <span class="sc">~</span> <span class="st">&quot;1-10&quot;</span>, Porcentaje <span class="sc">%in%</span> <span class="dv">11</span><span class="sc">:</span><span class="dv">20</span> <span class="sc">~</span> <span class="st">&quot;11-20&quot;</span>,</span>
+<span id="cb53-5"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb53-5" aria-hidden="true" tabindex="-1"></a>                                     Porcentaje<span class="sc">%in%</span> <span class="dv">21</span><span class="sc">:</span><span class="dv">30</span> <span class="sc">~</span> <span class="st">&quot;21-30&quot;</span>, Porcentaje<span class="sc">%in%</span> <span class="dv">31</span><span class="sc">:</span><span class="dv">40</span> <span class="sc">~</span> <span class="st">&quot;31-40&quot;</span>,</span>
+<span id="cb53-6"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb53-6" aria-hidden="true" tabindex="-1"></a>                                     Porcentaje<span class="sc">%in%</span> <span class="dv">41</span><span class="sc">:</span><span class="dv">50</span> <span class="sc">~</span> <span class="st">&quot;41-50&quot;</span>, Porcentaje<span class="sc">%in%</span> <span class="dv">51</span><span class="sc">:</span><span class="dv">60</span> <span class="sc">~</span> <span class="st">&quot;51-60&quot;</span>,</span>
+<span id="cb53-7"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb53-7" aria-hidden="true" tabindex="-1"></a>                                     Porcentaje<span class="sc">%in%</span> <span class="dv">61</span><span class="sc">:</span><span class="dv">70</span> <span class="sc">~</span> <span class="st">&quot;61-70&quot;</span>, Porcentaje<span class="sc">%in%</span> <span class="dv">71</span><span class="sc">:</span><span class="dv">80</span> <span class="sc">~</span> <span class="st">&quot;71-80&quot;</span>,</span>
+<span id="cb53-8"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb53-8" aria-hidden="true" tabindex="-1"></a>                                     Porcentaje<span class="sc">%in%</span> <span class="dv">81</span><span class="sc">:</span><span class="dv">90</span> <span class="sc">~</span> <span class="st">&quot;81-90&quot;</span>, Porcentaje<span class="sc">%in%</span> <span class="dv">91</span><span class="sc">:</span><span class="dv">100</span> <span class="sc">~</span> <span class="st">&quot;91-100&quot;</span>))</span></code></pre></div>
+<p>Lo primero que haremos será modificar nuestra base de datos; en las primeras líneas de código cambiaremos algunas de nuestras variables. Primero, para que al distribuir por sexos aparezcan las etiquetas de “Hombres” y “Mujeres” en lugar de unos y ceros, modificaremos dicha variable. Es importante que ubiquemos qué valor corresponde a Hombres y cuál a mujeres para con ello describirlo correctamente en la línea de código, en este caso, el 0 corresponde a hombres, mientras que el 1 corresponde a mujeres, por lo que se asignan de esa manera.</p>
+<p>En las siguientes líneas de código se modifica el puntaje total. Primero se convierte en porcentaje y después se agrupa en frecuencias, ubicando juntos a todos los que tengan puntajes del 1 al 10%, del 11 al 20, y así sucesivamente.</p>
+<p>Ya que hemos generado esta nueva base de datos dedicada a los gráficos que vamos a generar, podemos ejecutar la siguiente línea de código para obtener nuestor primer gráfico</p>
+<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb54-1" aria-hidden="true" tabindex="-1"></a>datos_graficos<span class="sc">%&gt;%</span></span>
+<span id="cb54-2"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb54-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> rango_porcentaje)) <span class="sc">+</span> <span class="fu">geom_bar</span>(<span class="at">fill =</span> <span class="st">&quot;steelblue&quot;</span>) <span class="sc">+</span></span>
+<span id="cb54-3"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb54-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Distribución de frecuencias de puntajes totales&quot;</span>,</span>
+<span id="cb54-4"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb54-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Puntaje total&quot;</span>,</span>
+<span id="cb54-5"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb54-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;Frecuencia&quot;</span>)</span></code></pre></div>
+<p><img src="analisis_files/figure-html/grafica-1-1.png" width="672" /></p>
+<p>El paquete que estamos utilizando para este ejemplo se llama “ggplot2,” este paquete tienen un nivel de personalización muy amplio, pero su código es poco comprensible para quien no está familiarizado. Existen algunos paquetes que han intentado hacerlo más secinllo tales como _________. En este ejemplo intentaremos concentrarnos en los aspectos fundamentales que nos ayudarán a generar los gráficos específicos que buscamos aquí, si al lector le interesa profundizar en el tema, nuevamente referimos a los enlaces presentados arriba.</p>
+<p>En la sintacis, lo primero que definimos es la variable que vamos a presentar. En este primer ejemplo, en lugar de presentar el puntaje total crudo, pasaremos directamente a presentarlo en términos de porcentaje agrupados en categorías de 10 en 10, variable a la cual llamamos arriba “rango_porcentaje.”</p>
+<p>Posteriormente, definimos qué tipo de gráfico queremos. En este caso es un gráfico de barras que se define con la línea <code>geom_bar()</code>. Dentro de ella, podemos definir el color del que queremos las barras. Puede ser un nombre como “steelblue” que se traduce como azul metálico, o puede ser el código html del color que buscamos. Podemos buscar el color específico que queremos y obtener su código html en <a href="https://htmlcolorcodes.com">esta página</a>. En la siguiente gráfica vemos un ejemplo de ello.</p>
+<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb55-1" aria-hidden="true" tabindex="-1"></a>datos_graficos<span class="sc">%&gt;%</span></span>
+<span id="cb55-2"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb55-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> rango_porcentaje)) <span class="sc">+</span> <span class="fu">geom_bar</span>(<span class="at">fill =</span> <span class="st">&quot;#54CDBA&quot;</span>) <span class="sc">+</span></span>
+<span id="cb55-3"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb55-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Distribución de frecuencias de puntajes totales&quot;</span>,</span>
+<span id="cb55-4"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb55-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Puntaje total&quot;</span>,</span>
+<span id="cb55-5"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb55-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;Frecuencia&quot;</span>)</span></code></pre></div>
+<p><img src="analisis_files/figure-html/grafica-2-1.png" width="672" /></p>
+<p>Después de este comando, añadimos uno más en el que definimos los títulos de la gráfica, tanto el título principal como los de cada eje de la gráfica; lo que está dentro de las comillas puede modificarse por el titulo que deseemos.</p>
+<p>En la siguiente gráfica, añadiremosla separación por sexos.</p>
+<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb56-1" aria-hidden="true" tabindex="-1"></a>datos_graficos<span class="sc">%&gt;%</span></span>
+<span id="cb56-2"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb56-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span> <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">x =</span> rango_porcentaje, <span class="at">fill =</span> Sexo),<span class="at">position=</span><span class="fu">position_dodge</span>()) <span class="sc">+</span></span>
+<span id="cb56-3"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb56-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Distribución de frecuencias de puntajes totales&quot;</span>,</span>
+<span id="cb56-4"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb56-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Puntaje total&quot;</span>,</span>
+<span id="cb56-5"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb56-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;Frecuencia&quot;</span>) </span></code></pre></div>
+<p><img src="analisis_files/figure-html/grafica-3-1.png" width="672" /></p>
+<p>Si observamos el código, veremos que modificamos el valor de <code>fill</code> por la variable Sexo, esto permitirá que observemos por separado los valores de hombres y mujeres. Además de esto, agregamos la línea “position=position_dodge(),” que nos permite ver lado a lado los valores de cada sexo.</p>
+<p>Ggplot2 genera en automático dos colores predeterminados, pero al igual que en el caso anterior, podemos personalizar los colores que necesitemos, solo que con una línea de código distinta.</p>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb57-1" aria-hidden="true" tabindex="-1"></a>datos_graficos<span class="sc">%&gt;%</span></span>
+<span id="cb57-2"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb57-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span> <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">x =</span> rango_porcentaje, <span class="at">fill =</span> Sexo),<span class="at">position=</span><span class="fu">position_dodge</span>()) <span class="sc">+</span></span>
+<span id="cb57-3"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb57-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Distribución de frecuencias de puntajes totales&quot;</span>,</span>
+<span id="cb57-4"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb57-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Puntaje total&quot;</span>,</span>
+<span id="cb57-5"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb57-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;Frecuencia&quot;</span>) <span class="sc">+</span></span>
+<span id="cb57-6"><a href="cómo-ejecutamos-los-análisis-estadísticos.html#cb57-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">&quot;#54CDBA&quot;</span>, <span class="st">&quot;#BA95DF&quot;</span>))</span></code></pre></div>
+<p><img src="analisis_files/figure-html/grafico-4-1.png" width="672" /></p>
+<p>En este caso, añadimos el comando <code>scale_fill_manual()</code> y dentro de él especificamos entre comillas cada uno de los valores que queremos.</p>
+
+</div>
+<div id="COMP7" class="section level2" number="8.9">
+<h2><span class="header-section-number">8.9</span> ¿Y QUÉ HACEMOS DESPUÉS CON EL EXAMEN?</h2>
+<p>Una vez que hemos terminado el proceso de elaboración de nuestro instrumento, lo aplicamos, verificamos sus propiedades métricas y validamos sus usos e interpretaciones, pareciera que el proceso está terminado. Sin embargo, hay una etapa más que suele dejarse de lado, y que, dependiendo del tipo de instrumento que hayamos construido es de suma importancia. Si nos regresamos a las primeras etapas y pensamos en los usos e interpretaciones que definimos para nuestro instrumento, hay que preguntarnos ¿el instrumento fue diseñado para una única aplicación aislada?, ¿o se pretende utilizar en múltiples aplicaciones a lo largo del tiempo? Si se trata más bien de la segunda opción, será importante que demos mantenimiento a nuestro instrumento.
+Cuando hablamos de mantenimiento nos referimos a vigilar que los usos e interpretaciones del instrumento sigan siendo válidos para futuras aplicaciones. Existen algunas áreas específicas que corren riesgo de atentar contra esta validez a lo largo del tiempo, y, que por lo tanto debemos cuidar:</p>
+</div>
+<div id="contenido-de-los-reactivos" class="section level2" number="8.10">
+<h2><span class="header-section-number">8.10</span> Contenido de los reactivos:</h2>
+<p>Existen áreas específicas que se actualizan constantemente, por ejemplo, un examen de física o ciencias naturales podrá contener conceptos que dentro de un par de años se vuelvan obsoletos, o que sean remplazados por nuevos conceptos o teorías. En casos como estos, es importante que vigilemos que nuestros reactivos contengan información actualizada.</p>
+</div>
+<div id="seguridad-del-instrumento" class="section level2" number="8.11">
+<h2><span class="header-section-number">8.11</span> Seguridad del instrumento:</h2>
+<p>En exámenes de alto impacto, como un examen de ingreso a la universidad, es muy importante seguir generando reactivos constantemente. Supongamos que una persona hace el examen y no logra ingresar a la universidad, pero logra recordar o capturar reactivos específicos del examen; si no generamos nuevos reactivos para la siguiente edición, esa persona tendrá mayor probabilidad de ingresar, pero no porque tenga los conocimientos y habilidades, sino porque recuerda los reactivos y tuvo el tiempo de indagar las respuestas correctas.</p>
+</div>
+<div id="desempeño-psicométrico" class="section level2" number="8.12">
+<h2><span class="header-section-number">8.12</span> Desempeño psicométrico:</h2>
+<p>Es importante que tengamos en cuenta que la confiabilidad y las evidencias de validez que obtenemos, no son de la prueba en sí, sino de la muestra a la que se le aplicó en específico; por ello, es importante que en cada nueva aplicación vigilemos las propiedades de nuestros reactivos. Supongamos que, de acuerdo a nuestra estructura, queremos tener un cierto porcentaje de reactivos con un índice de dificultad de entre 0.6 y 0.8. Logramos esa proporción durante la primera aplicación, pero a la siguiente, nos damos cuenta de que algunos reactivos ya bajaron su índice de dificultad, o incluso ya no funcionan tan bien, sería prudente considerar revisar esos reactivos o generar nuevos para mantener la cantidad adecuada de acuerdo a lo que planeamos. Analizar estos reactivos nos permitirá encontrar qué es lo que está pasando; quizá algún reactivo se desempeñó distinto porque la información de ese reactivo ya está obsoleta, o quizá hubo un cambio en el plan de estudios del nivel de educación anterior, lo que hizo que ese punto ya no sea estudiado por los alumnos. Además de estos ejemplos, existen muchas otras posibles razones para que el desempeño de algunos reactivos pueda cambiar, por eso es importante vigilar constantemente que nuestro examen y reactivos se sigan desempeñando adecuadamente para que podamos argumentar que los usos e interpretaciones del examen siguen siendo válidos.</p>
+<div class="evidencia">
+<p><strong>Evidencia documental:</strong> Si nuestro examen se aplicará de manera cíclica, cada nueva aplicación requerirá de su propio informe de evaluación, en el cual se incluyan los análisis psicométricos de esa aplicación específica, así como los cambios referentes a la versión anterior. Es importante llevar un registro de los reactivos que fueron agregados y probados en cada versión, así como sus desempeños psicométricos correspondientes.</p>
+</div>
+<div class="seguridad">
+<p><strong>Seguridad:</strong> Todo el proceso de mantenimiento debe llevarse de manera sistemática, diseñando un protocolo que permita tener orden de los nuevos reactivos y del desempeño de cada uno a lo largo del tiempo, y a la vez, que permita resguardar esta información y delimitar quienes tienen acceso a ella.</p>
+</div>
+<div class="aera">
+<p><strong>Estándar 4.24:</strong>
+“Las especificaciones de la prueba deben modificarse o revisarse cuando nuevos datos de investigación, cambios significativos en el dominio representado o condiciones recientemente recomendadas del uso de la prueba pueden reducir la validez de las interpretaciones de los puntajes de la prueba. Si bien no es necesario que una prueba que mantiene su utilidad sea retirada o revisada simplemente debido al paso del tiempo, los desarrolladores de la prueba y los editores de la prueba son responsables de supervisar condiciones cambiantes y de modificar, revisar o retirar la prueba según lo indicado.”</p>
+</div>
+<div class="quiz">
+<p>¿Cuál es la razón principal por la que es importante darle mantenimiento a nuestro examen?
+Asegurar que los usos e interpretaciones de los puntajes sigan siendo válidos en futuras aplicaciones.</p>
+</div>
+
+</div>
+</div>
+<hr>
+<center> 
+  <div class="footer">
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/2.0/88x31.png" /></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/">Licencia Creative Commons Atribución-NoComercial 2.0 Genérica</a>.
+  </div>
+</center>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="COMP6.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="GLOSARIO.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": false
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

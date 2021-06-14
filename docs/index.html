@@ -4,27 +4,28 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>A Minimal Book Example</title>
-  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <title>ASPECTOS ESENCIALES EN AL CONSTRUCCIÓN DE EXAMENES DE OPCIÓN MÚLTIPLE</title>
+  <meta name="description" content="Este es un manual técnico en construcción de cómo diseñar, aplicar y validar exámenes de opción múltiple de alto impacto" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="A Minimal Book Example" />
+  <meta property="og:title" content="ASPECTOS ESENCIALES EN AL CONSTRUCCIÓN DE EXAMENES DE OPCIÓN MÚLTIPLE" />
   <meta property="og:type" content="book" />
   
-  
-  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta property="og:image" content="/images/LOGO-UNAM.png" />
+  <meta property="og:description" content="Este es un manual técnico en construcción de cómo diseñar, aplicar y validar exámenes de opción múltiple de alto impacto" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="A Minimal Book Example" />
+  <meta name="twitter:title" content="ASPECTOS ESENCIALES EN AL CONSTRUCCIÓN DE EXAMENES DE OPCIÓN MÚLTIPLE" />
   
-  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
-  
+  <meta name="twitter:description" content="Este es un manual técnico en construcción de cómo diseñar, aplicar y validar exámenes de opción múltiple de alto impacto" />
+  <meta name="twitter:image" content="/images/LOGO-UNAM.png" />
 
-<meta name="author" content="Yihui Xie" />
+<meta name="author" content="Davin Eduardo Díaz García" />
+<meta name="author" content="Elizabeth Vega Gatica" />
 
 
-<meta name="date" content="2021-06-09" />
+<meta name="date" content="2021-06-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +33,7 @@
   
   
 
-<link rel="next" href="intro.html"/>
+<link rel="next" href="COMP1.html"/>
 <script src="libs/header-attrs-2.8/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -53,72 +54,10 @@
 
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
-<style type="text/css">
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-</style>
 
 <style type="text/css">
 /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
@@ -156,20 +95,120 @@ div.csl-indent {
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">A Minimal Book Example</a></li>
+<li><a href="./">Aspectos esenciales en la construcción de exámenes de opción múltiple</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
-<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
-<li class="chapter" data-level="3" data-path="literature.html"><a href="literature.html"><i class="fa fa-check"></i><b>3</b> Literature</a></li>
-<li class="chapter" data-level="4" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>4</b> Methods</a></li>
-<li class="chapter" data-level="5" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>5</b> Applications</a>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>¿Para qué necesitamos revisar un manual técnico?</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>5.1</b> Example one</a></li>
-<li class="chapter" data-level="5.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>5.2</b> Example two</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#fases"><i class="fa fa-check"></i>¿Cúales son las fases del procedimiento?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#instructivo"><i class="fa fa-check"></i>¿Cómo leer este manual?</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
-<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="1" data-path="COMP1.html"><a href="COMP1.html"><i class="fa fa-check"></i><b>1</b> ¿QUÉ, PARA QUÉ Y CÓMO VAMOS A EVALUAR?</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="COMP1.html"><a href="COMP1.html#qué-voy-a-medir"><i class="fa fa-check"></i><b>1.1</b> ¿Qué voy a medir?</a></li>
+<li class="chapter" data-level="1.2" data-path="COMP1.html"><a href="COMP1.html#para-qué-voy-a-medir"><i class="fa fa-check"></i><b>1.2</b> ¿Para qué voy a medir?</a></li>
+<li class="chapter" data-level="1.3" data-path="COMP1.html"><a href="COMP1.html#a-quién-voy-a-evaluar"><i class="fa fa-check"></i><b>1.3</b> ¿A quién voy a evaluar?</a></li>
+<li class="chapter" data-level="1.4" data-path="COMP1.html"><a href="COMP1.html#cuáles-serán-las-interpretaciones-para-los-usos-previstos-de-la-prueba"><i class="fa fa-check"></i><b>1.4</b> ¿Cuáles serán las interpretaciones para los usos previstos de la prueba?</a></li>
+<li class="chapter" data-level="1.5" data-path="COMP1.html"><a href="COMP1.html#cuál-será-el-tipo-de-instrumento-y-el-formato-de-los-reactivos"><i class="fa fa-check"></i><b>1.5</b> ¿Cuál será el tipo de instrumento y el formato de los reactivos?</a></li>
+<li class="chapter" data-level="1.6" data-path="COMP1.html"><a href="COMP1.html#qué-procedimiento-seguiremos-para-saber-si-nuestro-instrumento-es-válido-confiable-y-que-nuestros-reactivos-se-comportan-de-manera-adecuada"><i class="fa fa-check"></i><b>1.6</b> ¿Qué procedimiento seguiremos para saber si nuestro instrumento es válido, confiable y que nuestros reactivos se comportan de manera adecuada?</a></li>
+<li class="chapter" data-level="1.7" data-path="COMP1.html"><a href="COMP1.html#cuántos-reactivos-tendrá-nuestra-prueba-y-como-estará-organizada"><i class="fa fa-check"></i><b>1.7</b> ¿Cuántos reactivos tendrá nuestra prueba y como estará organizada?</a></li>
+<li class="chapter" data-level="1.8" data-path="COMP1.html"><a href="COMP1.html#cómo-calificaremos-la-prueba"><i class="fa fa-check"></i><b>1.8</b> ¿Cómo calificaremos la prueba?</a></li>
+<li class="chapter" data-level="1.9" data-path="COMP1.html"><a href="COMP1.html#otras-características-importantes-a-considerar"><i class="fa fa-check"></i><b>1.9</b> Otras características importantes a considerar</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="COMP2.html"><a href="COMP2.html"><i class="fa fa-check"></i><b>2</b> ¿CÓMO DELIMITAMOS LO QUE EVALUREMOS EN NUESTRO EXAMEN?</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="COMP2.html"><a href="COMP2.html#definiendo-nuestor-marco-conceptual"><i class="fa fa-check"></i><b>2.1</b> Definiendo nuestor marco conceptual</a></li>
+<li class="chapter" data-level="2.2" data-path="COMP2.html"><a href="COMP2.html#pasando-de-la-definición-de-constructo-a-la-construcción-de-reactivos"><i class="fa fa-check"></i><b>2.2</b> Pasando de la definición de constructo a la construcción de reactivos</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="COMP2.html"><a href="COMP2.html#operacionalizando"><i class="fa fa-check"></i><b>2.2.1</b> Operacionalizando</a></li>
+<li class="chapter" data-level="2.2.2" data-path="COMP2.html"><a href="COMP2.html#elaborando-nuestra-tabla-de-especificaciones"><i class="fa fa-check"></i><b>2.2.2</b> Elaborando nuestra tabla de especificaciones</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="COMP3.html"><a href="COMP3.html"><i class="fa fa-check"></i><b>3</b> ¿CÓMO ELABORAMOS NUESTRO EXAMEN?</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="COMP3.html"><a href="COMP3.html#redaccion"><i class="fa fa-check"></i><b>3.1</b> Redactando nuestros reactivos</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="COMP3.html"><a href="COMP3.html#reactivos-de-cuestionamiento-directo"><i class="fa fa-check"></i><b>3.1.1</b> Reactivos de cuestionamiento directo:</a></li>
+<li class="chapter" data-level="3.1.2" data-path="COMP3.html"><a href="COMP3.html#reactivos-de-completamiento"><i class="fa fa-check"></i><b>3.1.2</b> Reactivos de completamiento:</a></li>
+<li class="chapter" data-level="3.1.3" data-path="COMP3.html"><a href="COMP3.html#reactivos-de-elección-de-elementos-o-complejos"><i class="fa fa-check"></i><b>3.1.3</b> Reactivos de elección de elementos o complejos:</a></li>
+<li class="chapter" data-level="3.1.4" data-path="COMP3.html"><a href="COMP3.html#reactivos-de-jerarquización-u-ordenamiento"><i class="fa fa-check"></i><b>3.1.4</b> Reactivos de jerarquización u ordenamiento:</a></li>
+<li class="chapter" data-level="3.1.5" data-path="COMP3.html"><a href="COMP3.html#reactivo-verdadero-o-falso"><i class="fa fa-check"></i><b>3.1.5</b> Reactivo verdadero o falso:</a></li>
+<li class="chapter" data-level="3.1.6" data-path="COMP3.html"><a href="COMP3.html#reactivos-de-relación-de-columnas-o-matching"><i class="fa fa-check"></i><b>3.1.6</b> Reactivos de relación de columnas o matching:</a></li>
+<li class="chapter" data-level="3.1.7" data-path="COMP3.html"><a href="COMP3.html#conjuntos-de-reactivos-basados-en-contexto-o-multireactivos"><i class="fa fa-check"></i><b>3.1.7</b> Conjuntos de reactivos basados en contexto o multireactivos:</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="COMP3.html"><a href="COMP3.html#validando-nuestros-reactivos"><i class="fa fa-check"></i><b>3.2</b> Validando nuestros reactivos</a></li>
+<li class="chapter" data-level="3.3" data-path="COMP3.html"><a href="COMP3.html#piloteando-y-analizando-psicométricamente-nuestros-reactivos"><i class="fa fa-check"></i><b>3.3</b> Piloteando y analizando psicométricamente nuestros reactivos</a></li>
+<li class="chapter" data-level="3.4" data-path="COMP3.html"><a href="COMP3.html#creando-nuestro-banco-de-reactivos"><i class="fa fa-check"></i><b>3.4</b> Creando nuestro banco de reactivos</a></li>
+<li class="chapter" data-level="3.5" data-path="COMP3.html"><a href="COMP3.html#ensamblando-nuestro-examen"><i class="fa fa-check"></i><b>3.5</b> Ensamblando nuestro examen</a></li>
+<li class="chapter" data-level="3.6" data-path="COMP3.html"><a href="COMP3.html#para-ejercitar"><i class="fa fa-check"></i><b>3.6</b> Para ejercitar</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="COMP4.html"><a href="COMP4.html"><i class="fa fa-check"></i><b>4</b> ¿CÓMO ADMINISTRAMOS EL EXAME?</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="COMP4.html"><a href="COMP4.html#cómo-producimos-e-imprimimos-el-examen"><i class="fa fa-check"></i><b>4.1</b> ¿Cómo producimos e imprimimos el examen?</a></li>
+<li class="chapter" data-level="4.2" data-path="COMP4.html"><a href="COMP4.html#cómo-aplicamos-el-examen"><i class="fa fa-check"></i><b>4.2</b> ¿Cómo aplicamos el examen?</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="COMP5.html"><a href="COMP5.html"><i class="fa fa-check"></i><b>5</b> ¿QUÉ ANÁLISIS PODEMOS HACER DE LOS RESULTADOS?</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="COMP5.html"><a href="COMP5.html#desempeño-de-los-reactivos"><i class="fa fa-check"></i><b>5.1</b> Desempeño de los reactivos</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="COMP5.html"><a href="COMP5.html#teoría-clásica-de-los-tests"><i class="fa fa-check"></i><b>5.1.1</b> Teoría Clásica de los Tests</a></li>
+<li class="chapter" data-level="5.1.2" data-path="COMP5.html"><a href="COMP5.html#teoría-de-respuesta-al-ítem"><i class="fa fa-check"></i><b>5.1.2</b> Teoría de Respuesta al Ítem</a></li>
+<li class="chapter" data-level="5.1.3" data-path="COMP5.html"><a href="COMP5.html#eliminación-de-reactivos"><i class="fa fa-check"></i><b>5.1.3</b> Eliminación de reactivos</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="COMP5.html"><a href="COMP5.html#dimensionalidad"><i class="fa fa-check"></i><b>5.2</b> Dimensionalidad</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="COMP5.html"><a href="COMP5.html#análisis-factorial-exploratorio"><i class="fa fa-check"></i><b>5.2.1</b> Análisis Factorial Exploratorio</a></li>
+<li class="chapter" data-level="5.2.2" data-path="COMP5.html"><a href="COMP5.html#análisis-factorial-confirmatorio"><i class="fa fa-check"></i><b>5.2.2</b> Análisis Factorial Confirmatorio</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="COMP5.html"><a href="COMP5.html#confiabilidad"><i class="fa fa-check"></i><b>5.3</b> Confiabilidad</a></li>
+<li class="chapter" data-level="5.4" data-path="COMP5.html"><a href="COMP5.html#evidencias-de-validez"><i class="fa fa-check"></i><b>5.4</b> Evidencias de validez</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="COMP5.html"><a href="COMP5.html#correlación-con-otras-pruebas-supongamos-que-nosotros-definimos-nuestro-examen-como-un-instrumento-de-medición-que-permite-dar-cuenta-del-constructo-de-comprensión-lectora-a-partir-de-cierta-teoría-y-esta-teoría-afirma-que-la-comprensión-lectora-tiene-una-relación-significativa-con-la-memoria-de-trabajo-que-mencionamos-en-otro-ejemplo.-si-queremos-generar-mayor-evidencia-de-la-validez-del-uso-de-este-examen-como-una-medida-de-comprensión-lectora-bajo-esta-teoría-podríamos-aplicar-esta-misma-prueba-junto-con-nuestro-examen-a-los-participantes-y-medir-qué-tanto-se-relacionan-estadísticamente-estas-dos-pruebas."><i class="fa fa-check"></i><b>5.4.1</b> Correlación con otras pruebas: Supongamos que nosotros definimos nuestro examen como un instrumento de medición que permite dar cuenta del constructo de comprensión lectora a partir de cierta teoría, y esta teoría, afirma que la comprensión lectora tiene una relación significativa con la memoria de trabajo que mencionamos en otro ejemplo. Si queremos generar mayor evidencia de la validez del uso de este examen como una medida de comprensión lectora bajo esta teoría, podríamos aplicar esta misma prueba junto con nuestro examen a los participantes y medir qué tanto se relacionan estadísticamente estas dos pruebas.</a></li>
+<li class="chapter" data-level="5.4.2" data-path="COMP5.html"><a href="COMP5.html#regresiones-lineales-y-logísticas"><i class="fa fa-check"></i><b>5.4.2</b> Regresiones lineales y logísticas</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="COMP5.html"><a href="COMP5.html#calificación"><i class="fa fa-check"></i><b>5.5</b> Calificación</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="COMP7.html"><a href="COMP7.html"><i class="fa fa-check"></i><b>6</b> ¿CÓMO REPORTAMOS LOS RESULTADOS</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="COMP7.html"><a href="COMP7.html#examinados"><i class="fa fa-check"></i><b>6.1</b> Examinados</a></li>
+<li class="chapter" data-level="6.2" data-path="COMP7.html"><a href="COMP7.html#institución"><i class="fa fa-check"></i><b>6.2</b> Institución</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="COMP6.html"><a href="COMP6.html"><i class="fa fa-check"></i><b>7</b> ¿CÓMO EJECUTAMOS LOS ANÁLISIS ESTADÍSTICOS?</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="COMP6.html"><a href="COMP6.html#cómo-cargamos-nuestros-datos-en-r"><i class="fa fa-check"></i><b>7.1</b> ¿Cómo cargamos nuestros datos en R?</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="COMP6.html"><a href="COMP6.html#cómo-capturamos-la-clave-de-respuestas"><i class="fa fa-check"></i><b>7.1.1</b> ¿Cómo capturamos la clave de respuestas?</a></li>
+<li class="chapter" data-level="7.1.2" data-path="COMP6.html"><a href="COMP6.html#seleccionar-solamente-los-reactivos-y-transformarlos"><i class="fa fa-check"></i><b>7.1.2</b> Seleccionar solamente los reactivos y transformarlos</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="COMP6.html"><a href="COMP6.html#desempeño-de-los-reactivos-1"><i class="fa fa-check"></i><b>7.2</b> Desempeño de los reactivos</a></li>
+<li class="chapter" data-level="7.3" data-path="COMP6.html"><a href="COMP6.html#análisis-de-los-distractores"><i class="fa fa-check"></i><b>7.3</b> Análisis de los distractores</a></li>
+<li class="chapter" data-level="7.4" data-path="COMP6.html"><a href="COMP6.html#dimensionalidad-1"><i class="fa fa-check"></i><b>7.4</b> Dimensionalidad</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="COMP6.html"><a href="COMP6.html#análisis-factorial-exploratorio-1"><i class="fa fa-check"></i><b>7.4.1</b> Análisis Factorial Exploratorio</a></li>
+<li class="chapter" data-level="7.4.2" data-path="COMP6.html"><a href="COMP6.html#análisis-factorial-confirmatorio-1"><i class="fa fa-check"></i><b>7.4.2</b> Análisis Factorial Confirmatorio</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="COMP6.html"><a href="COMP6.html#confiabilidad-1"><i class="fa fa-check"></i><b>7.5</b> Confiabilidad</a></li>
+<li class="chapter" data-level="7.6" data-path="COMP6.html"><a href="COMP6.html#imparcialidad"><i class="fa fa-check"></i><b>7.6</b> Imparcialidad</a></li>
+<li class="chapter" data-level="7.7" data-path="COMP6.html"><a href="COMP6.html#gráficos"><i class="fa fa-check"></i><b>7.7</b> Gráficos</a></li>
+<li class="chapter" data-level="7.8" data-path="COMP6.html"><a href="COMP6.html#COMP8"><i class="fa fa-check"></i><b>7.8</b> ¿Y QUÉ HACEMOS DESPUÉS CON EL EXAMEN?</a></li>
+</ul></li>
+<li class="appendix"><span><b>ANEXO</b></span></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html"><i class="fa fa-check"></i>GLOSARIO</a>
+<ul>
+<li class="chapter" data-level="9" data-path="GLOSARIO.html"><a href="GLOSARIO.html#alpha"><i class="fa fa-check"></i><b>9</b> Alpha de Cronbach:</a></li>
+<li class="chapter" data-level="10" data-path="GLOSARIO.html"><a href="GLOSARIO.html#base-limpia"><i class="fa fa-check"></i><b>10</b> Base de datos limpia:</a></li>
+<li class="chapter" data-level="11" data-path="GLOSARIO.html"><a href="GLOSARIO.html#examen"><i class="fa fa-check"></i><b>11</b> Examen (prueba objetiva):</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="respuestas-a-las-preguntas.html"><a href="respuestas-a-las-preguntas.html"><i class="fa fa-check"></i>RESPUESTAS A LAS PREGUNTAS</a>
+<ul>
+<li class="chapter" data-level="12" data-path="respuestas-a-las-preguntas.html"><a href="respuestas-a-las-preguntas.html#quiz1"><i class="fa fa-check"></i><b>12</b> <strong>¿Por qué es necesario establecer los usos inválidos de la prueba?</strong></a></li>
+<li class="chapter" data-level="13" data-path="respuestas-a-las-preguntas.html"><a href="respuestas-a-las-preguntas.html#quiz2"><i class="fa fa-check"></i><b>13</b> <strong>¿Qué función tiene el propósito de la evaluación?</strong></a></li>
+<li class="chapter" data-level="14" data-path="respuestas-a-las-preguntas.html"><a href="respuestas-a-las-preguntas.html#quiz3"><i class="fa fa-check"></i><b>14</b> <strong>¿Para qué necesitamos un marco conceptual del constructo a evaluar?</strong></a></li>
+<li class="chapter" data-level="15" data-path="respuestas-a-las-preguntas.html"><a href="respuestas-a-las-preguntas.html#quiz4"><i class="fa fa-check"></i><b>15</b> <strong>¿Cuál es la utilidad que tiene generar una tabla de especificaciones?</strong></a></li>
+<li class="chapter" data-level="16" data-path="respuestas-a-las-preguntas.html"><a href="respuestas-a-las-preguntas.html#quiz5"><i class="fa fa-check"></i><b>16</b> <strong>¿Cuál es la importancia de utilizar diferentes grupos de expertos en la revisión de los reactivos?</strong></a></li>
+<li class="chapter" data-level="17" data-path="respuestas-a-las-preguntas.html"><a href="respuestas-a-las-preguntas.html#quiz6"><i class="fa fa-check"></i><b>17</b> <strong>¿Por qué es ideal realizar un piloteo de los reactivos?</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -182,7 +221,7 @@ div.csl-indent {
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Minimal Book Example</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">ASPECTOS ESENCIALES EN AL CONSTRUCCIÓN DE EXAMENES DE OPCIÓN MÚLTIPLE</a>
           </h1>
         </div>
 
@@ -190,29 +229,85 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">A Minimal Book Example</h1>
-<p class="author"><em>Yihui Xie</em></p>
-<p class="date" style="margin-top: 1.5em;"><em>2021-06-09</em></p>
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <link href="style.css" rel="stylesheet">
+</head>
+        
+
+
+<div class="hero-image-container"> 
+  <img class= "hero-image" src="images/UNAM.png">
 </div>
-<div id="prerequisites" class="section level1" number="1">
-<h1><span class="header-section-number">Chapter 1</span> Prerequisites</h1>
-<p>This is a <em>sample</em> book written in <strong>Markdown</strong>. You can use anything that Pandoc’s Markdown supports, e.g., a math equation <span class="math inline">\(a^2 + b^2 = c^2\)</span>.</p>
-<p>The <strong>bookdown</strong> package can be installed from CRAN or Github:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="index.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;bookdown&quot;</span>)</span>
-<span id="cb1-2"><a href="index.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># or the development version</span></span>
-<span id="cb1-3"><a href="index.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># devtools::install_github(&quot;rstudio/bookdown&quot;)</span></span></code></pre></div>
-<p>Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading <code>#</code>.</p>
-<p>To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <a href="https://yihui.org/tinytex/" class="uri">https://yihui.org/tinytex/</a>.</p>
+<div id="header">
+<h1 class="title">ASPECTOS ESENCIALES EN AL CONSTRUCCIÓN DE EXAMENES DE OPCIÓN MÚLTIPLE</h1>
+<p class="author"><em>Davin Eduardo Díaz García</em></p>
+<p class="author"><em>Elizabeth Vega Gatica</em></p>
+<p class="date" style="margin-top: 1.5em;"><em>2021-06-14</em></p>
+</div>
+<div id="para" class="section level1 unnumbered">
+<h1>¿Para qué necesitamos revisar un manual técnico?</h1>
+<p>El presente manual está dirigido a comisiones académicas de licenciatura y posgrado, no expertas en evaluación, que se encargan de la elaboración de exámenes de opción múltiple. Busca ser una guía en el proceso de diseño, desarrollo, aplicación, análisis e interpretación de exámenes de alto impacto que pretendan ser usados como herramientas que permitan la toma de decisiones en distintos ámbitos a nivel licenciatura o posgrado.</p>
+<p>Mediante una serie de cuestionamientos y preguntas guía, además de información sintetizada, buscamos que los lectores puedan diseñar, construir y validar los exámenes de acuerdo con sus necesidades y contextos específicos.</p>
+<p>Cuando queremos medir aprendizajes, conocimientos, habilidades o desempeños de nuestros alumnos, debemos buscar herramientas que registrarlos u observarlos, por lo que buscamos desarrollar un instrumento que permita realizar afirmaciones sobre el desempeño de los individuos. Pero, desarrollar un instrumento no es tarea fácil, requiere de una serie de pasos y condiciones que ayuden a garantizar la pertinencia, justicia, <a href="COMP5.html#confiabilidad">confiabilidad</a> y la <a href="#validez-G">validez</a> de las interpretaciones que se quieran emitir y que tienen un impacto significativo en la vida de los alumnos, por lo que es fundamental desarrollar el instrumento basándonos en las buenas prácticas de evaluación, es decir, en los Estándares para Pruebas Psicológicas y Educativas del American Educational Research Association, American Psychological Association y National Council on Measurement in Education <span class="citation">(<a href="#ref-AERA2018" role="doc-biblioref">AERA, APA, and NCME 2018</a>)</span>, las cuales nos ayudarán a evitar perjudicar con los resultados de las pruebas a los alumnos; es decir, el objetivo es lograr la construcción de instrumentos confiables, válidos y justos, es por eso que a continuación se presentan una serie de componentes que nos guiarán en el diseño y desarrollo de instrumentos de medición adecuados basados en los estándares y en evidencias científicas.</p>
+<div id="fases" class="section level2 unnumbered">
+<h2>¿Cúales son las fases del procedimiento?</h2>
+<p>Fases del procedimiento: <img src="images/infografia.png" /></p>
+</div>
+<div id="instructivo" class="section level2 unnumbered">
+<h2>¿Cómo leer este manual?</h2>
+<p>Como el lector se podrá dar cuenta, el presente manual está constituido por una serie de fases que permitirán el diseño y desarrollo de exámenes de alto impacto; además cada una de las fases cuenta con 5 apartados adicionales, que contienen información de suma importancia, los apartados se verían de la siguiente manera:</p>
+<div class="evidencia">
+<p><strong>Evidencias documentales</strong>
+En este apartado se señalan los productos resultantes de cada fase que servirán para dar evidencias de los procesos o análisis realizados, lo cual permitirá apoyar la validez de las interpretaciones y usos de los resultados.</p>
+</div>
+<div class="seguridad">
+<p><a href="#seguridad-G"><strong>Seguridad</strong></a>
+Este es un aspecto transversal en todas las fases de construcción del examen, por lo que en cada fase se hacen explicitas las recomendaciones para el resguardo de la información obtenida.</p>
+</div>
+<div class="aera">
+<p><strong>Estándares</strong> Dado que el presente manual está basado en los Estándares para Pruebas Psicológicas y Educativas de la <span class="citation"><a href="#ref-AERA2018" role="doc-biblioref">AERA, APA, and NCME</a> (<a href="#ref-AERA2018" role="doc-biblioref">2018</a>)</span>, se hacen explícitos algunos de estos estándares que de manera general abordan cada una de las fases.</p>
+</div>
+<div class="quiz">
+<p><strong>Preguntas</strong> Al finalizar cada fase se plantean uno o más cuestionamientos que permiten al lector reflexionar sobre lo aprendido en dicha fase, e identificar si no se entendió de manera clara algún aspecto del contenido, es decir, sirven como un método de autoevaluación del aprendizaje alcanzado. Las respuestas propuestas a estas preguntas se incluirán en una sección distinta, por si el lector desea consultarlas, pero sí recomendamos que intente responderlas por sí mismo para reforzar el aprendizaje.</p>
+</div>
+<div class="nota">
+<p><strong>Nota</strong>
+También se realizan recomendaciones sobre bibliografía de apoyo para profundizar en ciertos aspectos del proceso de evaluación y se hace uso de notas que permiten aclarar determinados puntos especificados en el contenido de las fases.</p>
+</div>
+<p>De igual manera, al ser un manual interactivo, el lector podrá encontrar durante su lectura algunos vínculos que le permiten trasladarse a otro apartado del manual que sea necesario leer según las necesidades y propósitos del examen que se va a desarrollar, así como vínculos que permiten al lector ir directamente al glosario ubicado al final del manual.</p>
+<p>Finalmente, es preciso señalar que, aunque las fases tienen un orden lógico determinado, una recomendación que permitirá al lector darle un uso efectivo y práctico a la información proporcionada por el manual, es realizar una lectura general de todo el manual antes de comenzar a planear, diseñar y desarrollar el instrumento, lo cual permitirá la comprensión de la relación existente entre las diversas fases y por ende facilitará la realización de la primera fase del manual, la cual requiere el planteamiento de los aspectos generales de todo el proceso de diseño y desarrollo del examen, por lo que se necesita entender el proceso de construcción en su totalidad.</p>
+<p>Considerando lo anterior, el presente manual usa como referencias principales tres fuentes bibliográficas: <span class="citation"><a href="#ref-AERA2018" role="doc-biblioref">AERA, APA, and NCME</a> (<a href="#ref-AERA2018" role="doc-biblioref">2018</a>)</span>, <span class="citation"><a href="#ref-INEE2019" role="doc-biblioref">INEE</a> (<a href="#ref-INEE2019" role="doc-biblioref">2019</a>)</span> y <span class="citation"><a href="#ref-Lane2016" role="doc-biblioref">Lane, Raymond, and Haladyna</a> (<a href="#ref-Lane2016" role="doc-biblioref">2016</a>)</span>, por lo que las citas que se encuentren dentro del contenido de las fases son fuentes específicas de elementos más especializados, planteadas de acuerdo con los requerimientos de las fases del manual.
+Ahora si estamos listos para comenzar la construcción de nuestro examen.</p>
 
 </div>
+</div>
+<h3>Referencias</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-AERA2018" class="csl-entry">
+AERA, APA, and NCME. 2018. <em><span class="nocase">Est<span class="nocase">á</span>ndares para Pruebas Educativas y Psicol<span class="nocase">ó</span>gicas</span></em>. Edited by Trans. (M. Lieve. (Original. Washington, DC: American Educational Research Association. (Original. <a href="https://doi.org/10.2307/j.ctvr43hg2">https://doi.org/10.2307/j.ctvr43hg2</a>.
+</div>
+<div id="ref-INEE2019" class="csl-entry">
+INEE. 2019. <span>“<span class="nocase">Gu<span class="nocase">í</span>a para la elaboraci<span class="nocase">ó</span>n de instrumentos de evaluaci<span class="nocase">ó</span>n.</span>”</span> M<span>é</span>xico. <a href="https://www.inee.edu.mx/wp-content/uploads/2019/04/P1E213.pdf">https://www.inee.edu.mx/wp-content/uploads/2019/04/P1E213.pdf</a>.
+</div>
+<div id="ref-Lane2016" class="csl-entry">
+Lane, Suzanne, Mark R. Raymond, and Thomas M. Haladyna. 2016. <em><span class="nocase">Handbook of Test Development</span></em>. 2da ed. Routledge. https://doi.org/<a href="https://doi.org/10.4324/9780203102961">https://doi.org/10.4324/9780203102961</a>.
+</div>
+</div>
+<hr>
+<center> 
+  <div class="footer">
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/2.0/88x31.png" /></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/">Licencia Creative Commons Atribución-NoComercial 2.0 Genérica</a>.
+  </div>
+</center>
             </section>
 
           </div>
         </div>
       </div>
 
-<a href="intro.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="COMP1.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -228,15 +323,15 @@ div.csl-indent {
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
-"github": false,
-"facebook": true,
+"github": true,
+"facebook": false,
 "twitter": true,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
 "whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+"all": false
 },
 "fontsettings": {
 "theme": "white",
@@ -255,28 +350,14 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["manual-examen.pdf", "manual-examen.epub"],
+"download": null,
 "toc": {
-"collapse": "subsection"
+"collapse": "section"
 }
 });
 });
 </script>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:")
-      if (/^https?:/.test(src))
-        src = src.replace(/^https?:/, '');
-    script.src = src;
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
 </body>
 
 </html>

@@ -1,7 +1,22 @@
 book_filename: "manual-examen"
 delete_merged_file: true
+rmd_files:
+- index.Rmd
+- plan_general.Rmd
+- operacionalizacion.Rmd
+- redaccion_reactivos.Rmd
+- aplicacion.Rmd
+- analisis_posibles.Rmd
+- reporte_resultados.Rmd
+- analisis.Rmd
+- mantenimiento.Rmd
+- glosario.Rmd
+- preguntas.Rmd
+- referencias.Rmd
+
 output_dir: docs
 language:
   ui:
-    chapter_name: "Chapter "
-new_session: true
+    chapter_name: "COMPONENTE "
+    appendix_name: "ANEXO "
+new_session: yes
