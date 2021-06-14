@@ -55,6 +55,69 @@
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -159,31 +222,91 @@
 </ul></li>
 <li class="chapter" data-level="7" data-path="COMP6.html"><a href="COMP6.html"><i class="fa fa-check"></i><b>7</b> ¿CÓMO EJECUTAMOS LOS ANÁLISIS ESTADÍSTICOS?</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="COMP6.html"><a href="COMP6.html#cómo-cargamos-nuestros-datos-en-r"><i class="fa fa-check"></i><b>7.1</b> ¿Cómo cargamos nuestros datos en R?</a>
+<li class="chapter" data-level="7.1" data-path="COMP6.html"><a href="COMP6.html#cómo-capturamos-nuestros-datos"><i class="fa fa-check"></i><b>7.1</b> ¿Cómo capturamos nuestros datos?</a>
 <ul>
-<li class="chapter" data-level="7.1.1" data-path="COMP6.html"><a href="COMP6.html#cómo-capturamos-la-clave-de-respuestas"><i class="fa fa-check"></i><b>7.1.1</b> ¿Cómo capturamos la clave de respuestas?</a></li>
-<li class="chapter" data-level="7.1.2" data-path="COMP6.html"><a href="COMP6.html#seleccionar-solamente-los-reactivos-y-transformarlos"><i class="fa fa-check"></i><b>7.1.2</b> Seleccionar solamente los reactivos y transformarlos</a></li>
+<li class="chapter" data-level="7.1.1" data-path="COMP6.html"><a href="COMP6.html#la-base-de-datos-que-utilizaremos"><i class="fa fa-check"></i><b>7.1.1</b> La base de datos que utilizaremos</a></li>
 </ul></li>
-<li class="chapter" data-level="7.2" data-path="COMP6.html"><a href="COMP6.html#desempeño-de-los-reactivos-1"><i class="fa fa-check"></i><b>7.2</b> Desempeño de los reactivos</a></li>
-<li class="chapter" data-level="7.3" data-path="COMP6.html"><a href="COMP6.html#análisis-de-los-distractores"><i class="fa fa-check"></i><b>7.3</b> Análisis de los distractores</a></li>
-<li class="chapter" data-level="7.4" data-path="COMP6.html"><a href="COMP6.html#dimensionalidad-1"><i class="fa fa-check"></i><b>7.4</b> Dimensionalidad</a>
+<li class="chapter" data-level="7.2" data-path="COMP6.html"><a href="COMP6.html#cómo-cargamos-nuestros-datos-en-r"><i class="fa fa-check"></i><b>7.2</b> ¿Cómo cargamos nuestros datos en R?</a>
 <ul>
-<li class="chapter" data-level="7.4.1" data-path="COMP6.html"><a href="COMP6.html#análisis-factorial-exploratorio-1"><i class="fa fa-check"></i><b>7.4.1</b> Análisis Factorial Exploratorio</a></li>
-<li class="chapter" data-level="7.4.2" data-path="COMP6.html"><a href="COMP6.html#análisis-factorial-confirmatorio-1"><i class="fa fa-check"></i><b>7.4.2</b> Análisis Factorial Confirmatorio</a></li>
+<li class="chapter" data-level="7.2.1" data-path="COMP6.html"><a href="COMP6.html#cómo-capturamos-la-clave-de-respuestas"><i class="fa fa-check"></i><b>7.2.1</b> ¿Cómo capturamos la clave de respuestas?</a></li>
+<li class="chapter" data-level="7.2.2" data-path="COMP6.html"><a href="COMP6.html#seleccionar-solamente-los-reactivos-y-transformarlos"><i class="fa fa-check"></i><b>7.2.2</b> Seleccionar solamente los reactivos y transformarlos</a></li>
 </ul></li>
-<li class="chapter" data-level="7.5" data-path="COMP6.html"><a href="COMP6.html#confiabilidad-1"><i class="fa fa-check"></i><b>7.5</b> Confiabilidad</a></li>
-<li class="chapter" data-level="7.6" data-path="COMP6.html"><a href="COMP6.html#imparcialidad-1"><i class="fa fa-check"></i><b>7.6</b> Imparcialidad</a></li>
-<li class="chapter" data-level="7.7" data-path="COMP6.html"><a href="COMP6.html#gráficos"><i class="fa fa-check"></i><b>7.7</b> Gráficos</a></li>
-<li class="chapter" data-level="7.8" data-path="COMP6.html"><a href="COMP6.html#COMP8"><i class="fa fa-check"></i><b>7.8</b> ¿Y QUÉ HACEMOS DESPUÉS CON EL EXAMEN?</a></li>
-<li class="chapter" data-level="7.9" data-path="COMP6.html"><a href="COMP6.html#a-modo-de-repaso-5"><i class="fa fa-check"></i><b>7.9</b> A modo de repaso</a></li>
+<li class="chapter" data-level="7.3" data-path="COMP6.html"><a href="COMP6.html#desempeño-de-los-reactivos-1"><i class="fa fa-check"></i><b>7.3</b> Desempeño de los reactivos</a></li>
+<li class="chapter" data-level="7.4" data-path="COMP6.html"><a href="COMP6.html#análisis-de-los-distractores"><i class="fa fa-check"></i><b>7.4</b> Análisis de los distractores</a></li>
+<li class="chapter" data-level="7.5" data-path="COMP6.html"><a href="COMP6.html#dimensionalidad-1"><i class="fa fa-check"></i><b>7.5</b> Dimensionalidad</a>
+<ul>
+<li class="chapter" data-level="7.5.1" data-path="COMP6.html"><a href="COMP6.html#análisis-factorial-exploratorio-1"><i class="fa fa-check"></i><b>7.5.1</b> Análisis Factorial Exploratorio</a></li>
+<li class="chapter" data-level="7.5.2" data-path="COMP6.html"><a href="COMP6.html#análisis-factorial-confirmatorio-1"><i class="fa fa-check"></i><b>7.5.2</b> Análisis Factorial Confirmatorio</a></li>
+</ul></li>
+<li class="chapter" data-level="7.6" data-path="COMP6.html"><a href="COMP6.html#confiabilidad-1"><i class="fa fa-check"></i><b>7.6</b> Confiabilidad</a></li>
+<li class="chapter" data-level="7.7" data-path="COMP6.html"><a href="COMP6.html#imparcialidad-1"><i class="fa fa-check"></i><b>7.7</b> Imparcialidad</a></li>
+<li class="chapter" data-level="7.8" data-path="COMP6.html"><a href="COMP6.html#gráficos"><i class="fa fa-check"></i><b>7.8</b> Gráficos</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="COMP8.html"><a href="COMP8.html"><i class="fa fa-check"></i><b>8</b> ¿Y QUÉ HACEMOS DESPUÉS CON EL EXAMEN?</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="COMP8.html"><a href="COMP8.html#contenido-de-los-reactivos"><i class="fa fa-check"></i><b>8.1</b> Contenido de los reactivos:</a></li>
+<li class="chapter" data-level="8.2" data-path="COMP8.html"><a href="COMP8.html#seguridad-del-instrumento"><i class="fa fa-check"></i><b>8.2</b> Seguridad del instrumento:</a></li>
+<li class="chapter" data-level="8.3" data-path="COMP8.html"><a href="COMP8.html#desempeño-psicométrico"><i class="fa fa-check"></i><b>8.3</b> Desempeño psicométrico:</a></li>
+<li class="chapter" data-level="8.4" data-path="COMP8.html"><a href="COMP8.html#a-modo-de-repaso-5"><i class="fa fa-check"></i><b>8.4</b> A modo de repaso</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>REFERENCIAS</a></li>
 <li class="appendix"><span><b>ANEXO</b></span></li>
 <li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html"><i class="fa fa-check"></i>GLOSARIO</a>
 <ul>
-<li class="chapter" data-level="10" data-path="GLOSARIO.html"><a href="GLOSARIO.html#alpha"><i class="fa fa-check"></i><b>10</b> Alpha de Cronbach:</a></li>
-<li class="chapter" data-level="11" data-path="GLOSARIO.html"><a href="GLOSARIO.html#base-limpia"><i class="fa fa-check"></i><b>11</b> Base de datos limpia:</a></li>
-<li class="chapter" data-level="12" data-path="GLOSARIO.html"><a href="GLOSARIO.html#examen"><i class="fa fa-check"></i><b>12</b> Examen (prueba objetiva):</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#alpha"><i class="fa fa-check"></i>Alpha de Cronbach:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#AFE"><i class="fa fa-check"></i>Análisis Factorial Exploratorio:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#AFC"><i class="fa fa-check"></i>Análisis Factorial Confirmatorio:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#aprendizaje"><i class="fa fa-check"></i>Aprendizaje esperado:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#base"><i class="fa fa-check"></i>Base de datos:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#base-limpia"><i class="fa fa-check"></i>Base de datos limpia:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#base-ordenada"><i class="fa fa-check"></i>Base de datos ordenada:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#calibracion"><i class="fa fa-check"></i>Calibración:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#calificacion"><i class="fa fa-check"></i>Codificación:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#confiabilidad-G"><i class="fa fa-check"></i>Confiabilidad:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#consistencia"><i class="fa fa-check"></i>Consistencia interna:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#constructo"><i class="fa fa-check"></i>Constructo:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#correlacion"><i class="fa fa-check"></i>Correlación:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#reactivo-total"><i class="fa fa-check"></i>Correlación reactivo-total:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#calidad"><i class="fa fa-check"></i>Criterios de calidad de los reactivos:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#cuestionario"><i class="fa fa-check"></i>Cuestionario:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#desempeño"><i class="fa fa-check"></i>Desempeño de reactivos:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#dificultad"><i class="fa fa-check"></i>Dificultad:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#dimension"><i class="fa fa-check"></i>Dimensión:</a></li>
+<li class="chapter" data-level="" data-path="COMP5.html"><a href="COMP5.html#dimensionalidad"><i class="fa fa-check"></i>Dimensionalidad:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#distractores"><i class="fa fa-check"></i>Distractores:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#entrevista"><i class="fa fa-check"></i>Entrevista cognitiva:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#equiparacion"><i class="fa fa-check"></i>Equiparación:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#error"><i class="fa fa-check"></i>Error de medición:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#estimulo"><i class="fa fa-check"></i>Escenario o estímulo:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#estandar"><i class="fa fa-check"></i>Estandarización:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#criterio"><i class="fa fa-check"></i>Evaluación criterial:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#norma"><i class="fa fa-check"></i>Evaluación normativa:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#evidencia-validez"><i class="fa fa-check"></i>Evidencias de validez:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#examen"><i class="fa fa-check"></i>Examen (prueba objetiva):</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#DIF-G"><i class="fa fa-check"></i>Funcionamiento Diferencial del Reactivo (DIF):</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#mantenimiento"><i class="fa fa-check"></i>Mantenimiento de la prueba:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#marco-conceptual"><i class="fa fa-check"></i>Marco conceptual:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#R1PL"><i class="fa fa-check"></i>Modelo de 1 parámetro:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#R2PL"><i class="fa fa-check"></i>Modelo de 2 parámetros:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#niveles"><i class="fa fa-check"></i>Niveles de aprendizaje:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#omega"><i class="fa fa-check"></i>Omega de McDonald:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#opera"><i class="fa fa-check"></i>Operacionalización:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#panel"><i class="fa fa-check"></i>Paneles de expertos:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#param"><i class="fa fa-check"></i>Parámetros psicométricos:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#prop-estad"><i class="fa fa-check"></i>Propiedades estadísticas:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#paralel"><i class="fa fa-check"></i>Pruebas paralelas:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#corte"><i class="fa fa-check"></i>Punto de corte:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#ancla"><i class="fa fa-check"></i>Reactivos ancla:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#regresion"><i class="fa fa-check"></i>Regresión Lineal:</a></li>
+<li class="chapter" data-level="5" data-path="GLOSARIO.html"><a href="GLOSARIO.html#seguridad-del-instrumento--seguridadg"><i class="fa fa-check"></i><b>5</b> Seguridad del instrumento: {-seguridadG}</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#sesgo"><i class="fa fa-check"></i>Sesgo:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#subrep"><i class="fa fa-check"></i>Subrepresentación del constructo:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#tabla-espec-G"><i class="fa fa-check"></i>Tabla de especificaciones:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#TCT-G"><i class="fa fa-check"></i>Teoría Clásica de los Tests:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#TRI-G"><i class="fa fa-check"></i>Teoría de Respuesta al Ítem:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#test-retest"><i class="fa fa-check"></i>Test-Retest:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#validez-G"><i class="fa fa-check"></i>Validez:</a></li>
+<li class="chapter" data-level="" data-path="GLOSARIO.html"><a href="GLOSARIO.html#varianza"><i class="fa fa-check"></i>Varianza irrelevante al constructo:</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="respuestas-a-las-preguntas.html"><a href="respuestas-a-las-preguntas.html"><i class="fa fa-check"></i>RESPUESTAS A LAS PREGUNTAS</a>
 <ul>
@@ -243,10 +366,10 @@ Mucha de la información aquí presentada se basa en las recomendacionEs dentro 
 </div>
 <ul>
 <li><p><a href="#desmpeño"><strong>Desempeño de reactivos:</strong></a> Nos dirá si realmente los reactivos funcionaron en cuanto a dificultad y discriminación, y si los distractores funcionaron como se esperaba que lo hicieran.</p></li>
-<li><p><a href="COMP5.html#dimensionalidad"><strong>Dimensionalidad:</strong></a> Nos mostrará si todos los reactivos de un dominio o subdominio específico realmente están midiendo lo mismo, o si, por el contrario, algún reactivo que esperábamos midiera un dominio, en realidad se agrupa mejor con reactivos que miden otra cosa. Esta es una importante <a href="#evidencia-validez">evidencia de validez</a>.</p></li>
+<li><p><a href="COMP5.html#dimensionalidad"><strong>Dimensionalidad:</strong></a> Nos mostrará si todos los reactivos de un dominio o subdominio específico realmente están midiendo lo mismo, o si, por el contrario, algún reactivo que esperábamos midiera un dominio, en realidad se agrupa mejor con reactivos que miden otra cosa. Esta es una importante <a href="GLOSARIO.html#evidencia-validez">evidencia de validez</a>.</p></li>
 <li><p><a href="COMP5.html#confiabilidad"><strong>Confiabilidad:</strong></a> Nos dirá si el examen es consistente a través del tiempo o de las versiones diferentes del mismo.</p></li>
 <li><p><strong>Imparcialidad</strong> Nos permitirá determinar si nuestros reactivos benefician a algún grupo en específico, independientemente de su nivel de habilidad.</p></li>
-<li><p><a href="#evidencia-validez"><strong>Evidencias de validez:</strong></a> En esta sección se agrupan varios análisis que nos permitirán identificar si el examen realmente mide lo que pretende medir y si en verdad se puede interpretar de la manera que pretendemos hacerlo.</p></li>
+<li><p><a href="GLOSARIO.html#evidencia-validez"><strong>Evidencias de validez:</strong></a> En esta sección se agrupan varios análisis que nos permitirán identificar si el examen realmente mide lo que pretende medir y si en verdad se puede interpretar de la manera que pretendemos hacerlo.</p></li>
 <li><p><strong>Calificación:</strong> Nos ayudará a determinar cómo establecer puntos de corte para decidir quién aprueba y quién no, dependiendo de los usos e interpretaciones previstos</p></li>
 </ul>
 <div class="aera">
@@ -258,7 +381,7 @@ Mucha de la información aquí presentada se basa en las recomendacionEs dentro 
 <h2><span class="header-section-number">5.1</span> Desempeño de los reactivos</h2>
 <div id="teoría-clásica-de-los-tests" class="section level3" number="5.1.1">
 <h3><span class="header-section-number">5.1.1</span> Teoría Clásica de los Tests</h3>
-<p>Para realizar el análisis psicométrico de los reactivos, desde la <a href="#TCT-G">Teoría Clásica de los Tests (TCT)</a>, son tres los puntos principales que necesitamos evaluar: la dificultad, la discriminación y la <a href="#correlacion">correlación</a> con el total del instrumento.</p>
+<p>Para realizar el análisis psicométrico de los reactivos, desde la <a href="GLOSARIO.html#TCT-G">Teoría Clásica de los Tests (TCT)</a>, son tres los puntos principales que necesitamos evaluar: la dificultad, la discriminación y la <a href="GLOSARIO.html#correlacion">correlación</a> con el total del instrumento.</p>
 <div id="índice-de-dificultad" class="section level4" number="5.1.1.1">
 <h4><span class="header-section-number">5.1.1.1</span> Índice de dificultad</h4>
 <p>Cuando hablamos de dificultad del reactivo en la TCT, nos referimos a la proporción de alumnos que contestó correctamente el reactivo con respecto al total de examinados. Supongamos que, en un examen de matemáticas, incluimos dos reactivos de cálculo integral; uno de ellos, es contestado correctamente por el 80% de los estudiantes que tomaron el examen, mientras que el otro, solamente fue contestado correctamente por el 35% de los participantes. Con solo esta información, es fácil asumir que el primer reactivo es mucho más sencillo que el segundo, dado que una gran proporción de los examinados lo contestó correctamente. Puede parecer un poco contraintuitivo, pero al ser la proporción de respuestas correctas, un número alto en el índice de dificultad, nos indica que el reactivo es sencillo, mientras que un número pequeño nos indica que el reactivo es difícil. El índice de dificultad, en lugar de presentarse en porcentaje como el ejemplo, suele presentarse como un valor decimal, dado que se calcula dividiendo el número de personas que contestaron correctamente el reactivo entre el número total de participantes. En el primer reactivo del ejemplo, su índice de dificultad sería de .8, y el segundo, de .35.</p>
@@ -274,9 +397,9 @@ Mucha de la información aquí presentada se basa en las recomendacionEs dentro 
 <p>En el contexto de análisis de reactivos, hablamos de discriminación para referirnos a la capacidad que tiene el reactivo para distinguir correctamente el grupo de sustentantes con desempeño alto (sustentantes con el mayor puntaje total en el examen) con respecto a los sustentantes de bajo desempeño (sustentantes con el puntaje global en el examen más bajo). En otras palabras, un reactivo discrimina bien, cuando son más los sustentantes con alto desempeño los que lo contestan bien, y más los que tienen bajo desempeño quienes lo contestan de manera incorrecta. Si, por el contrario, tenemos un reactivo que solo el 40% de los sustentantes contestó correctamente, pero de ese 40%, la mayoría fueron sustentantes con un desempeño bajo, el reactivo no está funcionando de manera adecuada. También se puede dar el caso donde lo respondan de manera correcta sustentantes de ambos grupos por igual, por lo que el reactivo realmente no aporta información importante.</p>
 <p>El índice de discriminación se obtiene al restar el número de sustentantes del grupo bajo que respondieron correctamente, al número de sustentantes del grupo alto que respondieron correctamente, lo cual luego se divide entre el número total de participantes. Si obtenemos un valor negativo de esta operación, significa que fue mayor la proporción de sustentantes en el grupo bajo que contestó correctamente el reactivo. Si obtenemos 0 o valores muy cercanos a 0, significa que la proporción de ambos grupos es prácticamente la misma. Con esto en cuenta, el criterio que se suele utilizar es conservar reactivos con un índice de discriminación mayor a .2, o en casos más estrictos, mayores a .3. Nuevamente, no podemos tomar solo este índice como criterio para eliminar el reactivo, sino que se debe considerar en conjunto con los demás.</p>
 </div>
-<div id="correlación-entre-el-reactivo-y-el-total-de-la-prueba" class="section level4" number="5.1.1.4">
+<div id="correactivo" class="section level4" number="5.1.1.4">
 <h4><span class="header-section-number">5.1.1.4</span> Correlación entre el reactivo y el total de la prueba</h4>
-<p>Otro punto importante es qué tanto el reactivo contribuye al puntaje total de la prueba. Para determinar esto, utilizamos un método estadístico llamado <a href="#reactivo-total">correlación biserial puntal</a>. En esencia, una correlación nos dice qué tanto dos valores están relacionados y de qué manera; en este caso, el valor de la correlación nos dirá si el contestar de manera correcta un reactivo está relacionado con obtener puntajes altos y si contestarlo de manera incorrecta se relaciona con la obtención de puntajes bajos. En otras palabras, nos dirá si contestar de manera correcta o incorrecta cierto reactivo nos ayuda a determinar el nivel de habilidad de la persona (entendido como el puntaje total de la prueba).</p>
+<p>Otro punto importante es qué tanto el reactivo contribuye al puntaje total de la prueba. Para determinar esto, utilizamos un método estadístico llamado <a href="GLOSARIO.html#reactivo-total">correlación biserial puntal</a>. En esencia, una correlación nos dice qué tanto dos valores están relacionados y de qué manera; en este caso, el valor de la correlación nos dirá si el contestar de manera correcta un reactivo está relacionado con obtener puntajes altos y si contestarlo de manera incorrecta se relaciona con la obtención de puntajes bajos. En otras palabras, nos dirá si contestar de manera correcta o incorrecta cierto reactivo nos ayuda a determinar el nivel de habilidad de la persona (entendido como el puntaje total de la prueba).</p>
 <p>La correlación se obtiene de comparar el valor (correcto o incorrecto) que obtuvo cada sustentante en determinado reactivo con su puntaje total en la prueba. El valor que se obtiene estará dentro de un rango de -1 a 1. En este rango, valores cercanos a -1 indican una correlación negativa, es decir, contestar de manera correcta se relaciona más con obtener puntajes bajos, mientras que valores más cercanos a 1 indican una correlación positiva, siendo que contestar correctamente se relaciona con obtener puntajes altos. Por otro lado, valores cercanos a 0, ya sean positivos o negativos, nos indican que no hay una relación entre contestar de manera correcta o incorrecta el reactivo y el puntaje total de la prueba.</p>
 <p>Lo que esperamos con los reactivos que diseñamos es que todos los reactivos contribuyan a determinar el nivel de habilidad de los sustentantes, por ende, lo que esperamos son correlaciones de carácter positivo. No necesitamos correlaciones que se encuentren muy cercanas a 1, de hecho eso es poco probable. Sin embargo, solemos usar como criterio el conservar reactivos con correlaciones mayores a .2. Nuevamente, este dato solo se puede usar como criterio cuando se toma en cuenta con el resto de información obtenida con respecto al reactivo.</p>
 </div>
@@ -289,26 +412,26 @@ Mucha de la información aquí presentada se basa en las recomendacionEs dentro 
 <h3><span class="header-section-number">5.1.2</span> Teoría de Respuesta al Ítem</h3>
 <p>Otra metodología que también se suele utilizar para analizar las propiedades de los reactivos es la <a href="#TRI_G">Teoría de Respuesta al Ítem</a>. Este modelo teórico, a diferencia del anterior, se centra en la relación entre el nivel de habilidad de los sustentantes y su probabilidad de responder de manera correcta o incorrecta cierto reactivo. Esta teoría parte del supuesto de que la probabilidad de responder de manera correcta un reactivo está dada en función del nivel de habilidad de los sustentantes y por 1 o más parámetros referentes al reactivo de manera específica.</p>
 <p>Tomando en cuenta estos parámetros, se obtiene la probabilidad de que un sustentante conteste de manera correcta un reactivo en función de su nivel de habilidad. Pero de manera más interesante para este contexto, nos da específicamente los valores de estos parámetros, que si observamos con detenimiento podremos identificar que los primeros dos se refieren al mismo concepto que vimos en la Teoría Clásica de los Test.</p>
-<div id="modelo-de-un-parámetro" class="section level4" number="5.1.2.1">
+<div id="RASCH1" class="section level4" number="5.1.2.1">
 <h4><span class="header-section-number">5.1.2.1</span> Modelo de un parámetro</h4>
-<p>El <a href="#1PL">modelo de un parámetro</a> únicamente toma en cuenta el nivel de habilidad de los sustentantes y la dificultad del reactivo, y asume que la discriminación de todos los reactivos es igual. El valor del índice de dificultad, en teoría puede ir de -infinito a +infinito. El índice de dificultad puede variar de valores negativos cuando es fácil o valores positivos cuando es difícil. Un buen criterio de decisión es conservar los reactivos cuyo valor en el parámetro de dificultad sea de -2.5 a 2.5.</p>
+<p>El <a href="GLOSARIO.html#R1PL">modelo de un parámetro</a> únicamente toma en cuenta el nivel de habilidad de los sustentantes y la dificultad del reactivo, y asume que la discriminación de todos los reactivos es igual. El valor del índice de dificultad, en teoría puede ir de -infinito a +infinito. El índice de dificultad puede variar de valores negativos cuando es fácil o valores positivos cuando es difícil. Un buen criterio de decisión es conservar los reactivos cuyo valor en el parámetro de dificultad sea de -2.5 a 2.5.</p>
 </div>
-<div id="modelo-de-dos-parámetros" class="section level4" number="5.1.2.2">
+<div id="RASCH2" class="section level4" number="5.1.2.2">
 <h4><span class="header-section-number">5.1.2.2</span> Modelo de dos parámetros</h4>
-<p>El <a href="#2PL">modelo de dos parámetros</a>, además de considerar el nivel de habilidad y la dificultad de los reactivos, incluye la variación en el nivel de discriminación de los reactivos. El parámetro de discriminación puede tomar valores comenzando en 0 y hasta un máximo de 2. Suele considerarse que reactivos con valores iguales o mayores a 0.45 son reactivos con un buen nivel de discriminación. Valores más pequeños indicarían que el reactivo no discrimina bien entre los grupos con mayor o menor nivel de habilidad.</p>
+<p>El <a href="GLOSARIO.html#R2PL">modelo de dos parámetros</a>, además de considerar el nivel de habilidad y la dificultad de los reactivos, incluye la variación en el nivel de discriminación de los reactivos. El parámetro de discriminación puede tomar valores comenzando en 0 y hasta un máximo de 2. Suele considerarse que reactivos con valores iguales o mayores a 0.45 son reactivos con un buen nivel de discriminación. Valores más pequeños indicarían que el reactivo no discrimina bien entre los grupos con mayor o menor nivel de habilidad.</p>
 </div>
 </div>
 <div id="eliminación-de-reactivos" class="section level3" number="5.1.3">
 <h3><span class="header-section-number">5.1.3</span> Eliminación de reactivos</h3>
 <p>Ya que hemos obtenido toda la información anterior, es importante que la analicemos reactivo por reactivo para que podamos decidir qué reactivos conservaremos para la versión final y para la calificación. La decisión de eliminar o no un reactivo dependerá de múltiples factores. En primer lugar, es importante ver qué tanto cumple con los criterios esperados, si en un principio el reactivo tiene muy malos indicadores (por ejemplo, índice de dificultad menor a .1, índice de discriminación menor a .2 o correlación biserial negativa), entonces lo mejor será eliminarlo directamente, ya que un reactivo con un desempeño muy pobre es difícilmente rescatable. Sin embargo, si se excede en alguno de los indicadores o en varios por poco, es importante considerar el funcionamiento de los distractores, para ver si es factible enviar el reactivo a revisión para que sea corregido para futuras aplicaciones.</p>
-<p>Otro aspecto que es importante tomar en cuenta es la cantidad de reactivos que se tiene para cada indicador. Si fuéramos muy estrictos y elimináramos cada reactivo que no cumple con alguno de los criterios, probablemente terminaríamos con un examen muy pequeño, y el riesgo de eso es que terminemos por eliminar todos los reactivos de alguna dimensión o subdimensión, logrando que tengamos un examen con una gran <a href="#subrep">subrepresentación del constructo</a>. Cuando diseñamos exámenes, por lo general se genera más de un reactivo para cada indicador, pero puede darse el caso que todos los reactivos de un indicador tengan alguna deficiencia, por lo que hay que considerar cuál o cuáles de ellos pueden ser más susceptibles a correcciones que ayuden a mejorar su desempeño, y con ello conservar el indicador.</p>
+<p>Otro aspecto que es importante tomar en cuenta es la cantidad de reactivos que se tiene para cada indicador. Si fuéramos muy estrictos y elimináramos cada reactivo que no cumple con alguno de los criterios, probablemente terminaríamos con un examen muy pequeño, y el riesgo de eso es que terminemos por eliminar todos los reactivos de alguna dimensión o subdimensión, logrando que tengamos un examen con una gran <a href="GLOSARIO.html#subrep">subrepresentación del constructo</a>. Cuando diseñamos exámenes, por lo general se genera más de un reactivo para cada indicador, pero puede darse el caso que todos los reactivos de un indicador tengan alguna deficiencia, por lo que hay que considerar cuál o cuáles de ellos pueden ser más susceptibles a correcciones que ayuden a mejorar su desempeño, y con ello conservar el indicador.</p>
 </div>
 </div>
 <div id="dimensionalidad" class="section level2" number="5.2">
 <h2><span class="header-section-number">5.2</span> Dimensionalidad</h2>
 <p>Un aspecto muy importante a evaluar para obtener evidencias de validez es la dimensionalidad. Este aspecto se refiere a qué tanto los reactivos se agrupan de la manera que esperaríamos se agrupen. Supongamos que elaboramos un examen de matemáticas, donde incluimos varios reactivos de álgebra y varios de geometría. Si un estudiante sabe realizar operaciones algebraicas, pero tiene dificultades con geometría, esperaríamos que conteste de manera correcta la mayoría de los reactivos de álgebra y que no pueda contestar correctamente muchos de geometría. En otras palabras, nosotros suponemos que los reactivos que clasificamos como referentes a álgebra están midiendo toda la habilidad en álgebra de los estudiantes y los que elaboramos de geometría, que estén todos midiendo la habilidad en geometría.</p>
 <p>Tomando esto en cuenta, lo que esperaríamos es que nuestro examen tenga una estructura interna definida por lo que planteamos en un inicio al elaborar la tabla de especificaciones, si suponemos que todos los reactivos dentro de una dimensión o dominio están midiendo un mismo constructo, esperaríamos que estos reactivos se agrupen de esta manera. Habrá otras ocasiones en que el examen en su conjunto presente una estructura unidimensional, es decir, todos los reactivos se agrupen y midan un solo constructo. Por ejemplo, un examen de comprensión lectora es muy probable que presente una estructura unidimensional.</p>
-<p>Para poder determinar la estructura interna de un instrumento, son dos las principales técnicas utilizadas: análisis factorial exploratorio <a href="#AFE">AFE</a> y análisis factorial confirmatorio <a href="#AFC">AFC</a>.</p>
+<p>Para poder determinar la estructura interna de un instrumento, son dos las principales técnicas utilizadas: análisis factorial exploratorio <a href="GLOSARIO.html#AFE">AFE</a> y análisis factorial confirmatorio <a href="GLOSARIO.html#AFC">AFC</a>.</p>
 <div id="análisis-factorial-exploratorio" class="section level3" number="5.2.1">
 <h3><span class="header-section-number">5.2.1</span> Análisis Factorial Exploratorio</h3>
 <p>En el primer caso, mediante un software estadístico, se establecen algunos criterios para que el software haga una serie de análisis que permitan identificar la cantidad de factores (término utilizado para referirnos a las dimensiones del examen) necesarios y los reactivos que se agrupan en cada uno de estos factores. Dado que es un enfoque exploratorio, nosotros solamente proporcionamos los reactivos y algunos criterios como el método de estimación, la cantidad de factores o los métodos de rotación (se explicará más a detalle en la sección práctica), y es el software el que determina la estructura que mejor se ajusta a los datos.</p>
@@ -325,8 +448,8 @@ Dado que este procedimiento es más complejo en cuanto a los análisis y los cri
 <div id="confiabilidad" class="section level2" number="5.3">
 <h2><span class="header-section-number">5.3</span> Confiabilidad</h2>
 <p>Cuando hablamos de confiabilidad nos referimos a “la consistencia de las calificaciones obtenidas por las mismas personas en ocasiones diferentes o con diferentes conjuntos de reactivos equivalentes” (Anastasi, 1966). En otras palabras, para que un instrumento sea confiable, nosotros esperaríamos que, si lo aplicamos a una persona en un momento dado, y se lo volvemos a aplicar tiempo después (asumiendo que su nivel de rasgo no cambie), la persona obtenga resultados iguales o muy similares en ambas aplicaciones. O, si le administramos dos instrumentos que miden lo mismo con reactivos equivalentes (reactivos que evalúen lo mismo con el mismo nivel de dificultad y discriminación), la persona obtendría también resultados muy similares en ambos instrumentos.</p>
-<p>En el primer caso, la manera más simple de obtener la confiabilidad del instrumento sería al obtener la correlación entre los puntajes de la primera y la segunda aplicación (<a href="#test-retest">Test-Retest</a>), y en el segundo caso, la correlación entre los puntajes de ambas versiones del instrumento. Sin embargo, estos dos procedimientos no siempre son viables. En el caso de exámenes, al ser preguntas de conocimientos, es más sencillo que los estudiantes se familiaricen con el contenido y les sea más sencillo en una segunda aplicación del mismo examen, por lo que el nivel de confiabilidad podría estar sesgado, además de que no siempre es posible reunir a las mismas personas para dos aplicaciones distintas. De igual forma, diseñar dos versiones paralelas del mismo examen, es costo y toma mucho tiempo, por lo que no en todos los casos es algo viable o deseable.</p>
-<p>Por ello, una tercera alternativa es evaluar la confiabilidad con respecto a la consistencia interna del instrumento, es decir, qué tanto los reactivos del instrumento se relacionan entre sí, y que tan homogéneos son. La prueba para medir la confiabilidad por consistencia interna más utilizada es el <a href="GLOSARIO.html#alpha">Alpha de Cronbach</a>. Este coeficiente se ubica en un rango de 0 a 1, siendo los valores más cercanos a 1 indicadores de una consistencia interna alta. Sin embargo, este coeficiente tiene algunas limitaciones, dado que depende mucho de la cantidad de reactivos y del tamaño de la muestra (entre más reactivos tenga el examen y más personas se tengan en la muestra, más alto será el valor de Alpha). Además, se basa en algunos supuestos que no siempre es posible que se cumplan en el contexto de los exámenes. Por ello, una alternativa es utilizar el coeficiente <a href="#omega">Omega de McDonald</a>, el cual reduce los sesgos por tamaño de muestra y cantidad de reactivos, y toma en cuenta la dimensionalidad del instrumento (si el instrumento tiene varias dimensiones, las analiza en conjunto y otorga un valor específico para cada dimensión y uno global).</p>
+<p>En el primer caso, la manera más simple de obtener la confiabilidad del instrumento sería al obtener la correlación entre los puntajes de la primera y la segunda aplicación (<a href="GLOSARIO.html#test-retest">Test-Retest</a>), y en el segundo caso, la correlación entre los puntajes de ambas versiones del instrumento. Sin embargo, estos dos procedimientos no siempre son viables. En el caso de exámenes, al ser preguntas de conocimientos, es más sencillo que los estudiantes se familiaricen con el contenido y les sea más sencillo en una segunda aplicación del mismo examen, por lo que el nivel de confiabilidad podría estar sesgado, además de que no siempre es posible reunir a las mismas personas para dos aplicaciones distintas. De igual forma, diseñar dos versiones paralelas del mismo examen, es costo y toma mucho tiempo, por lo que no en todos los casos es algo viable o deseable.</p>
+<p>Por ello, una tercera alternativa es evaluar la confiabilidad con respecto a la consistencia interna del instrumento, es decir, qué tanto los reactivos del instrumento se relacionan entre sí, y que tan homogéneos son. La prueba para medir la confiabilidad por consistencia interna más utilizada es el <a href="GLOSARIO.html#alpha">Alpha de Cronbach</a>. Este coeficiente se ubica en un rango de 0 a 1, siendo los valores más cercanos a 1 indicadores de una consistencia interna alta. Sin embargo, este coeficiente tiene algunas limitaciones, dado que depende mucho de la cantidad de reactivos y del tamaño de la muestra (entre más reactivos tenga el examen y más personas se tengan en la muestra, más alto será el valor de Alpha). Además, se basa en algunos supuestos que no siempre es posible que se cumplan en el contexto de los exámenes. Por ello, una alternativa es utilizar el coeficiente <a href="GLOSARIO.html#omega">Omega de McDonald</a>, el cual reduce los sesgos por tamaño de muestra y cantidad de reactivos, y toma en cuenta la dimensionalidad del instrumento (si el instrumento tiene varias dimensiones, las analiza en conjunto y otorga un valor específico para cada dimensión y uno global).</p>
 <div class="aera">
 <p><strong>Estándar 2.3:</strong>
 <em>“Para cada puntaje total, subpuntaje o combinación de puntajes que deba interpretarse, deben reportarse estimaciones de índices relevantes de confiabilidad/ precisión.”</em></p>
@@ -336,7 +459,7 @@ Dado que este procedimiento es más complejo en cuanto a los análisis y los cri
 <div id="imparcialidad" class="section level2" number="5.4">
 <h2><span class="header-section-number">5.4</span> Imparcialidad</h2>
 <p>Un análisis que puede resultar de suma importancia de acuerdo con nuestros usos e interpretaciones previstos es el análisis de la imparcialidad. Cuando tenemos grupos claramente diferenciados a quienes se les aplicará nuestro examen, (e.g., hombres y mujeres, personas extranjeras y nativas, personas provenientes de sistemas de bachillerato diferentes, etc.), uno de los objetivos que debemos asegurar para nuestro examen, es que sea capaz de determinar el nivel de habilidad que tiene la persona en el constructo que evalúa nuestro examen independientemente de sus características particulares o grupo de pertenencia; en otras palabras, queremos que nuestro examen determine si alguien es aprobado o reprobado por su nivel de habilidad únicamente, y no que una persona apruebe porque le da cierta ventaja pertenecer a un grupo específico. Cuando los reactivos se comportan de esta manera, decimos que son reactivos sesgados, en los que algo de su redacción, planteamiento u opciones de respuesta, está favoreciendo alguna característica de uno de los grupos, independientemente de su nivel de habilidad.</p>
-<p>Para detectar la presencia de este sesgo, la herramienta más utilizada es el análisis del <a href="#DIF-G">Funcionamiento Diferencial del Reactivo</a> (DIF por sus siglas en inglés). Existen distintos métodos para estimar la presencia de DIF en los reactivos, algunos provenientes de la TRI y otros provenientes de la TCT. En general, estos métodos buscan analizar si existen diferencias en la probabilidad de los participantes de responder correctamente un reactivo, cuando ambos participantes tienen el mismo nivel de habilidad.</p>
+<p>Para detectar la presencia de este sesgo, la herramienta más utilizada es el análisis del <a href="GLOSARIO.html#DIF-G">Funcionamiento Diferencial del Reactivo</a> (DIF por sus siglas en inglés). Existen distintos métodos para estimar la presencia de DIF en los reactivos, algunos provenientes de la TRI y otros provenientes de la TCT. En general, estos métodos buscan analizar si existen diferencias en la probabilidad de los participantes de responder correctamente un reactivo, cuando ambos participantes tienen el mismo nivel de habilidad.</p>
 <div class="nota">
 <p><strong>Nota:</strong>
 Para revisar con más detalle la interpretación de estos análisis, por favor dirigirse al capítulo anexo de análisis en R en la sección de análisis DIF</p>
@@ -362,7 +485,7 @@ Para revisar con más detalle la interpretación de estos análisis, por favor d
 <div id="regresiones-lineales-y-logísticas" class="section level3" number="5.5.2">
 <h3><span class="header-section-number">5.5.2</span> Regresiones lineales y logísticas</h3>
 <p>Si bien las correlaciones pueden ser una fuente importante de evidencias de validez, en ocasiones necesitaremos más que demostrar la relación entre dos variables, ver si esa relación tiene algún nivel de causalidad. Por lo general, muchos exámenes se diseñan para ser usados como criterios para la toma de decisiones, y esto implica que tomamos el resultado del examen como un predictor de algo que acontecerá en el futuro. Por ejemplo, un examen de admisión es utilizado como criterio para decidir si alguien es admitido o no en una universidad, bajo la premisa de que, si obtiene un puntaje alto en el examen, es más probable que tenga un desempeño alto en el programa al que será admitido. Para poder presentar evidencia de que esta interpretación del resultado del examen como predictor de desempeño es válida, necesitamos, no solamente literatura que señale dicha relación causal, sino también evidencia empírica de nuestro caso en particular. Este ejemplo puede resultar sumamente complejo para generar evidencias, pero hay otros casos en los que lo que intentamos predecir es más sencillo de medir a corto plazo. Por ejemplo, un examen de egreso del bachillerato como predictor del desempeño de ingreso a licenciatura, o un examen que predice los puntajes en otro examen específico.</p>
-<p>Cuando hablamos en términos de predicción, la herramienta más utilizada es el análisis de <a href="#regresion">regresión lineal</a> o de regresión logística. El primero nos permite predecir, a partir de algún criterio como el puntaje de nuestro examen, el resultado en otra variable con varias opciones de resultado posibles; por ejemplo, predecir las calificaciones de un alumno a partir de su puntaje de ingreso, o predecir su puntaje en otro examen. Por su parte, la regresión logística, nos permite predecir la probabilidad de que se dé una condición específica o no. Por ejemplo, podemos intentar predecir, a partir de un examen de egreso del bachillerato, la probabilidad de que los alumnos sean admitidos o no a la educación superior.</p>
+<p>Cuando hablamos en términos de predicción, la herramienta más utilizada es el análisis de <a href="GLOSARIO.html#regresion">regresión lineal</a> o de regresión logística. El primero nos permite predecir, a partir de algún criterio como el puntaje de nuestro examen, el resultado en otra variable con varias opciones de resultado posibles; por ejemplo, predecir las calificaciones de un alumno a partir de su puntaje de ingreso, o predecir su puntaje en otro examen. Por su parte, la regresión logística, nos permite predecir la probabilidad de que se dé una condición específica o no. Por ejemplo, podemos intentar predecir, a partir de un examen de egreso del bachillerato, la probabilidad de que los alumnos sean admitidos o no a la educación superior.</p>
 </div>
 </div>
 <div id="calificación" class="section level2" number="5.6">
@@ -371,7 +494,7 @@ Para revisar con más detalle la interpretación de estos análisis, por favor d
 <p>Si hemos llevado el proceso de manera sistemática hasta este momento, siguiendo todos los pasos aquí especificados, y si realizamos los análisis con la clave de respuestas de manera correcta, este procedimiento resultará sumamente sencillo, dado que solo queda generar la suma de los aciertos de cada estudiante, proceso que ya realizamos en el capítulo de análisis en R. Sin embargo, hay algunos pasos adicionales correspondientes a la interpretación y al reporte de estos resultados.</p>
 <div id="métodos-para-establecer-puntos-de-corte-standard-setting" class="section level3" number="5.6.1">
 <h3><span class="header-section-number">5.6.1</span> Métodos para establecer puntos de corte (standard setting)</h3>
-<p>Si uno de los usos establecidos para la prueba involucra la definición de grupos específicos a partir de los puntajes de la prueba; por ejemplo, clasificar a los sustentantes en desempeño insatisfactorio, satisfactorio y sobresaliente o determinar una calificación aprobatoria para la admisión a la universidad, es necesario llevar a cabo un procedimiento más para definir de la manera más objetiva y empírica posible los <a href="#corte">puntos de corte</a> que vamos a utilizar para cada caso. Existen muchos y muy diversos métodos para establecer puntos de corte, y cada uno de ellos utiliza procedimientos muy diversos. Para fines prácticos, en este manual describiremos únicamente uno de los métodos más utilizados: el método de Angoff utilizado para situaciones en las que requerimos calcular únicamente un punto de corte (e.g., aprobado-no aprobado) basados en un criterio específico. Si al lector le interesa obtener más información sobre distintos métodos, o desea obtener más de un punto de corte o puntos referentes a normas, recomendamos revisar el capítulo 10 del libro de Lane et al. (2016).</p>
+<p>Si uno de los usos establecidos para la prueba involucra la definición de grupos específicos a partir de los puntajes de la prueba; por ejemplo, clasificar a los sustentantes en desempeño insatisfactorio, satisfactorio y sobresaliente o determinar una calificación aprobatoria para la admisión a la universidad, es necesario llevar a cabo un procedimiento más para definir de la manera más objetiva y empírica posible los <a href="GLOSARIO.html#corte">puntos de corte</a> que vamos a utilizar para cada caso. Existen muchos y muy diversos métodos para establecer puntos de corte, y cada uno de ellos utiliza procedimientos muy diversos. Para fines prácticos, en este manual describiremos únicamente uno de los métodos más utilizados: el método de Angoff utilizado para situaciones en las que requerimos calcular únicamente un punto de corte (e.g., aprobado-no aprobado) basados en un criterio específico. Si al lector le interesa obtener más información sobre distintos métodos, o desea obtener más de un punto de corte o puntos referentes a normas, recomendamos revisar el capítulo 10 del libro de Lane et al. (2016).</p>
 <div id="método-de-angoff" class="section level4" number="5.6.1.1">
 <h4><span class="header-section-number">5.6.1.1</span> Método de Angoff</h4>
 <p>Para poder determinar el punto de corte de nuestro examen con este método, necesitamos de la ayuda de un grupo de expertos para tomar la decisión. Este grupo puede ser el mismo que nos ayudó con la generación de reactivos, aunque si es posible conseguir otro grupo, también es algo recomendable.</p>

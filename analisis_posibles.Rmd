@@ -54,7 +54,7 @@ En el contexto de análisis de reactivos, hablamos de discriminación para refer
 
 El índice de discriminación se obtiene al restar el número de sustentantes del grupo bajo que respondieron correctamente, al número de sustentantes del grupo alto que respondieron correctamente, lo cual luego se divide entre el número total de participantes. Si obtenemos un valor negativo de esta operación, significa que fue mayor la proporción de sustentantes en el grupo bajo que contestó correctamente el reactivo. Si obtenemos 0 o valores muy cercanos a 0, significa que la proporción de ambos grupos es prácticamente la misma. Con esto en cuenta, el criterio que se suele utilizar es conservar reactivos con un índice de discriminación mayor a .2, o en casos más estrictos, mayores a .3.  Nuevamente, no podemos tomar solo este índice como criterio para eliminar el reactivo, sino que se debe considerar en conjunto con los demás.
 
-#### Correlación entre el reactivo y el total de la prueba
+#### Correlación entre el reactivo y el total de la prueba {#correactivo}
 
 Otro punto importante es qué tanto el reactivo contribuye al puntaje total de la prueba. Para determinar esto, utilizamos un método estadístico llamado [correlación biserial puntal](#reactivo-total). En esencia, una correlación nos dice qué tanto dos valores están relacionados y de qué manera; en este caso, el valor de la correlación nos dirá si el contestar de manera correcta un reactivo está relacionado con obtener puntajes altos y si contestarlo de manera incorrecta se relaciona con la obtención de puntajes bajos. En otras palabras, nos dirá si contestar de manera correcta o incorrecta cierto reactivo nos ayuda a determinar el nivel de habilidad de la persona (entendido como el puntaje total de la prueba). 
 
@@ -72,13 +72,13 @@ Otra metodología que también se suele utilizar para analizar las propiedades d
 
 Tomando en cuenta estos parámetros, se obtiene la probabilidad de que un sustentante conteste de manera correcta un reactivo en función de su nivel de habilidad. Pero de manera más interesante para este contexto, nos da específicamente los valores de estos parámetros, que si observamos con detenimiento podremos identificar que los primeros dos se refieren al mismo concepto que vimos en la Teoría Clásica de los Test. 
 
-#### Modelo de un parámetro
+#### Modelo de un parámetro {#RASCH1}
 
-El [modelo de un parámetro](#1PL) únicamente toma en cuenta el nivel de habilidad de los sustentantes y la dificultad del reactivo, y asume que la discriminación de todos los reactivos es igual. El valor del índice de dificultad, en teoría puede ir de -infinito a +infinito. El índice de dificultad puede variar de valores negativos cuando es fácil o valores positivos cuando es difícil. Un buen criterio de decisión es conservar los reactivos cuyo valor en el parámetro de dificultad sea de -2.5 a 2.5.
+El [modelo de un parámetro](#R1PL) únicamente toma en cuenta el nivel de habilidad de los sustentantes y la dificultad del reactivo, y asume que la discriminación de todos los reactivos es igual. El valor del índice de dificultad, en teoría puede ir de -infinito a +infinito. El índice de dificultad puede variar de valores negativos cuando es fácil o valores positivos cuando es difícil. Un buen criterio de decisión es conservar los reactivos cuyo valor en el parámetro de dificultad sea de -2.5 a 2.5.
 
-#### Modelo de dos parámetros
+#### Modelo de dos parámetros {#RASCH2}
 
-El [modelo de dos parámetros](#2PL), además de considerar el nivel de habilidad y la dificultad de los reactivos, incluye la variación en el nivel de discriminación de los reactivos. El parámetro de discriminación puede tomar valores comenzando en 0 y hasta un máximo de 2. Suele considerarse que reactivos con valores iguales o mayores a 0.45 son reactivos con un buen nivel de discriminación. Valores más pequeños indicarían que el reactivo no discrimina bien entre los grupos con mayor o menor nivel de habilidad.
+El [modelo de dos parámetros](#R2PL), además de considerar el nivel de habilidad y la dificultad de los reactivos, incluye la variación en el nivel de discriminación de los reactivos. El parámetro de discriminación puede tomar valores comenzando en 0 y hasta un máximo de 2. Suele considerarse que reactivos con valores iguales o mayores a 0.45 son reactivos con un buen nivel de discriminación. Valores más pequeños indicarían que el reactivo no discrimina bien entre los grupos con mayor o menor nivel de habilidad.
 
 ### Eliminación de reactivos
 

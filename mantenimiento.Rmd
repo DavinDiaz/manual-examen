@@ -1,4 +1,4 @@
-## ¿Y QUÉ HACEMOS DESPUÉS CON EL EXAMEN? {#COMP8}
+# ¿Y QUÉ HACEMOS DESPUÉS CON EL EXAMEN? {#COMP8}
 
 <center>![](images/comp3.png){width=60%}</center>
 

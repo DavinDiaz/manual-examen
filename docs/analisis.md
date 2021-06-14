@@ -166,12 +166,12 @@ Ya que tenemos esta base de datos, podemos realizar algunos análisis para ver c
 * TCT
  + [Índice de Dificultad]
  + [Índice de Discriminación]
- + [Correlación reactivo-total]
- + [Alfa si se elimina el reactivo]
+ + [Correlación reactivo-total](#correactivo)
+ + Alfa si se elimina el reactivo
 
 * TRI
- + Índice de Dificultad
- + Índice de Discriminación
+ + [Índice de Dificultad](#RASCH1)
+ + [Índice de Discriminación](#RASCH2)
 
 Para mayor practicidad, sugerimos al lector ejecutar todas las siguientes líneas de código tal como están, con lo que obtendrá como resultado final una tabla con todos estos estadísticos. La interpretación de estos estadísticos se especificó en el capítulo referente los [tipos de análisis que podemos realizar](#COMP5).
 
@@ -853,12 +853,6 @@ El gráfico nos ayuda a determinarlo al trazar la línea roja punteada, en este 
 
 ```r
 fa.parallel(reactivos_correctos, fm = "uls", fa = "fa")
-```
-
-```
-## Warning in fa.stats(r = r, f = f, phi = phi, n.obs = n.obs, np.obs = np.obs, :
-## The estimated weights for the factor scores are probably incorrect. Try a
-## different factor score estimation method.
 ```
 
 <img src="analisis_files/figure-html/parallel-1.png" width="672" />

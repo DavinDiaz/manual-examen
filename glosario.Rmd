@@ -104,10 +104,10 @@ Cuando hablamos de mantenimiento nos referimos a vigilar que los usos e interpre
 ##	Marco conceptual: {-#marco-conceptual}
 Base teórica sobre la que se construye la definición del constructo, la operacionalización de este y la construcción de la tabla de especificaciones. Se refiere a la teoría o evidencia bibliográfica sobre la que se sustenta nuestro examen.
 
-##	Modelo de 1 parámetro: {-#1PL}
+##	Modelo de 1 parámetro: {-#R1PL}
 Modelo explicativo que parte de la Teoría de Respuesta al Ítem, y que utiliza únicamente el nivel de habilidad y el índice de dificultad del reactivo como criterios para calcular la probabilidad de que un participante responda correctamente.
 
-##	Modelo de 2 parámetros: {-#2PL}
+##	Modelo de 2 parámetros: {-#R2PL}
 Modelo explicativo que parte de la Teoría de Respuesta al Ítem, y que utiliza tanto el nivel de habilidad y el índice de dificultad como el nivel de discriminación del reactivo como criterios para calcular la probabilidad de que un participante responda correctamente.
 
 ##	Niveles de aprendizaje: {-#niveles}
@@ -141,7 +141,7 @@ Se refiere a aquellos reactivos utilizados en pruebas paralelas que se conservan
 ##	Regresión Lineal: {-#regresion}
 Nos permite predecir, a partir de algún criterio como el puntaje de nuestro examen, el resultado en otra variable con varias opciones de resultado posibles; por ejemplo, predecir las calificaciones de un alumno a partir de su puntaje de ingreso, o predecir su puntaje en otro examen. La precisión con que logramos predecir la segunda variable a partir de la primera nos indicará no solo la relación entre ambas variables, sino que da cuenta de una posible relación de causalidad.
 
-##	Seguridad del instrumento: {-seguridad-G}
+##	Seguridad del instrumento: {-seguridadG}
 Se refiere a todos los esfuerzos y protocolos utilizados para garantizar que toda información referente al instrumento que pudiera afectar su funcionamiento, confiabilidad y validez, sea resguardada y protegida, para con ello proteger también la validez de los usos e interpretaciones del examen.
 
 ##	Sesgo: {-#sesgo}
