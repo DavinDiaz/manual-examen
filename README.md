@@ -1,1 +1,1 @@
-This is a minimal example of a book based on R Markdown and **bookdown** (https://github.com/rstudio/bookdown). Please see the page "Get Started" at https://bookdown.org/home/about/ for how to compile this example.
+Este manual fue creado por Davin Eduardo Díaz García y Elizabeth Vega Gatica en el marco de las asignaturas de Medición y Evaluación y Seminario de Evaluación del Aprendizaje dentro del segundo semestre de la Maestría en Psicología con Residencia en Evaluación Educativa de la Universidad Nacional Autónoma de México.

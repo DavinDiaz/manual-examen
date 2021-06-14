@@ -25,10 +25,18 @@ Es importante que tengamos en cuenta que la confiabilidad y las evidencias de va
 
 :::aera
 **Estándar 4.24:**
-"Las especificaciones de la prueba deben modificarse o revisarse cuando nuevos datos de investigación, cambios significativos en el dominio representado o condiciones recientemente recomendadas del uso de la prueba pueden reducir la validez de las interpretaciones de los puntajes de la prueba. Si bien no es necesario que una prueba que mantiene su utilidad sea retirada o revisada simplemente debido al paso del tiempo, los desarrolladores de la prueba y los editores de la prueba son responsables de supervisar condiciones cambiantes y de modificar, revisar o retirar la prueba según lo indicado."
+*"Las especificaciones de la prueba deben modificarse o revisarse cuando nuevos datos de investigación, cambios significativos en el dominio representado o condiciones recientemente recomendadas del uso de la prueba pueden reducir la validez de las interpretaciones de los puntajes de la prueba. Si bien no es necesario que una prueba que mantiene su utilidad sea retirada o revisada simplemente debido al paso del tiempo, los desarrolladores de la prueba y los editores de la prueba son responsables de supervisar condiciones cambiantes y de modificar, revisar o retirar la prueba según lo indicado."*
+
+[@AERA2018]
 :::
 
+
+## A modo de repaso
+
 :::quiz
-¿Cuál es la razón principal por la que es importante darle mantenimiento a nuestro examen?
+
+**¿Cuál es la razón principal por la que es importante darle mantenimiento a nuestro examen?**
+
 Asegurar que los usos e interpretaciones de los puntajes sigan siendo válidos en futuras aplicaciones.
+
 :::

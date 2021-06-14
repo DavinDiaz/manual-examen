@@ -15,7 +15,9 @@ Para los examinados, lo que resulta de mayor interés al reportar es únicamente
 
 
 :::aera
-**Estándar 10.11:** "Cuando sea apropiado o lo exija la ley, los profesionales deben compartir los puntajes e interpretaciones de las pruebas con el examinando. Esta información se debe expresar en un lenguaje que el examinando (o, si corresponde, el representante legal del examinando) pueda comprender."
+**Estándar 10.11:** *"Cuando sea apropiado o lo exija la ley, los profesionales deben compartir los puntajes e interpretaciones de las pruebas con el examinando. Esta información se debe expresar en un lenguaje que el examinando (o, si corresponde, el representante legal del examinando) pueda comprender."*
+
+[@AERA2018]
 :::
 
 ## Institución
@@ -62,6 +64,15 @@ De igual forma, en términos de confidencialidad, es importante diseñar un sist
 
 :::aera
 **Estándar 5.1:** 
-"Se deben proporcionar a los usuarios de la prueba explicaciones claras de las características, el significado y la interpretación prevista de los puntajes de escala, así como de sus limitaciones."
+*"Se deben proporcionar a los usuarios de la prueba explicaciones claras de las características, el significado y la interpretación prevista de los puntajes de escala, así como de sus limitaciones."*
+
+[@AERA2018]
 :::
 
+## A modo de repaso
+
+:::quiz
+
+[**¿Por qué es recomendable utilizar reportes personalizados de acuerdo con los distintos interesados en los resultados?**]
+
+:::

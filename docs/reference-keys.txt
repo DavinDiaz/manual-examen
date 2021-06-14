@@ -8,11 +8,13 @@ qué-procedimiento-seguiremos-para-saber-si-nuestro-instrumento-es-válido-confi
 cuántos-reactivos-tendrá-nuestra-prueba-y-como-estará-organizada
 cómo-calificaremos-la-prueba
 otras-características-importantes-a-considerar
+a-modo-de-repaso
 COMP2
 definiendo-nuestor-marco-conceptual
 pasando-de-la-definición-de-constructo-a-la-construcción-de-reactivos
 operacionalizando
 elaborando-nuestra-tabla-de-especificaciones
+a-modo-de-repaso-1
 COMP3
 redaccion
 reactivos-de-cuestionamiento-directo
@@ -30,6 +32,7 @@ para-ejercitar
 COMP4
 cómo-producimos-e-imprimimos-el-examen
 cómo-aplicamos-el-examen
+a-modo-de-repaso-2
 COMP5
 desempeño-de-los-reactivos
 teoría-clásica-de-los-tests
@@ -53,9 +56,11 @@ regresiones-lineales-y-logísticas
 calificación
 métodos-para-establecer-puntos-de-corte-standard-setting
 método-de-angoff
+a-modo-de-repaso-3
 COMP7
 examinados
 institución
+a-modo-de-repaso-4
 COMP6
 cómo-capturamos-nuestros-datos
 cómo-cargamos-nuestros-datos-en-r
@@ -74,6 +79,7 @@ COMP8
 contenido-de-los-reactivos
 seguridad-del-instrumento
 desempeño-psicométrico
+a-modo-de-repaso-5
 alpha
 AFE
 AFC
@@ -126,9 +132,3 @@ TRI-G
 test-retest
 validez-G
 varianza
-quiz1
-quiz2
-quiz3
-quiz4
-quiz5
-quiz6

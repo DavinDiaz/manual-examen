@@ -5,6 +5,8 @@
 
 Una vez que hemos elaborado nuestra tabla de especificaciones estamos listos para comenzar la tarea de construcción de reactivos, de manera que a partir de ellos podamos realizar interpretaciones y usar los resultados del examen de manera confiable, válida y justa. 
 
+Según el @INEE2019 y @Lane2016 las etapas de elaboración son
+
 ## Redactando nuestros reactivos {#redaccion}
 Como vimos en la sección anterior, la tabla de especificaciones será la guía que nos permita construir reactivos acordes a lo que queremos medir, lo cual se logra gracias a su desglose en área, subárea, aprendizaje esperado, nivel de evaluación, cantidad y tipo de reactivos.
 
@@ -16,7 +18,7 @@ Antes de ir directo con la construcción, debemos conocer qué es un reactivo, l
 
 Un reactivo es un planteamiento que solicita la realización de una tarea, está conformado por la base donde se especifica el planteamiento preciso del problema a resolver, también tiene opciones de respuesta donde una es la respuesta correcta y los otros son opciones incorrectas o distractores. 
 
-Los diferentes tipos de reactivos de opción múltiple tienen ventajas y desventajas, pero la elección de uno u otro depende principalmente de su adecuación al aprendizaje esperado y al nivel de evaluación que nos señale la tabla de especificaciones. Según Rodríguez y Albano (2017) y Ceneval (2013) los reactivos se pueden clasificar en: 
+Los diferentes tipos de reactivos de opción múltiple tienen ventajas y desventajas, pero la elección de uno u otro depende principalmente de su adecuación al aprendizaje esperado y al nivel de evaluación que nos señale la tabla de especificaciones. Según @rodriguez2017 y @CENEVAL2013 los reactivos se pueden clasificar en: 
 
 ### Reactivos de cuestionamiento directo: 
 Su base se construye en forma de pregunta la cual solicita una respuesta directa que se encuentra entre las opciones de respuesta, también pueden ser formuladas de manera que sea una oración que deba ser completada en su estructura final, es decir, que las opciones de respuesta cierren la oración que está en la base del reactivo.

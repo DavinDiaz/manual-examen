@@ -38,19 +38,33 @@ En ambos aspectos es requisito ineludible el resguardo de los instrumentos, por 
 
 :::aera
 **Estándar 4.15:**
-“Las instrucciones para la administración de la prueba deben presentarse con suficiente claridad para que sea posible que otros repliquen las condiciones de administración en las que se obtuvieron los datos sobre confiabilidad, validez y (cuando corresponda) normas. Las variaciones admisibles en los procedimientos de administración deben describirse claramente. El proceso para revisar solicitudes de variaciones adicionales en la evaluación también debe documentarse” (p.102).
+*“Las instrucciones para la administración de la prueba deben presentarse con suficiente claridad para que sea posible que otros repliquen las condiciones de administración en las que se obtuvieron los datos sobre confiabilidad, validez y (cuando corresponda) normas. Las variaciones admisibles en los procedimientos de administración deben describirse claramente. El proceso para revisar solicitudes de variaciones adicionales en la evaluación también debe documentarse.”*
+
+[@AERA2018]
+
 :::
 
 :::aera
 **Estándar 4.16:**
-“Las instrucciones presentadas a los examinandos deben contener suficiente detalle para que los examinandos puedan responder a una tarea de la manera prevista por el desarrollador de la prueba. Cuando corresponda, deben proporcionarse los materiales de la muestra, preguntas prácticas o de la muestra, criterios para calificación y un ítem representativo identificado con cada formato de ítem o área importante en la clasificación o dominio de la prueba a los examinandos antes de la administración de la prueba, o deben incluirse en el material de evaluación como parte de las instrucciones de administración estándar” (p.102).
+*“Las instrucciones presentadas a los examinandos deben contener suficiente detalle para que los examinandos puedan responder a una tarea de la manera prevista por el desarrollador de la prueba. Cuando corresponda, deben proporcionarse los materiales de la muestra, preguntas prácticas o de la muestra, criterios para calificación y un ítem representativo identificado con cada formato de ítem o área importante en la clasificación o dominio de la prueba a los examinandos antes de la administración de la prueba, o deben incluirse en el material de evaluación como parte de las instrucciones de administración estándar.”*
 :::
 
 :::aera
 **Estándar 6.6:** 
-“Se deben tomar las medidas razonables para garantizar la integridad de los puntajes de las pruebas, eliminando las oportunidades para que los examinandos logren puntajes mediante medios engañosos o fraudulentos (p.131).
-Estándar 10.9 Cuando se decide sobre el uso de administración de pruebas basada en tecnología, los profesionales deben tener en cuenta el propósito de la evaluación, el constructo que se mide y las capacidades del examinando (p.186).
+*“Se deben tomar las medidas razonables para garantizar la integridad de los puntajes de las pruebas, eliminando las oportunidades para que los examinandos logren puntajes mediante medios engañosos o fraudulentos."*
+
+[@AERA2018]
 :::
+
+
+:::aera
+**Estándar 10.9** 
+*"Cuando se decide sobre el uso de administración de pruebas basada en tecnología, los profesionales deben tener en cuenta el propósito de la evaluación, el constructo que se mide y las capacidades del examinando."*
+
+[@AERA2018]
+:::
+
+## A modo de repaso
 
 :::quiz
 

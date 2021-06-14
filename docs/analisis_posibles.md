@@ -7,7 +7,7 @@ Una vez que hemos terminado de aplicar el examen y capturado la información (ya
 
 :::nota
 **Nota:**
-Mucha de la información aquí presentada se basa en las recomendacioens dentro del libro de Chadha (2009) y del de Lane et al. (2016); si al lector le interesa profundizar en alguno de estos puntos, recomendamos estas dos fuentes como principales puntos de referencia
+Mucha de la información aquí presentada se basa en las recomendacionEs dentro del libro de @chadha2009 y del de @Lane2016; si al lector le interesa profundizar en alguno de estos puntos, recomendamos estas dos fuentes como principales puntos de referencia
 :::
 
 * [**Desempeño de reactivos:**](#desmpeño) Nos dirá si realmente los reactivos funcionaron en cuanto a dificultad y discriminación, y si los distractores funcionaron como se esperaba que lo hicieran.
@@ -23,7 +23,10 @@ Mucha de la información aquí presentada se basa en las recomendacioens dentro 
 * **Calificación:** Nos ayudará a determinar cómo establecer puntos de corte para decidir quién aprueba y quién no, dependiendo de los usos e interpretaciones previstos
 
 :::aera
-**Estándar 5.0:** Los puntajes de la prueba deben derivarse de una manera que respalde las interpretaciones de los puntajes de la prueba para los usos propuestos de las pruebas. Los desarrolladores y usuarios de la prueba deben documentar evidencia de imparcialidad, confiabilidad y validez de los puntajes de la prueba para su uso propuesto.
+**Estándar 5.0:** 
+*Los puntajes de la prueba deben derivarse de una manera que respalde las interpretaciones de los puntajes de la prueba para los usos propuestos de las pruebas. Los desarrolladores y usuarios de la prueba deben documentar evidencia de imparcialidad, confiabilidad y validez de los puntajes de la prueba para su uso propuesto.*
+
+[@AERA2018]
 :::
 
 
@@ -114,7 +117,9 @@ Por ello, una tercera alternativa es evaluar la confiabilidad con respecto a la 
 
 :::aera
 **Estándar 2.3:**
-"Para cada puntaje total, subpuntaje o combinación de puntajes que deba interpretarse, deben reportarse estimaciones de índices relevantes de confiabilidad/ precisión."
+*"Para cada puntaje total, subpuntaje o combinación de puntajes que deba interpretarse, deben reportarse estimaciones de índices relevantes de confiabilidad/ precisión."*
+
+[@AERA2018]
 :::
 
 ##	Imparcialidad
@@ -135,7 +140,9 @@ Dependiendo de estos resultados, será importante tomar la decisión de si todos
 
 :::aera
 **Estándar 4.10:**
-"Cuando un desarrollador de pruebas evalúa las propiedades psicométricas de los ítems, el modelo utilizado para ese fin (p. ej., teoría clásica de los tests, teoría de respuesta al ítem u otro modelo) debe documentarse. La muestra utilizada para estimar las propiedades de los ítems debe describirse y debe ser de un tamaño y diversidad adecuados para el procedimiento. El proceso por el cual se criban los ítems y los datos utilizados para cribado, como dificultad del ítem, discriminación de ítems, o funcionamiento diferencial de los ítems (DIF) para grupos importantes de individuos examinados también deben documentarse. Cuando se utilizan métodos basados en modelos (p. ej., TRI) para estimar los parámetros de los ítems en el desarrollo de pruebas, el modelo de respuesta al ítem, los procedimientos de estimación y la evidencia de ajuste del modelo deben documentarse."
+*"Cuando un desarrollador de pruebas evalúa las propiedades psicométricas de los ítems, el modelo utilizado para ese fin (p. ej., teoría clásica de los tests, teoría de respuesta al ítem u otro modelo) debe documentarse. La muestra utilizada para estimar las propiedades de los ítems debe describirse y debe ser de un tamaño y diversidad adecuados para el procedimiento. El proceso por el cual se criban los ítems y los datos utilizados para cribado, como dificultad del ítem, discriminación de ítems, o funcionamiento diferencial de los ítems (DIF) para grupos importantes de individuos examinados también deben documentarse. Cuando se utilizan métodos basados en modelos (p. ej., TRI) para estimar los parámetros de los ítems en el desarrollo de pruebas, el modelo de respuesta al ítem, los procedimientos de estimación y la evidencia de ajuste del modelo deben documentarse."*
+
+[@AERA2018]
 :::
 
 
@@ -183,7 +190,9 @@ En ocasiones, se suele presentar a los jueces los resultados psicométricos de l
 Una vez que se han dado las dos rondas, se capturan los resultados finales de cada uno de los jueces y se elabora una tabla en la que se registre el puntaje que cada juez le dio a cada reactivo, para después, promediar estos puntajes por reactivo y por juez, y al sumar todas estas probabilidades promedio y dividirlas entre el total de jueces y reactivos, se obtiene el punto de corte. Dado que se les solicita probabilidades de 0 a 100, lo que obtenemos como puntaje se puede interpretar como un porcentaje de respuestas correctas.
 
 :::aera
-**Estándar 5.21:** "Cuando las interpretaciones de puntajes propuestas involucran uno o más puntajes de corte, deben documentarse claramente la justificación y los procedimientos utilizados para establecer puntajes de corte."
+**Estándar 5.21:** *"Cuando las interpretaciones de puntajes propuestas involucran uno o más puntajes de corte, deben documentarse claramente la justificación y los procedimientos utilizados para establecer puntajes de corte."*
+
+[@AERA2018]
 :::
 
 :::evidencia
@@ -196,6 +205,8 @@ Durante esta fase, es importante registrar todos los procedimientos llevados a c
 Es importante que diseñemos un protocolo que nos permita resguardar y limitar el acceso a las bases de datos utilizadas para realizar el análisis,
 :::
 
+
+## A modo de repaso
 
 :::quiz
 

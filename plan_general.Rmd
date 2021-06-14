@@ -64,15 +64,17 @@ Hay que tener en cuenta el resguardo de la información que se construya en este
 **Estándar 4.0**
 *“Las pruebas y programas de evaluación deben diseñarse y desarrollarse de una manera que respalde la validez de las interpretaciones de los puntajes de la prueba para sus usos previstos. Los desarrolladores y editores de pruebas deben documentar las medidas tomadas durante el proceso y desarrollo de la prueba para proporcionar evidencia de imparcialidad, confiabilidad y validez para los usos previstos para individuos en la población prevista de individuos examinados”*
 
-[@AERA2018, p.96]
+[@AERA2018]
 :::
 
 :::aera
 **Estándar 1.8** 
 *“La composición de cualquier muestra de examinandos de la cual se obtiene evidencia de validación debe describirse con tanto detalle como sea práctico y aceptable, incluidas características sociodemográficas y de desarrollo relevantes*
 
-@AERA2018, p.27]
+[@AERA2018]
 :::
+
+## A modo de repaso
 
 :::quiz
 
