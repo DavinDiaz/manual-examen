@@ -69,7 +69,7 @@ Hay que tener en cuenta el resguardo de la información que se construya en este
 
 :::aera
 **Estándar 1.8** 
-*“La composición de cualquier muestra de examinandos de la cual se obtiene evidencia de validación debe describirse con tanto detalle como sea práctico y aceptable, incluidas características sociodemográficas y de desarrollo relevantes*
+*“La composición de cualquier muestra de examinandos de la cual se obtiene evidencia de validación debe describirse con tanto detalle como sea práctico y aceptable, incluidas características sociodemográficas y de desarrollo relevantes."*
 
 [@AERA2018]
 :::

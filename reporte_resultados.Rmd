@@ -22,7 +22,7 @@ Para los examinados, lo que resulta de mayor interés al reportar es únicamente
 
 ## Institución
 
-En el informe específico para la institución, el foco de atención estará en dos aspectos principales, los resultados referentes al examen en sí y aquellos referidos al colectivo de los sustentantes. Es decir, presentaremos tanto las principales evidencias de validez de las interpretaciones del examen como los resultados generales de los examinados. Para hacer la presentación de estos resultados, Ryan (2016), presenta algunas recomendaciones que aquí desglosaremos:
+En el informe específico para la institución, el foco de atención estará en dos aspectos principales, los resultados referentes al examen en sí y aquellos referidos al colectivo de los sustentantes. Es decir, presentaremos tanto las principales evidencias de validez de las interpretaciones del examen como los resultados generales de los examinados. Para hacer la presentación de estos resultados, @Lane2016 en el capítulo correspondiente reporte de resultados, presentan algunas recomendaciones que aquí desglosaremos:
 
 *	**Hacer el reporte legible, conciso y visualmente atractivo:** Un reporte de resultados puede resultar ser un documento sumamente tedioso de leer para los interesados, especialmente si se sobrecarga de texto. Lo ideal es reducir al mínimo necesario la cantidad de texto y concentrarnos en la comunicación gráfica, desde las fuentes y colores utilizados hasta las herramientas gráficas de comunicación que veremos en los siguientes puntos.
 

@@ -87,7 +87,7 @@ En este componente, nuestra principal evidencia documental será la propia tabla
 La tabla de especificaciones debe resguardarse y delimitar específicamente quién tiene acceso a ella. Parte de la información aquí obtenida puede hacerse pública, tanto el marco conceptual como parte del proceso de operacionalización, pero es importante resguardar todo aquello que pueda atentar contra la validez de la prueba; es decir, si se filtra información hacia los examinados de los contenidos específicos del examen, esto puede invalidar la interpretación de que su puntaje se debe a su nivel de conocimientos, dado que en este caso estaría influido por su conocimiento de la estructura y contenidos del examen.
 :::
 
-# A modo de repaso
+## A modo de repaso
 
 :::quiz
 

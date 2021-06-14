@@ -75,7 +75,7 @@ Para fines prácticos, solamente incluimos pequeñas viñetas de este texto para
 
 Es esencial que al construir los reactivos los expertos justifiquen las opciones de respuesta, tanto la correcta como los distractores, lo cual brindará la oportunidad de rectificar si las opciones son adecuadas o si hay una opción que sea parcialmente correcta. 
 
-Ahora bien, recordemos que lo que buscamos en la elaboración de nuestro examen es que este sea [estandarizado](#estandar) y que los reactivos tengan parámetros psicométricos adecuados para su implementación; es debido a esto que se han establecido ciertos lineamientos técnicos que se deben seguir para conseguir su adecuada construcción. Si bien estos lineamientos varían de acuerdo a los requerimientos de cada institución y de acuerdo al formato de los reactivos, hay algunos que son generales para los exámenes de opción múltiple según @rodríguez2017, los cuales son:
+Ahora bien, recordemos que lo que buscamos en la elaboración de nuestro examen es que este sea [estandarizado](#estandar) y que los reactivos tengan parámetros psicométricos adecuados para su implementación; es debido a esto que se han establecido ciertos lineamientos técnicos que se deben seguir para conseguir su adecuada construcción. Si bien estos lineamientos varían de acuerdo a los requerimientos de cada institución y de acuerdo al formato de los reactivos, hay algunos que son generales para los exámenes de opción múltiple según @rodriguez2017, los cuales son:
 
 *	**Basar cada reactivo en un aspecto del contenido o una tarea cognitiva.**
 
@@ -153,7 +153,9 @@ Otro aspecto que permite construir un reactivo que se lea de forma fluida y prec
 
 En el contexto del artículo, cuando García menciona el concepto defenestrar se refiere 
 A) a atacar
+
 B) a alabar 
+
 C) a justificar 
 
 :::
@@ -230,7 +232,7 @@ Algunas de las recomendaciones que se deben de seguir son:
 
 :::nota
 **Nota:**
-Para más ejemplos de cada uno de estos lineamientos generales, consultar el capítulo 4 “ Writing Multiple-Choise Items” de @rodríguez2017 referido en la bibliografía de este manual.
+Para más ejemplos de cada uno de estos lineamientos generales, consultar el capítulo 4 “ Writing Multiple-Choise Items” de @rodriguez2017 referido en la bibliografía de este manual.
 :::
 
 Como podemos ver, la redacción de un reactivo no es tarea sencilla, hay muchos aspectos que se deben cuidar para que no intervengan y afecten el constructo que queremos medir, de otra manera las interpretaciones que hagamos de los resultados y usos de la prueba no serán válidos y podrían traer consecuencias negativas para los sustentantes, por lo que, una vez capacitados los expertos a partir de los lineamientos y que se hayan redactado los reactivos, estos deben pasar por una revisión profunda antes de ser aplicados. 

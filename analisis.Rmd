@@ -10,9 +10,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 En esta sección presentaremos herramientas para llevar a cabo el análisis estadístico de los reactivos y de la prueba en general. Para ayudar a que cualquier persona que lea el manual pueda llevar a cabo estos análisis, utilizaremos el lenguaje de programación R. Pese a que llamarlo lenguaje de programación puede resultar intimidante, trataremos de presentar todo el contenido de esta sección de la manera más simple y didáctica posible, de tal forma que el lector solo tenga que reemplazar uno o dos valores que nosotros indicaremos, y que con eso sea suficiente para obtener los resultados deseados. 
 
-Para lograr este cometido, necesitaremos dos prerrequisitos importantes, el primero de ellos es tener instalado R y RStudio; para ello, recomendamos el siguiente enlace con instrucciones para su instalación:
+Para lograr este cometido, necesitaremos dos prerrequisitos importantes, el primero de ellos es tener instalado R y RStudio; para ello, recomendamos dirigirse a [este enlace](https://gonzalezgouveia.com/como-instalar-rstudio-en-windows-10/) con instrucciones para su instalación:
 
->Enlace pendiente
 
 El segundo requisito es tener una [base de datos](#base) [limpia](#base-limpia) y [ordenada](#base-ordenada) que permita analizar la información de la manera más simple posible. Para ello, recomendamos al lector dirigirse a la siguiente sección y seguir cada uno de los tips presentados ahí.
 
@@ -35,6 +34,13 @@ Es muy importante que mantengamos un registro por separado de lo que cada códig
 
 * **Secuencia de las columnas:** Es recomendable que introduzcamos cada atributo del sustentante en un orden lógico. De igual forma, se recomienda que las columnas iniciales contengan los datos de identificación o demográficos. La primera columna suele ser el identificador del sustentante, ya sea su nombre, clave única o clave asignada. Posterior a esto, se introducen los demás atributos como el sexo, edad, semestre que cursa, etc. En cuanto a los reactivos, es importante que se registren en orden: si tenemos 15 reactivos de un subdominio específico, que esos 15 reactivos se registren en 15 columnas consecutivas.
 
+### La base de datos que utilizaremos
+
+Para este ejemplo, se diseñó una base de datos ficticia de un examen de matemáticas que cubre tres áreas principales: Álgebra, Geometría y Cálculo. Cada área tiene 6 reactivos, siendo que el primer reactivo de Álgebra aparece como `Alg1`, el primero de Geometría como `Geo1`, y el primero de Cálculo como `Calc1`, y todos los demás con la misma clave y únicamente variando en el número final. Además de esto, se elaboró de forma ficticia variables descriptivas como sexo, grado escolar y edad. 
+
+En un archivo de excel, siguiendo las recomendaciones anteriores, nuestra base de datos se vería así:
+
+<center>![](images/excel.png)</center>
 
 ## ¿Cómo cargamos nuestros datos en R?
 
@@ -143,16 +149,16 @@ head(reactivos_correctos)
 Ya que tenemos esta base de datos, podemos realizar algunos análisis para ver cómo se comportan los reactivos. Si recordamos lo revisado en la sección del desempeño de los reactivos, los principales análisis que podemos hacer en este campo son:
 
 * TCT
- + Índice de Dificultad
- + Índice de Discriminación
- + Correlación reactivo-total
- + Alfa si se elimina el reactivo
+ + [Índice de Dificultad]
+ + [Índice de Discriminación]
+ + [Correlación reactivo-total]
+ + [Alfa si se elimina el reactivo]
 
 * TRI
  + Índice de Dificultad
  + Índice de Discriminación
 
-Para mayor practicidad, sugerimos al lector ejecutar todas las siguientes líneas de código tal como están, con lo que obtendrá como resultado final una tabla con todos estos estadísticos. La interpretación de estos estadísticos se especificó en el capítulo referente los tipos de análisis que podemos realizar.
+Para mayor practicidad, sugerimos al lector ejecutar todas las siguientes líneas de código tal como están, con lo que obtendrá como resultado final una tabla con todos estos estadísticos. La interpretación de estos estadísticos se especificó en el capítulo referente los [tipos de análisis que podemos realizar](#COMP5).
 
 
 ```{r tabla-reactivos, message=FALSE, warning=FALSE}
@@ -177,7 +183,12 @@ propiedades_items<-bind_cols(tabla_items[,c(1,10,12,15)], items.2PL[,1:2])%>%
 
 ## Análisis de los distractores
 
-El lector recordará que también sugerimos incluir el análisis de los distractores. La manera más práctica de hacerlo es al visualizar la frecuencia con la que cada una de las opciones de respuestas fue seleccionada. Si deseamos ver estas frecuencias en forma de tabla y separados por grupos bajo, medio y alto (en las tablas aparecen como 1, 2 y 3 respectivamente), el siguiente comando puede ayudarnos a lograrlo
+El lector recordará que también sugerimos incluir el análisis de los distractores. La manera más práctica de hacerlo es al visualizar la frecuencia con la que cada una de las opciones de respuestas fue seleccionada. Si deseamos ver estas frecuencias en forma de tabla y separados por grupos bajo, medio y alto (en las tablas aparecen como 1, 2 y 3 respectivamente), el siguiente comando puede ayudarnos a lograrlo.
+
+:::nota
+**Nota**
+En este caso, lo que nosotros ejecutaremos serán las primeras líneas hasta `print(distractores)`. Lo siguiente es el resultado de estas líneas para nuestro ejemplo. Simplemente R lo muestra junto a las líneas para mayor practicidad. Como regla general, todo lo que veamos en los cuadros de código que comience con `##` es el resultado que R nos da, y no son líneas que debamos ejecutar.
+:::
 
 ```{r distractores}
 distractores<-datos_completos%>%
@@ -301,7 +312,7 @@ Una vez que hemos determinado la cantidad de factores, podemos pasar a ejecutar 
 
 :::nota
 **Nota:**
-Si al lector le interesa profundizar en esto, recomendamos consultar el artículo de Lloret-Segura et al. (2014), el cuál presenta una guía práctica para la elaboración de AFE en español.
+Si al lector le interesa profundizar en esto, recomendamos consultar el artículo de @lloret2014, el cuál presenta una guía práctica para la elaboración de AFE en español.
 :::
 
 
@@ -369,7 +380,7 @@ Por su parte, el RMSEA, es una medida del error presente en el modelo, nos indic
 
 ## Confiabilidad
 
-Como se mencionó en el capítulo anterior, existen diversos tipos de confiabilidad, los cuales se obtienen con diferentes métodos. Sin embargo, la más usada usualmente, debido a su practicidad es la confiabilidad de consistencia interna, en especial el coeficiente Alfa de Cronbach. Para obtenerlo, solamente tenemos que utilizar la función `cronbach()` e indicar dentro de esta el nombre de la base de datos en donde se encuentran únicamente nuestros reactivos.
+Como se mencionó en el [capítulo anterior](#COMP5), existen diversos tipos de confiabilidad, los cuales se obtienen con diferentes métodos. Sin embargo, la más usada usualmente, debido a su practicidad es la confiabilidad de consistencia interna, en especial el coeficiente Alfa de Cronbach. Para obtenerlo, solamente tenemos que utilizar la función `cronbach()` e indicar dentro de esta el nombre de la base de datos en donde se encuentran únicamente nuestros reactivos.
 
 ```{r alfa-1}
 cronbach(reactivos_correctos)
@@ -443,8 +454,12 @@ En este ejemplo, no parece haber diferencias significativas en el total. Sin emb
 Inclusive, aunque hayan existido diferencias significativas entre los grupos, eso no significa que esas diferencias sean debidas a que el examen está sesgado. De hecho, como se mencionó en el capítulo anterior, al igual que en el siguiente análisis, estas diferencias podrían ser explicadas por diferencias existentes reales entre ambos grupos. 
 :::
 
-El análisis DIF nos indica la presencia de sesgos en los reactivos que favorezcan más a algún grupo con respecto a otro independientemente de su nivel de habilidad. Esto es, si dos sustentantes tienen el mismo nivel de habilidad, pero uno de ellos por pertenecer a un grupo distinto tiene mayor probabilidad de contestar de manera correcta dicho reactivo. Existen muchos métodos distintos para detectar la presencia de DIF en cada reactivo, algunos que parten de la IRT y algunos que parten de otras teorías. Para fines prácticos, en este análisis incluiremos la comparativa de dos modelos de manera simplificada, pero si al lector le interesa profundizar en este aspecto, recomendamos las siguientes fuentes:
-_____________
+El análisis DIF nos indica la presencia de sesgos en los reactivos que favorezcan más a algún grupo con respecto a otro independientemente de su nivel de habilidad. Esto es, si dos sustentantes tienen el mismo nivel de habilidad, pero uno de ellos por pertenecer a un grupo distinto tiene mayor probabilidad de contestar de manera correcta dicho reactivo. 
+
+:::nota
+**Nota**
+Existen muchos métodos distintos para detectar la presencia de DIF en cada reactivo, algunos que parten de la IRT y algunos que parten de otras teorías. Para fines prácticos, en este análisis incluiremos la comparativa de dos modelos de manera simplificada, pero si al lector le interesa profundizar en este aspecto, recomendamos revisar el capítulo de @penfield2006.
+:::
 
 Para llevar a cabo el análisis, simplemente tenemos que ejecutar la siguiente línea de código. En el campo de Data, pondremos el nombre de nuestra base de datos que solamente incluye los reactivos en formato de 0-1. En el campo de group, incluiremos la variable que define los grupos que queremos contrastar; en este caso, haremos el análisis en términos de género. Recordaremos, que esa variable estaba presente en la primera base de datos que cargamos en nuestro ejemplo, por lo que podemos referenciarla poniendo el nombre de la base de datos donde se encuentra seguido del signo "$" y el nombre de la varible.
 
@@ -522,7 +537,12 @@ datos_graficos%>%
 
 ```
 
-El paquete que estamos utilizando para este ejemplo se llama "ggplot2", este paquete tienen un nivel de personalización muy amplio, pero su código es poco comprensible para quien no está familiarizado. Existen algunos paquetes que han intentado hacerlo más secinllo tales como _________. En este ejemplo intentaremos concentrarnos en los aspectos fundamentales que nos ayudarán a generar los gráficos específicos que buscamos aquí, si al lector le interesa profundizar en el tema, nuevamente referimos a los enlaces presentados arriba.
+El paquete que estamos utilizando para este ejemplo se llama "ggplot2", este paquete tienen un nivel de personalización muy amplio, pero su código es poco comprensible para quien no está familiarizado. En este ejemplo intentaremos concentrarnos en los aspectos fundamentales que nos ayudarán a generar los gráficos específicos que buscamos aquí, si al lector le interesa profundizar en el tema, nuevamente referimos a los enlaces presentados arriba.
+
+:::nota
+**Nota**
+Si al lector le interesa profundizar en el uso de este tipo de gráficas, una buena herramienta es la presentada en [este enlace](https://www.hebergementwebs.com/tutorial-de-ggplot2/ggplot2-guia-rapida).
+:::
 
 En la sintacis, lo primero que definimos es la variable que vamos a presentar. En este primer ejemplo, en lugar de presentar el puntaje total crudo, pasaremos directamente a presentarlo en términos de porcentaje agrupados en categorías de 10 en 10, variable a la cual llamamos arriba "rango_porcentaje".
 

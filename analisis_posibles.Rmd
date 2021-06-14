@@ -152,7 +152,9 @@ Recordando que lo que se vuelve válido no es el instrumento en sí, sino las in
 
 Además de las evidencias que ya hemos ido generando, algunos de los principales métodos para obtención de evidencia de validez que vienen de la elaboración de análisis estadísticos son los siguientes:
 
-### Correlación con otras pruebas: Supongamos que nosotros definimos nuestro examen como un instrumento de medición que permite dar cuenta del constructo de comprensión lectora a partir de cierta teoría, y esta teoría, afirma que la comprensión lectora tiene una relación significativa con la memoria de trabajo que mencionamos en otro ejemplo. Si queremos generar mayor evidencia de la validez del uso de este examen como una medida de comprensión lectora bajo esta teoría, podríamos aplicar esta misma prueba junto con nuestro examen a los participantes y medir qué tanto se relacionan estadísticamente estas dos pruebas. 
+### Correlación con otras pruebas: 
+
+Supongamos que nosotros definimos nuestro examen como un instrumento de medición que permite dar cuenta del constructo de comprensión lectora a partir de cierta teoría, y esta teoría, afirma que la comprensión lectora tiene una relación significativa con la memoria de trabajo que mencionamos en otro ejemplo. Si queremos generar mayor evidencia de la validez del uso de este examen como una medida de comprensión lectora bajo esta teoría, podríamos aplicar esta misma prueba junto con nuestro examen a los participantes y medir qué tanto se relacionan estadísticamente estas dos pruebas. 
 
 De igual forma, si según nuestra teoría, existe una relación fuerte entre el nivel de comprensión lectora y el número de libros que la persona reporta leer al año en promedio, podríamos solicitar este dato a nuestros participantes y observar si esta relación se presenta como esperaríamos. 
 

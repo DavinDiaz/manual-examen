@@ -10,9 +10,10 @@ rmd_files:
 - reporte_resultados.Rmd
 - analisis.Rmd
 - mantenimiento.Rmd
+- referencias.Rmd
 - glosario.Rmd
 - preguntas.Rmd
-- referencias.Rmd
+
 
 output_dir: docs
 language:

@@ -132,3 +132,8 @@ TRI-G
 test-retest
 validez-G
 varianza
+correlación-con-otras-pruebas
+la-base-de-datos-que-utilizaremos
+modelo-de-1-parámetro--1pl
+modelo-de-2-parámetros--2pl
+seguridad-del-instrumento--seguridad-g
