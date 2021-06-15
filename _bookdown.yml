@@ -11,11 +11,13 @@ rmd_files: [
   "analisis.Rmd",
   "reporte_resultados.Rmd",
   "mantenimiento.Rmd",
-  "referencias.Rmd",
+
 
   "glosario.Rmd",
   
-  "preguntas.Rmd"
+  "preguntas.Rmd",
+  
+  "referencias.Rmd"
 ]
 
 output_dir: docs
