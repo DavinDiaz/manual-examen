@@ -7,7 +7,7 @@ Una vez que hemos terminado de aplicar el examen y capturado la información (ya
 
 :::nota
 **Nota:**
-Mucha de la información aquí presentada se basa en las recomendacionEs dentro del libro de @chadha2009 y del de @Lane2016; si al lector le interesa profundizar en alguno de estos puntos, recomendamos estas dos fuentes como principales puntos de referencia
+Mucha de la información aquí presentada se basa en las recomendaciones de los libros de @chadha2009 y de @Lane2016; si al lector le interesa profundizar en alguno de estos puntos, recomendamos estas dos fuentes como principales puntos de referencia
 :::
 
 * [**Desempeño de reactivos:**](#desmpeño) Nos dirá si realmente los reactivos funcionaron en cuanto a dificultad y discriminación, y si los distractores funcionaron como se esperaba que lo hicieran.
@@ -62,7 +62,7 @@ La correlación se obtiene de comparar el valor (correcto o incorrecto) que obtu
 
 Lo que esperamos con los reactivos que diseñamos es que todos los reactivos contribuyan a determinar el nivel de habilidad de los sustentantes, por ende, lo que esperamos son correlaciones de carácter positivo. No necesitamos correlaciones que se encuentren muy cercanas a 1, de hecho eso es poco probable. Sin embargo, solemos usar como criterio el conservar reactivos con correlaciones mayores a .2. Nuevamente, este dato solo se puede usar como criterio cuando se toma en cuenta con el resto de información obtenida con respecto al reactivo.
 
-#### Correlación de los distractores.
+#### Correlación de los distractores
 
 La correlación que hicimos hace un momento se hace al tomar el valor de contestar correctamente como 1, y contestar incorrectamente como 0. Bajo esa premisa, podemos hacer la misma correlación para cada una de las opciones de respuesta, es decir, si un sustentante eligió uno de los distractores, lo tomamos como un 1, y si no lo eligió, como un 0. Esto nos permite realizar la correlación con el puntaje total también con los distractores. La ventaja que tiene este análisis es que nos permite detectar si los distractores realmente están funcionando como esperamos que funcionen. Lo que esperaríamos es obtener correlaciones negativas en todos los distractores; es decir, contestar un reactivo con uno de los distractores se relaciona con obtener puntajes más bajos en la prueba. En este caso no hay un criterio establecido para qué tan grande deba ser el nivel de la correlación. Sin embargo, en caso de obtener correlaciones positivas en alguno de los distractores, nos estaría diciendo que elegir ese distractor se relaciona con obtener puntajes más altos, por lo que podría ser que ese distractor en realidad sea una respuesta correcta o parcialmente correcta. 
 

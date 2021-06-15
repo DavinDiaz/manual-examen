@@ -1,6 +1,5 @@
 --- 
-title: "ASPECTOS ESENCIALES EN L
-A CONSTRUCCIÓN DE EXAMENES DE OPCIÓN MÚLTIPLE"
+title: "ASPECTOS ESENCIALES EN LA CONSTRUCCIÓN DE EXÁMENES DE OPCIÓN MÚLTIPLE"
 author: 
 - Davin Eduardo Díaz García
 - Elizabeth Vega Gatica
@@ -12,6 +11,7 @@ biblio-style: apalike-es
 link-citations: yes
 cover-image: images/LOGO-UNAM.png
 description: "Este es un manual técnico en construcción de cómo diseñar, aplicar y validar exámenes de opción múltiple de alto impacto"
+always_allow_html: yes
 ---
 
 # ¿Para qué necesitamos revisar un manual técnico? {-#para}
@@ -51,7 +51,7 @@ Este es un aspecto transversal en todas las fases de construcción del examen, p
 
 
 :::nota
-**Nota**
+**Notas**
 También se realizan recomendaciones sobre bibliografía de apoyo para profundizar en ciertos aspectos del proceso de evaluación y se hace uso de notas que permiten aclarar determinados puntos especificados en el contenido de las fases.
 :::
 

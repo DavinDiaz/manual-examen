@@ -1,6 +1,6 @@
 # ¿Y QUÉ HACEMOS DESPUÉS CON EL EXAMEN? {#COMP8}
 
-<center>![](images/comp3.png){width=60%}</center>
+<center>![](images/comp8.png){width=60%}</center>
 
 
 Una vez que hemos terminado el proceso de elaboración de nuestro instrumento, lo aplicamos, verificamos sus propiedades métricas y validamos sus usos e interpretaciones, pareciera que el proceso está terminado. Sin embargo, hay una etapa más que suele dejarse de lado, y que, dependiendo del tipo de instrumento que hayamos construido es de suma importancia. Si nos regresamos a las primeras etapas y pensamos en los usos e interpretaciones que definimos para nuestro instrumento, hay que preguntarnos ¿el instrumento fue diseñado para una única aplicación aislada?, ¿o se pretende utilizar en múltiples aplicaciones a lo largo del tiempo? Si se trata más bien de la segunda opción, será importante que demos [mantenimiento](#mantenimiento) a nuestro instrumento.
@@ -35,8 +35,6 @@ Es importante que tengamos en cuenta que la confiabilidad y las evidencias de va
 
 :::quiz
 
-**¿Cuál es la razón principal por la que es importante darle mantenimiento a nuestro examen?**
-
-Asegurar que los usos e interpretaciones de los puntajes sigan siendo válidos en futuras aplicaciones.
+[**¿Cuál es la razón principal por la que es importante darle mantenimiento a nuestro examen?**]
 
 :::

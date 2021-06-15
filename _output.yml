@@ -10,7 +10,7 @@ bookdown::gitbook:
       before: |
         <li class="toc-logo"><a href="./"><img src="images/LOGO-UNAM.png"></a></li>      
       after: |
-        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+        <li><a href="https://github.com/rstudio/bookdown" target="blank">Publicado usando bookdown</a></li>
     download: ["rmd"]
     sharing:
       github: yes

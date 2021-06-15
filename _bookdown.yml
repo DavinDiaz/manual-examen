@@ -1,19 +1,22 @@
 book_filename: "manual-examen"
 delete_merged_file: true
-rmd_files:
-- index.Rmd
-- plan_general.Rmd
-- operacionalizacion.Rmd
-- redaccion_reactivos.Rmd
-- aplicacion.Rmd
-- analisis_posibles.Rmd
-- reporte_resultados.Rmd
-- analisis.Rmd
-- mantenimiento.Rmd
-- referencias.Rmd
-- glosario.Rmd
-- preguntas.Rmd
+rmd_files: [
+  "index.Rmd",
+  
+  "plan_general.Rmd",
+  "operacionalizacion.Rmd",
+  "redaccion_reactivos.Rmd",
+  "aplicacion.Rmd",
+  "analisis_posibles.Rmd",
+  "analisis.Rmd",
+  "reporte_resultados.Rmd",
+  "mantenimiento.Rmd",
+  "referencias.Rmd",
 
+  "glosario.Rmd",
+  
+  "preguntas.Rmd"
+]
 
 output_dir: docs
 language:

@@ -11,10 +11,11 @@ Según el @INEE2019 y @Lane2016 las etapas de elaboración son
 Como vimos en la sección anterior, la tabla de especificaciones será la guía que nos permita construir reactivos acordes a lo que queremos medir, lo cual se logra gracias a su desglose en área, subárea, aprendizaje esperado, nivel de evaluación, cantidad y tipo de reactivos.
 
 :::nota
-**Nota:** La elaboración de reactivos debe ser realizada por profesionales expertos en el campo de conocimiento al que pertenece el examen, dado que ellos manejan los temas y logran plasmar en las opciones de respuesta elementos que suelen ser los que los alumnos confunden regularmente con la respuesta correcta, por lo que estos expertos no debieron ser partícipes en la elaboración de la tabla de especificaciones.
+**Nota:** La elaboración de reactivos debe ser realizada por profesionales expertos en el campo de conocimiento al que pertenece el examen, dado que ellos manejan los temas y logran plasmar en las opciones de respuesta elementos que suelen ser los que los alumnos confunden regularmente con la respuesta correcta, por lo que estos expertos no debieron participar en la elaboración de la tabla de especificaciones.
 Es necesario brindarles como insumo la tabla de especificaciones y capacitarlos en los lineamientos técnicos que deben seguir para la construcción de los reactivos. 
-Antes de ir directo con la construcción, debemos conocer qué es un reactivo, los elementos que lo conforman y los tipos de reactivos de opción múltiple que podemos utilizar.
 :::
+
+Antes de ir directo con la construcción, debemos conocer qué es un reactivo, los elementos que lo conforman y los tipos de reactivos de opción múltiple que podemos utilizar.
 
 Un reactivo es un planteamiento que solicita la realización de una tarea, está conformado por la base donde se especifica el planteamiento preciso del problema a resolver, también tiene opciones de respuesta donde una es la respuesta correcta y los otros son opciones incorrectas o distractores. 
 
@@ -46,7 +47,7 @@ Esta clasificación hace referencia a la agrupación de reactivos que buscan res
 Usar el formato “conjunto de reactivos basados en contexto” requiere la utilización de un [escenario o estímulo](#estimulo), por lo que son reactivos valiosos por su utilidad para evaluar niveles cognitivos superiores como aplicación, análisis y evaluación. Su construcción requiere que se seleccione o construya un texto o escenario que sea adecuado y significativo para los alumnos de acuerdo con su nivel educativo y contexto. Según la OECD (2018) estos recursos pueden abordar situaciones personales, públicas, educativas u ocupacionales y los textos que elijamos pueden ser de tipo descriptivo, narrativo, explicativo o argumentativo, los cuales pueden tener diferentes formatos de diseño y transición dependiendo del contenido y del medio por el cual se va a aplicar el examen.
 :::
 
-Una vez que ya identificamos los tipos de reactivos o formatos que se pueden desarrollar y ya seleccionamos a los expertos que nos apoyarán en su construcción, es viable empezar con la capacitación de los expertos guiándonos de la tabla de especificaciones, por ejemplo, en un examen de comprensión lectora es esencial la utilización de estímulos como textos o escenarios.
+Una vez que ya identificamos los tipos de reactivos o formatos que se pueden desarrollar y ya seleccionamos a los expertos que nos apoyarán en su construcción, es viable empezar con la capacitación de los expertos guiándonos de la tabla de especificaciones.
 
 Imaginemos que ya se ha seleccionado el texto del cual se basará el contenido de los reactivos y que se tiene la siguiente información en la tabla de especificaciones:
 
@@ -62,8 +63,10 @@ En este ejemplo tenemos que desarrollar un reactivo de cuestionamiento directo c
 En el contexto de la lectura, ¿a qué hace referencia el término “eclosión” utilizado por el Dr. Gary Small?
 
 A) Acción de “salir del cascarón” o “salir de lo cerrado”.
+
 B) Explosión de un fenómeno o un movimiento social o cultural.
-               C) Irrupción abrupta o el crecimiento súbito de algo.
+
+C) Irrupción abrupta o el crecimiento súbito de algo.
                
 :::
 
@@ -84,7 +87,9 @@ Imagina que se plantea un reactivo de la siguiente manera:
 :::reactivo
 
 *Los primeros automóviles fueron recibidos con vítores, sin embargo, a medida que fue popularizándose su uso y empezaron a aparecer los problemas, aumentaron las voces en su contra.* 
-        ¿Qué argumento intenta justificar el autor con la analogía de los primeros automóviles y por qué?
+
+
+¿Qué argumento intenta justificar el autor con la analogía de los primeros automóviles y por qué?
          
 :::
 
@@ -108,9 +113,10 @@ Imagina que se plantea la base del reactivo de la siguiente manera:
 
 :::
 
-Este reactivo está solicitando información muy específica, en este caso busca evaluar la identificación de un elemento del artículo, por lo que hay que preguntarse si el reactivo ofrece información relevante sobre los conocimientos, habilidades y aptitudes de los alumnos o si se puede transformar un reactivo que mida elementos clave del aprendizaje. La misma lógica aplicaría si se elaboran reactivos que solicitan información muy general.
+Este reactivo está solicitando información muy específica, en este caso busca evaluar la identificación de un elemento del artículo, por lo que hay que preguntarse si el reactivo ofrece información relevante sobre los conocimientos, habilidades y aptitudes de los alumnos o si se puede transformar en un reactivo que mida elementos clave del aprendizaje. La misma lógica aplicaría si se elaboran reactivos que solicitan información muy general.
 
 *	**Evitar opiniones y trucos.**
+
 Imagina que se plantea la base del reactivo de la siguiente manera:
 
 :::reactivo
@@ -152,6 +158,7 @@ Otro aspecto que permite construir un reactivo que se lea de forma fluida y prec
 :::reactivo
 
 En el contexto del artículo, cuando García menciona el concepto defenestrar se refiere 
+
 A) a atacar
 
 B) a alabar 
@@ -325,7 +332,7 @@ Los procedimientos utilizados para desarrollar, revisar y probar ítems y para s
 Cuando se realizan ensayos de ítems o formularios de prueba, deben documentarse los procedimientos utilizados para seleccionar la(s) muestra(s) de examinandos, así como las características resultantes de la(s) muestra(s). Las muestras deben ser tan representativas como sea posible de las poblaciones para las que está prevista la prueba (p.100).
 :::
 
-## Para ejercitar
+## A modo de repaso
 
 :::quiz
 

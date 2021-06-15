@@ -11,7 +11,7 @@ otras-características-importantes-a-considerar
 a-modo-de-repaso
 COMP2
 definiendo-nuestor-marco-conceptual
-pasando-de-la-definición-de-constructo-a-la-construcción-de-reactivos
+pasando-de-la-definición-del-constructo-a-la-construcción-de-reactivos
 operacionalizando
 elaborando-nuestra-tabla-de-especificaciones
 a-modo-de-repaso-1
@@ -28,11 +28,11 @@ validando-nuestros-reactivos
 piloteando-y-analizando-psicométricamente-nuestros-reactivos
 creando-nuestro-banco-de-reactivos
 ensamblando-nuestro-examen
-para-ejercitar
+a-modo-de-repaso-2
 COMP4
 cómo-producimos-e-imprimimos-el-examen
 cómo-aplicamos-el-examen
-a-modo-de-repaso-2
+a-modo-de-repaso-3
 COMP5
 desempeño-de-los-reactivos
 teoría-clásica-de-los-tests
@@ -40,7 +40,7 @@ teoría-clásica-de-los-tests
 proporción-de-elección-de-opciones-de-respuesta
 índice-de-discriminación
 correactivo
-correlación-de-los-distractores.
+correlación-de-los-distractores
 teoría-de-respuesta-al-ítem
 RASCH1
 RASCH2
@@ -56,10 +56,6 @@ regresiones-lineales-y-logísticas
 calificación
 métodos-para-establecer-puntos-de-corte-standard-setting
 método-de-angoff
-a-modo-de-repaso-3
-COMP7
-examinados
-institución
 a-modo-de-repaso-4
 COMP6
 cómo-capturamos-nuestros-datos
@@ -76,9 +72,13 @@ análisis-factorial-confirmatorio-1
 confiabilidad-1
 imparcialidad-1
 gráficos
+COMP7
+examinados
+institución
+a-modo-de-repaso-5
 COMP8
 contenido-de-los-reactivos
 seguridad-del-instrumento
 desempeño-psicométrico
-a-modo-de-repaso-5
+a-modo-de-repaso-6
 seguridad-del-instrumento--seguridadg

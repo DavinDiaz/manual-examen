@@ -1,4 +1,4 @@
-# ¿CÓMO ADMINISTRAMOS EL EXAME? {#COMP4}
+# ¿CÓMO ADMINISTRAMOS EL EXAMEN? {#COMP4}
 
 <center>![](images/comp4.png){width=60%}</center>
 

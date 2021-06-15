@@ -7,7 +7,7 @@ En este componente debemos considerar un panorama general de los aspectos esenci
 Los pasos que conforman este componente son los siguientes según el @INEE2019 y @Lane2016:
 
 ## ¿Qué voy a medir?
-Debemos definir que habilidad o conocimiento que queremos evaluar, aclarando desde qué modelo teórico o educativo será abordado, por ejemplo, si nuestra prueba medirá comprensión lectora, ese sería nuestro [constructo](#constructo) y podríamos especificar que lo abordaremos basándonos en el marco educativo de la prueba de competencia lectora de PISA 2018 [@PISA2018]).
+Debemos definir que habilidad o conocimiento queremos evaluar, aclarando desde qué modelo teórico o educativo será abordado, por ejemplo, si nuestra prueba medirá comprensión lectora, ese sería nuestro [constructo](#constructo) y podríamos especificar que lo abordaremos basándonos en el marco educativo de la prueba de competencia lectora de PISA 2018 [@PISA2018].
 
 ## ¿Para qué voy a medir?
 Tenemos que definir el propósito de la evaluación, puesto que es el que guiará la forma en la que se desarrollarán los componentes posteriores, por lo que siempre hay que tenerlo presente. Por ejemplo, nuestro examen de comprensión lectora puede tener como propósito realizar una evaluación diagnóstica de la habilidad de comprensión lectora de los alumnos de sexto semestre de la carrera de Psicología a fin de contar con elementos que permitan al docente ajustar los contenidos que se abordarán durante el semestre. 
@@ -27,7 +27,7 @@ Tenemos que ser muy claros en los usos válidos y no válidos para evitar que se
 Con base en los pasos anteriores tenemos que decidir qué tipo de instrumento desarrollaremos en función del tiempo y recursos con los que contamos, si va a ser una [prueba objetiva](#examen) o un [cuestionario](#cuestionario), si las repuestas que se solicitarán serán de selección o libres y también debemos especificar si la administración del instrumento está planeada para ser en lápiz y papel o en computadora. Por ejemplo, para una prueba de comprensión lectora podemos hacer uso de una prueba objetiva con reactivos de selección múltiple que contarán con cuatro opciones de respuesta donde solo una será la repuesta correcta y la aplicaremos en formato de lápiz y papel.
 
 :::nota 
-Este manual se enfocará en el proceso referente a pruebas objetivas con reactivos de selección múltiple. Sin embargo, es importante que el lector sepa de la posibilidad de utilizar otras opciones, las cuales puede consultar en libros como el de @Lane2016.
+Este manual se enfocará en el proceso referente a pruebas objetivas con reactivos de selección múltiple. Sin embargo, es importante que el lector tenga la posibilidad de utilizar otras opciones, las cuales puede consultar en libros como el de @Lane2016.
 :::
 
 ## ¿Qué procedimiento seguiremos para saber si nuestro instrumento es válido, confiable y que nuestros reactivos se comportan de manera adecuada?

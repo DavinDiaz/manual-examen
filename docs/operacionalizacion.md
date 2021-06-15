@@ -1,8 +1,8 @@
-# ¿CÓMO DELIMITAMOS LO QUE EVALUREMOS EN NUESTRO EXAMEN? {#COMP2}
+# ¿CÓMO DELIMITAMOS LO QUE EVALUAREMOS EN NUESTRO EXAMEN? {#COMP2}
 
 <center>![](images/comp2.png){width=60%}</center>
 
-En este componente revisaremos todo el procedimiento necesario para delimitar el constructo que evaluaremos, desde el marco conceptual hasta la generación de nuestra tabla de especificacion. Todo el procedimiento aquí definido se basa primordialmente en la propuesta del @INEE2019
+En este componente revisaremos todo el procedimiento necesario para delimitar el constructo que evaluaremos, desde el marco conceptual hasta la generación de nuestra tabla de especificaciones. Todo el procedimiento aquí definido se basa primordialmente en la propuesta del @INEE2019
 
 ## Definiendo nuestor marco conceptual
 
@@ -10,7 +10,7 @@ Una vez que ya sabemos lo que queremos medir, y tenemos un plan general de cómo
 
 :::nota 
 **Nota:** 
-Es importante considerar que cuando hagamos la búsqueda para definir específicamente el constructo que queremos medir, no nos encontraremos con definiciones aisladas y puntuales, sino que nos encontraremos con marcos conceptuales extensos que den sustento a las definiciones propuestas, y que habrá varios autores y trabajos encaminados dentro de un mismo marco conceptual. Habrá constructos como el de comprensión lectora que tendrán una amplia gama de modelos teóricos de donde elegir, pero habrá otros constructos menos estudiados dentro de los que quizá tendremos que generar nuestras propias definiciones a partir de lo que ya han estudiado otros autores al respecto.
+Es importante considerar que cuando hagamos la búsqueda para definir específicamente el constructo que queremos medir, no nos encontraremos con definiciones aisladas y puntuales, sino con marcos conceptuales extensos que den sustento a las definiciones propuestas, y que habrá varios autores y trabajos encaminados dentro de un mismo marco conceptual. Habrá constructos como el de comprensión lectora que tendrán una amplia gama de modelos teóricos de donde elegir, pero habrá otros constructos menos estudiados dentro de los que quizá tendremos que generar nuestras propias definiciones a partir de lo que ya han estudiado otros autores al respecto.
 :::
 
 :::aera
@@ -20,7 +20,7 @@ Es importante considerar que cuando hagamos la búsqueda para definir específic
 [@AERA2018]
 :::
 
-## Pasando de la definición de constructo a la construcción de reactivos
+## Pasando de la definición del constructo a la construcción de reactivos
 
 
 ### Operacionalizando
@@ -47,11 +47,11 @@ Habrá ocasiones, como el ejemplo anterior, en que el marco conceptual ya incluy
 ### Elaborando nuestra tabla de especificaciones
 
 Ya que hemos definido en términos operacionales nuestro constructo, es importante que capturemos esa información en lo que llamaremos nuestra [tabla de especificaciones](#tabla-espec-G). Esta herramienta será nuestra guía fundamental que nos permita generar los reactivos directamente a partir de la definición que hemos generado. Comenzaremos por mostrar un ejemplo de tabla de especificaciones que nos permitirá desglosar sus componentes y comprender su estructura. Cabe hacer la aclaración, de que no existe una sola forma de generar tablas de especificaciones, y que los componentes de la misma dependerán mucho del propósito de nuestro instrumento y de las características del constructo. 
-Área/ dimensión	Subárea	Aspecto a evaluar	Cantidad de preguntas	Tipo de reactivo	Nivel de evaluación	Cantidad de especificaciones (para elaboración de reactivos)	Fuente de la información
+
 							
 **Ejemplo de tabla de especificaciones:** ![](images/tabla-espec.png) 
 
-Dentro de la primera columna, será importante que definamos los componentes o dimensiones principales de nuestro constructo; es decir, las áreas que se desglosan directamente de la definición del constructo. En el ejemplo de comprensión lectora, estas tres áreas tomadas de la definición de PISA (Ministerio de Educación, 2018) serían localizar, comprender y reflexionar. 
+Dentro de la primera columna, será importante que definamos los componentes o dimensiones principales de nuestro constructo; es decir, las áreas que se desglosan directamente de la definición del constructo. En el ejemplo de comprensión lectora, estas tres áreas tomadas de la definición de PISA [@PISA2018] serían localizar, comprender y reflexionar. 
 
 Después, en la segunda columna añadiremos los subcomponentes en caso de que el constructo evaluado lo permita. Supongamos que queremos hacer un examen de historia de México. Los componentes serían quizá grandes fases o etapas de la historia, como la revolución mexicana, y los subcomponentes podrían ser acontecimientos importantes dentro de estas etapas históricas, como el plan de San Luis, la decena trágica o el plan de agua prieta. 
 
