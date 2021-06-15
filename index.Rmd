@@ -7,7 +7,7 @@ date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
-biblio-style: apalike-es
+csl: apa.csl
 link-citations: yes
 cover-image: images/LOGO-UNAM.png
 description: "Este es un manual técnico en construcción de cómo diseñar, aplicar y validar exámenes de opción múltiple de alto impacto"

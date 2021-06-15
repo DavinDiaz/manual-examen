@@ -3,11 +3,11 @@ title: "ASPECTOS ESENCIALES EN LA CONSTRUCCIÓN DE EXÁMENES DE OPCIÓN MÚLTIPL
 author: 
 - Davin Eduardo Díaz García
 - Elizabeth Vega Gatica
-date: "2021-06-14"
+date: "2021-06-15"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
-biblio-style: apalike-es
+csl: apa.csl
 link-citations: yes
 cover-image: images/LOGO-UNAM.png
 description: "Este es un manual técnico en construcción de cómo diseñar, aplicar y validar exámenes de opción múltiple de alto impacto"

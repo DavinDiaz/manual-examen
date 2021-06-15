@@ -26,7 +26,7 @@ En el informe específico para la institución, el foco de atención estará en 
 
 *	**Hacer el reporte legible, conciso y visualmente atractivo:** Un reporte de resultados puede resultar ser un documento sumamente tedioso de leer para los interesados, especialmente si se sobrecarga de texto. Lo ideal es reducir al mínimo necesario la cantidad de texto y concentrarnos en la comunicación gráfica, desde las fuentes y colores utilizados hasta las herramientas gráficas de comunicación que veremos en los siguientes puntos.
 
-*	**Mantener la presentación clara, simple y despejada:** Evitar sobrecargar de texto es importante, pero también es importante compactar la información en general y no tratar de explicar todo el procedimiento o resultados que obtuvimos, hay que buscar explicar de manera simple y concreta los principales resultados
+*	**Mantener la presentación clara, simple y despejada:** Evitar sobrecargar de texto es importante, pero también es importante compactar la información en general y no tratar de explicar todo el procedimiento o resultados que obtuvimos, hay que buscar explicar de manera simple y concreta los principales resultados.
 
 *	**No tratar de abarcar demasiado en una sola visualizacón de los datos:** Una de las formas en las que el punto anterior puede presentarse es cuando usamos gráficas o tablas en las que pretendemos resumir demasiada información. Existen informes en los que se presentan tablas con muchas variables agrupadas en una sola tabla, lo cual las vuelve difíciles de leer e interpretar. Es recomendable presentar un solo resultado por gráfico o tabla. Algunas recomendaciones se presentan en el capítulo de análisis en R.
 
